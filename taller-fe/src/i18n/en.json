@@ -1,0 +1,42 @@
+{
+    "slctVisible": "T",
+  
+    "app": {
+      "appName": "My lists",
+      "titulo": "My task lists",
+      "inicio": "Home",
+      "acerca_de": "About",
+      "btnAtras": "Back",
+      "otros": "Others"
+    },
+    "acerca_de": {
+      "titulo": "About this App",
+      "text": "Task list management application"
+    },
+    "add": {
+      "titulo": "Add new list",
+      "lblNombre": "Name: ",
+      "ttpNombre": "List name",
+      "btnAdd": "New list",
+      "btnAddList": "Create",
+      "lblColor": "Add color",
+      "lblFecha": "Date",
+      "errNombre": "The name cannot be empty"
+    },
+    "delete": {
+      "ttpBtn": "Delete"
+    },
+    "list": {
+      "titulo": "My lists",
+      "noLists": "You haven't created any lists yet",
+      "ttpNoVisible": "Hide list",
+      "ttpVisible": "Show list",
+      "optTodas": "View all",
+      "optVisibles": "View visible",
+      "optNOVisibles": "Not visible",
+      "ordenNombre": "By name",
+      "ordenFecha": "By date",
+      "ttpEditar": "Edit"
+    }
+  }
+  

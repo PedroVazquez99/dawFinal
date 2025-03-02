@@ -1,0 +1,3627 @@
+{
+  "Version": 1,
+  "Hash": "Gb18UiBMZ+ZcG0fSxilK8iDDcu1WCKGwhyztPcSUpfQ=",
+  "Source": "taller-be",
+  "BasePath": "_content/taller-be",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "taller-be\\wwwroot",
+      "Source": "taller-be",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\taller-be.styles.css",
+      "SourceId": "taller-be",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "taller-be#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "d13a76wwz8",
+      "Integrity": "H5P4Mmdm3CrXibk1XdyjA0attYI600EVgEDeFq3eU1U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\taller-be.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css",
+      "SourceId": "taller-be",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "taller-be#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "d13a76wwz8",
+      "Integrity": "H5P4Mmdm3CrXibk1XdyjA0attYI600EVgEDeFq3eU1U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\css\\app.bd071c00.css",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "css/app.bd071c00#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r0bz71qz9h",
+      "Integrity": "i40Os76b7hdz9AsJ2/07eCjjRf0VXqYloOD+3zIIhLQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\app.bd071c00.css"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\favicon.ico",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r8e75ffup4",
+      "Integrity": "23SrC3gzjB93j4OYxF9BA8ma6g6EWjEYp3ULTur9NEU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-192x192.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/android-chrome-192x192#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kl5s4ogku6",
+      "Integrity": "WO/dVKtzi6BsEqhuP7lsniI1PIkIDjzpEl9G3hlxLtc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\android-chrome-192x192.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-512x512.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/android-chrome-512x512#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "063njcnw40",
+      "Integrity": "OH2SDFhqF4elBiIo9jMaGgZooxp9C4PmaXTxjV1vDhg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\android-chrome-512x512.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-192x192.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/android-chrome-maskable-192x192#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mrn2onwdug",
+      "Integrity": "Lgf5u4lNfAqrQpUy8DA/lYYHczosMvVbdK9kgTs+BE4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\android-chrome-maskable-192x192.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-512x512.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/android-chrome-maskable-512x512#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "293w1wehuk",
+      "Integrity": "dhnoOzv2ekR7fBCGpnF9KXejUAh49oa/GRQ9kxrYTW4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\android-chrome-maskable-512x512.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/apple-touch-icon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zo1dn3gmkf",
+      "Integrity": "0yzRqlS6yVtyJguKmQPwKjoGxbJ0rMBdAIHfncmuvbs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\apple-touch-icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-120x120.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/apple-touch-icon-120x120#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "84m4x4lfod",
+      "Integrity": "CFambzBtzZPoFPgeHDFKO02j4PM6B9gnUAMkjazLdpg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\apple-touch-icon-120x120.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-152x152.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/apple-touch-icon-152x152#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bawxgy7syl",
+      "Integrity": "TZaF1hDEQRyq3Y02zpTTMDz1sFyOBNZ/wjLBakRpoTU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\apple-touch-icon-152x152.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-180x180.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/apple-touch-icon-180x180#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hhrc1t8sbo",
+      "Integrity": "JctZ8cndqct476hgftzpoVTLiNF3JmgpkDQwC19h23Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\apple-touch-icon-180x180.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-60x60.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/apple-touch-icon-60x60#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "daix16r79y",
+      "Integrity": "KzwTXhZcbim82lYLAXvjsGtPuhMIDfDsmudU6BmA8y0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\apple-touch-icon-60x60.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-76x76.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/apple-touch-icon-76x76#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pkmw2mjv1h",
+      "Integrity": "t3ueJdDwzo6hzdIxm3/Kax9HPPsXT0K72J4bO4yZg0c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\apple-touch-icon-76x76.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-16x16.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/favicon-16x16#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qtci45t06m",
+      "Integrity": "kmbE+XOZ+N+IBzBoZRIB+ZK4D817qEsEKHzVgX3AeEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\favicon-16x16.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-32x32.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/favicon-32x32#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "20o635qypc",
+      "Integrity": "AvZLtHmnvQ160FISP8zpx9r2IA+ftNzN9TN9vmlosqg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\favicon-32x32.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\msapplication-icon-144x144.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/msapplication-icon-144x144#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ycee3we5iq",
+      "Integrity": "zjwgJxVmP5Lzc1bwqUKygteuyMmgfoLL1x3yP1xNL0A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\msapplication-icon-144x144.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\mstile-150x150.png",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/mstile-150x150#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ey9bdv9ypk",
+      "Integrity": "2t87yCulbA7fJDReyN6VYT+Z50bV5tjjE+0toEuQGeo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\mstile-150x150.png"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\safari-pinned-tab.svg",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "img/icons/safari-pinned-tab#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0fyu3lgep6",
+      "Integrity": "vOC7qwz4oYY9jzqtLM9OOAtAUlIKB1uYUGxZE6BBZNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons\\safari-pinned-tab.svg"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\index.html",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pfikhya4vf",
+      "Integrity": "q0wpQq/I91r1qcNmcQSSoOxHtRkbLn/df8nS5ZTXysc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "js/about.4a4183d6#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "idvpgwl0vz",
+      "Integrity": "Fkt49fRSH0p5ReyH9rPZz0pfW1yjA4+B0r3Wr0y7TTA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\about.4a4183d6.js"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js.map",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "js/about.4a4183d6.js#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w3lahea90l",
+      "Integrity": "pO301Y3n1+yON78R15gM4AdpyJn95GK/n5ZSaU51miY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\about.4a4183d6.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\about.js",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "js/about#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ajtfa9gr39",
+      "Integrity": "RhFEhP0XSDkvnL5AXcQyyDKwubU0QJJdfmNvO1lTHZU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\about.js"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "js/app.e32529b0#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8nc6iih23n",
+      "Integrity": "fBAzaTXzSiHslAD/AvuAUf8V6pHiI3JC763MoFG8mjw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.e32529b0.js"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js.map",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "js/app.e32529b0.js#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dh12mpyn4k",
+      "Integrity": "/9EkpFwZaOfe4XcKEzE3tCp2iSD/TOMqVYjgEFIJWRA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.e32529b0.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "js/app#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oxd8574hi5",
+      "Integrity": "dOZaLmlCbrrJ6uyIiEA7odah19GJLSFmUxzEEdEmKe8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.js"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "js/chunk-vendors.41ea2f5f#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r45v4o74bj",
+      "Integrity": "u39F5nUIyWwteICeXWF/fTa4eVDY/f9B6wLrpb1NnVY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chunk-vendors.41ea2f5f.js"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js.map",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "js/chunk-vendors.41ea2f5f.js#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w2qrl9bl9g",
+      "Integrity": "yKW3GdmvgQhhIOTtxRFYdnTPNA7A8K88aKB6VWLSFG0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chunk-vendors.41ea2f5f.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.js",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "js/chunk-vendors#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b6hmvdpnjp",
+      "Integrity": "cyMcTKbvTi1mnx3iqzr9WiGiwAG3IwHduE+NkYEA5MU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chunk-vendors.js"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\manifest.json",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "manifest#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0ej3vn690t",
+      "Integrity": "GKDf9d+yaAb4huI+7nYSYzhfrzuXyyM4uLksG97TpZA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\manifest.json"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\robots.txt",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "robots#[.{fingerprint}]?.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "79d4vcjbz7",
+      "Integrity": "5cS4RITuQhbpNzvpk4AyDCXdlIBfmfCoBYRvCHY2VT8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\robots.txt"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\service-worker.js",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "service-worker#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nkoh2kvm8g",
+      "Integrity": "WecmxTuR2Kv1NHZ9CLi/7R2fDWsccB1coLqblq9SUxw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\service-worker.js"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\service-worker.js.map",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "service-worker.js#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sbmavgk62v",
+      "Integrity": "iA797ZcQWux9zxzUjDhhNN5xxmLZdwPoPBbpNl3aME0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\service-worker.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "workbox-6567b62a#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nxupcefa03",
+      "Integrity": "JaOIXNejzOmFziHVgLs3PkgRQDZovuJ0XVKgwcIRpLE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\workbox-6567b62a.js"
+    },
+    {
+      "Identity": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js.map",
+      "SourceId": "taller-be",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\",
+      "BasePath": "_content/taller-be",
+      "RelativePath": "workbox-6567b62a.js#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qe1eukmc64",
+      "Integrity": "ogwcq62MGwELW7GEWTgl6lSIXbeuVyqygNpShpKDnA4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\workbox-6567b62a.js.map"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/app.bd071c00.css",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\css\\app.bd071c00.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "250"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i40Os76b7hdz9AsJ2/07eCjjRf0VXqYloOD+3zIIhLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-i40Os76b7hdz9AsJ2/07eCjjRf0VXqYloOD+3zIIhLQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.bd071c00.r0bz71qz9h.css",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\css\\app.bd071c00.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "250"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i40Os76b7hdz9AsJ2/07eCjjRf0VXqYloOD+3zIIhLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r0bz71qz9h"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.bd071c00.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-i40Os76b7hdz9AsJ2/07eCjjRf0VXqYloOD+3zIIhLQ="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"23SrC3gzjB93j4OYxF9BA8ma6g6EWjEYp3ULTur9NEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-23SrC3gzjB93j4OYxF9BA8ma6g6EWjEYp3ULTur9NEU="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.r8e75ffup4.ico",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"23SrC3gzjB93j4OYxF9BA8ma6g6EWjEYp3ULTur9NEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r8e75ffup4"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-23SrC3gzjB93j4OYxF9BA8ma6g6EWjEYp3ULTur9NEU="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/android-chrome-192x192.kl5s4ogku6.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-192x192.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9416"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WO/dVKtzi6BsEqhuP7lsniI1PIkIDjzpEl9G3hlxLtc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kl5s4ogku6"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/android-chrome-192x192.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WO/dVKtzi6BsEqhuP7lsniI1PIkIDjzpEl9G3hlxLtc="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/android-chrome-192x192.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-192x192.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9416"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WO/dVKtzi6BsEqhuP7lsniI1PIkIDjzpEl9G3hlxLtc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WO/dVKtzi6BsEqhuP7lsniI1PIkIDjzpEl9G3hlxLtc="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/android-chrome-512x512.063njcnw40.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-512x512.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OH2SDFhqF4elBiIo9jMaGgZooxp9C4PmaXTxjV1vDhg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "063njcnw40"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/android-chrome-512x512.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OH2SDFhqF4elBiIo9jMaGgZooxp9C4PmaXTxjV1vDhg="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/android-chrome-512x512.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-512x512.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OH2SDFhqF4elBiIo9jMaGgZooxp9C4PmaXTxjV1vDhg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OH2SDFhqF4elBiIo9jMaGgZooxp9C4PmaXTxjV1vDhg="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/android-chrome-maskable-192x192.mrn2onwdug.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-192x192.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lgf5u4lNfAqrQpUy8DA/lYYHczosMvVbdK9kgTs+BE4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mrn2onwdug"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/android-chrome-maskable-192x192.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lgf5u4lNfAqrQpUy8DA/lYYHczosMvVbdK9kgTs+BE4="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/android-chrome-maskable-192x192.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-192x192.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lgf5u4lNfAqrQpUy8DA/lYYHczosMvVbdK9kgTs+BE4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lgf5u4lNfAqrQpUy8DA/lYYHczosMvVbdK9kgTs+BE4="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/android-chrome-maskable-512x512.293w1wehuk.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-512x512.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dhnoOzv2ekR7fBCGpnF9KXejUAh49oa/GRQ9kxrYTW4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "293w1wehuk"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/android-chrome-maskable-512x512.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dhnoOzv2ekR7fBCGpnF9KXejUAh49oa/GRQ9kxrYTW4="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/android-chrome-maskable-512x512.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-512x512.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dhnoOzv2ekR7fBCGpnF9KXejUAh49oa/GRQ9kxrYTW4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dhnoOzv2ekR7fBCGpnF9KXejUAh49oa/GRQ9kxrYTW4="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/apple-touch-icon.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4678"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0yzRqlS6yVtyJguKmQPwKjoGxbJ0rMBdAIHfncmuvbs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0yzRqlS6yVtyJguKmQPwKjoGxbJ0rMBdAIHfncmuvbs="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/apple-touch-icon.zo1dn3gmkf.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4678"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0yzRqlS6yVtyJguKmQPwKjoGxbJ0rMBdAIHfncmuvbs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zo1dn3gmkf"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/apple-touch-icon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0yzRqlS6yVtyJguKmQPwKjoGxbJ0rMBdAIHfncmuvbs="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/apple-touch-icon-120x120.84m4x4lfod.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-120x120.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CFambzBtzZPoFPgeHDFKO02j4PM6B9gnUAMkjazLdpg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "84m4x4lfod"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/apple-touch-icon-120x120.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CFambzBtzZPoFPgeHDFKO02j4PM6B9gnUAMkjazLdpg="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/apple-touch-icon-120x120.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-120x120.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CFambzBtzZPoFPgeHDFKO02j4PM6B9gnUAMkjazLdpg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CFambzBtzZPoFPgeHDFKO02j4PM6B9gnUAMkjazLdpg="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/apple-touch-icon-152x152.bawxgy7syl.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-152x152.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4046"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TZaF1hDEQRyq3Y02zpTTMDz1sFyOBNZ/wjLBakRpoTU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bawxgy7syl"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/apple-touch-icon-152x152.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TZaF1hDEQRyq3Y02zpTTMDz1sFyOBNZ/wjLBakRpoTU="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/apple-touch-icon-152x152.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-152x152.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4046"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TZaF1hDEQRyq3Y02zpTTMDz1sFyOBNZ/wjLBakRpoTU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TZaF1hDEQRyq3Y02zpTTMDz1sFyOBNZ/wjLBakRpoTU="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/apple-touch-icon-180x180.hhrc1t8sbo.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-180x180.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4678"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JctZ8cndqct476hgftzpoVTLiNF3JmgpkDQwC19h23Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hhrc1t8sbo"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/apple-touch-icon-180x180.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JctZ8cndqct476hgftzpoVTLiNF3JmgpkDQwC19h23Y="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/apple-touch-icon-180x180.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-180x180.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4678"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JctZ8cndqct476hgftzpoVTLiNF3JmgpkDQwC19h23Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JctZ8cndqct476hgftzpoVTLiNF3JmgpkDQwC19h23Y="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/apple-touch-icon-60x60.daix16r79y.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-60x60.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1491"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KzwTXhZcbim82lYLAXvjsGtPuhMIDfDsmudU6BmA8y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "daix16r79y"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/apple-touch-icon-60x60.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KzwTXhZcbim82lYLAXvjsGtPuhMIDfDsmudU6BmA8y0="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/apple-touch-icon-60x60.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-60x60.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1491"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KzwTXhZcbim82lYLAXvjsGtPuhMIDfDsmudU6BmA8y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KzwTXhZcbim82lYLAXvjsGtPuhMIDfDsmudU6BmA8y0="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/apple-touch-icon-76x76.pkmw2mjv1h.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-76x76.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t3ueJdDwzo6hzdIxm3/Kax9HPPsXT0K72J4bO4yZg0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pkmw2mjv1h"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/apple-touch-icon-76x76.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-t3ueJdDwzo6hzdIxm3/Kax9HPPsXT0K72J4bO4yZg0c="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/apple-touch-icon-76x76.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-76x76.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t3ueJdDwzo6hzdIxm3/Kax9HPPsXT0K72J4bO4yZg0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-t3ueJdDwzo6hzdIxm3/Kax9HPPsXT0K72J4bO4yZg0c="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/favicon-16x16.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-16x16.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "799"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kmbE+XOZ+N+IBzBoZRIB+ZK4D817qEsEKHzVgX3AeEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kmbE+XOZ+N+IBzBoZRIB+ZK4D817qEsEKHzVgX3AeEY="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/favicon-16x16.qtci45t06m.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-16x16.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "799"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kmbE+XOZ+N+IBzBoZRIB+ZK4D817qEsEKHzVgX3AeEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qtci45t06m"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/favicon-16x16.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kmbE+XOZ+N+IBzBoZRIB+ZK4D817qEsEKHzVgX3AeEY="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/favicon-32x32.20o635qypc.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-32x32.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1271"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AvZLtHmnvQ160FISP8zpx9r2IA+ftNzN9TN9vmlosqg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "20o635qypc"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/favicon-32x32.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AvZLtHmnvQ160FISP8zpx9r2IA+ftNzN9TN9vmlosqg="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/favicon-32x32.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-32x32.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1271"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AvZLtHmnvQ160FISP8zpx9r2IA+ftNzN9TN9vmlosqg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AvZLtHmnvQ160FISP8zpx9r2IA+ftNzN9TN9vmlosqg="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/msapplication-icon-144x144.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\msapplication-icon-144x144.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1169"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zjwgJxVmP5Lzc1bwqUKygteuyMmgfoLL1x3yP1xNL0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zjwgJxVmP5Lzc1bwqUKygteuyMmgfoLL1x3yP1xNL0A="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/msapplication-icon-144x144.ycee3we5iq.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\msapplication-icon-144x144.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1169"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zjwgJxVmP5Lzc1bwqUKygteuyMmgfoLL1x3yP1xNL0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ycee3we5iq"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/msapplication-icon-144x144.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zjwgJxVmP5Lzc1bwqUKygteuyMmgfoLL1x3yP1xNL0A="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/mstile-150x150.ey9bdv9ypk.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\mstile-150x150.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2t87yCulbA7fJDReyN6VYT+Z50bV5tjjE+0toEuQGeo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ey9bdv9ypk"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/mstile-150x150.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2t87yCulbA7fJDReyN6VYT+Z50bV5tjjE+0toEuQGeo="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/mstile-150x150.png",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\mstile-150x150.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2t87yCulbA7fJDReyN6VYT+Z50bV5tjjE+0toEuQGeo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2t87yCulbA7fJDReyN6VYT+Z50bV5tjjE+0toEuQGeo="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/safari-pinned-tab.0fyu3lgep6.svg",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\safari-pinned-tab.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vOC7qwz4oYY9jzqtLM9OOAtAUlIKB1uYUGxZE6BBZNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0fyu3lgep6"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icons/safari-pinned-tab.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vOC7qwz4oYY9jzqtLM9OOAtAUlIKB1uYUGxZE6BBZNQ="
+        }
+      ]
+    },
+    {
+      "Route": "img/icons/safari-pinned-tab.svg",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\img\\icons\\safari-pinned-tab.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vOC7qwz4oYY9jzqtLM9OOAtAUlIKB1uYUGxZE6BBZNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vOC7qwz4oYY9jzqtLM9OOAtAUlIKB1uYUGxZE6BBZNQ="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q0wpQq/I91r1qcNmcQSSoOxHtRkbLn/df8nS5ZTXysc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 17:44:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-q0wpQq/I91r1qcNmcQSSoOxHtRkbLn/df8nS5ZTXysc="
+        }
+      ]
+    },
+    {
+      "Route": "index.pfikhya4vf.html",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q0wpQq/I91r1qcNmcQSSoOxHtRkbLn/df8nS5ZTXysc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 17:44:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pfikhya4vf"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-q0wpQq/I91r1qcNmcQSSoOxHtRkbLn/df8nS5ZTXysc="
+        }
+      ]
+    },
+    {
+      "Route": "js/about.4a4183d6.idvpgwl0vz.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38029"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fkt49fRSH0p5ReyH9rPZz0pfW1yjA4+B0r3Wr0y7TTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "idvpgwl0vz"
+        },
+        {
+          "Name": "label",
+          "Value": "js/about.4a4183d6.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fkt49fRSH0p5ReyH9rPZz0pfW1yjA4+B0r3Wr0y7TTA="
+        }
+      ]
+    },
+    {
+      "Route": "js/about.4a4183d6.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38029"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fkt49fRSH0p5ReyH9rPZz0pfW1yjA4+B0r3Wr0y7TTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fkt49fRSH0p5ReyH9rPZz0pfW1yjA4+B0r3Wr0y7TTA="
+        }
+      ]
+    },
+    {
+      "Route": "js/about.4a4183d6.js.map",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pO301Y3n1+yON78R15gM4AdpyJn95GK/n5ZSaU51miY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pO301Y3n1+yON78R15gM4AdpyJn95GK/n5ZSaU51miY="
+        }
+      ]
+    },
+    {
+      "Route": "js/about.4a4183d6.js.w3lahea90l.map",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pO301Y3n1+yON78R15gM4AdpyJn95GK/n5ZSaU51miY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w3lahea90l"
+        },
+        {
+          "Name": "label",
+          "Value": "js/about.4a4183d6.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pO301Y3n1+yON78R15gM4AdpyJn95GK/n5ZSaU51miY="
+        }
+      ]
+    },
+    {
+      "Route": "js/about.ajtfa9gr39.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\about.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RhFEhP0XSDkvnL5AXcQyyDKwubU0QJJdfmNvO1lTHZU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 01:53:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ajtfa9gr39"
+        },
+        {
+          "Name": "label",
+          "Value": "js/about.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RhFEhP0XSDkvnL5AXcQyyDKwubU0QJJdfmNvO1lTHZU="
+        }
+      ]
+    },
+    {
+      "Route": "js/about.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\about.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RhFEhP0XSDkvnL5AXcQyyDKwubU0QJJdfmNvO1lTHZU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 01:53:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RhFEhP0XSDkvnL5AXcQyyDKwubU0QJJdfmNvO1lTHZU="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.e32529b0.8nc6iih23n.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17125"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fBAzaTXzSiHslAD/AvuAUf8V6pHiI3JC763MoFG8mjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8nc6iih23n"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.e32529b0.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fBAzaTXzSiHslAD/AvuAUf8V6pHiI3JC763MoFG8mjw="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.e32529b0.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17125"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fBAzaTXzSiHslAD/AvuAUf8V6pHiI3JC763MoFG8mjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fBAzaTXzSiHslAD/AvuAUf8V6pHiI3JC763MoFG8mjw="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.e32529b0.js.dh12mpyn4k.map",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35068"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/9EkpFwZaOfe4XcKEzE3tCp2iSD/TOMqVYjgEFIJWRA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dh12mpyn4k"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.e32529b0.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/9EkpFwZaOfe4XcKEzE3tCp2iSD/TOMqVYjgEFIJWRA="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.e32529b0.js.map",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35068"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/9EkpFwZaOfe4XcKEzE3tCp2iSD/TOMqVYjgEFIJWRA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/9EkpFwZaOfe4XcKEzE3tCp2iSD/TOMqVYjgEFIJWRA="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194205"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dOZaLmlCbrrJ6uyIiEA7odah19GJLSFmUxzEEdEmKe8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 23:19:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dOZaLmlCbrrJ6uyIiEA7odah19GJLSFmUxzEEdEmKe8="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.oxd8574hi5.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "194205"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dOZaLmlCbrrJ6uyIiEA7odah19GJLSFmUxzEEdEmKe8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 23:19:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oxd8574hi5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dOZaLmlCbrrJ6uyIiEA7odah19GJLSFmUxzEEdEmKe8="
+        }
+      ]
+    },
+    {
+      "Route": "js/chunk-vendors.41ea2f5f.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "151481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u39F5nUIyWwteICeXWF/fTa4eVDY/f9B6wLrpb1NnVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u39F5nUIyWwteICeXWF/fTa4eVDY/f9B6wLrpb1NnVY="
+        }
+      ]
+    },
+    {
+      "Route": "js/chunk-vendors.41ea2f5f.js.map",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "798658"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yKW3GdmvgQhhIOTtxRFYdnTPNA7A8K88aKB6VWLSFG0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yKW3GdmvgQhhIOTtxRFYdnTPNA7A8K88aKB6VWLSFG0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chunk-vendors.41ea2f5f.js.w2qrl9bl9g.map",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "798658"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yKW3GdmvgQhhIOTtxRFYdnTPNA7A8K88aKB6VWLSFG0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w2qrl9bl9g"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chunk-vendors.41ea2f5f.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yKW3GdmvgQhhIOTtxRFYdnTPNA7A8K88aKB6VWLSFG0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chunk-vendors.41ea2f5f.r45v4o74bj.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "151481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u39F5nUIyWwteICeXWF/fTa4eVDY/f9B6wLrpb1NnVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r45v4o74bj"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chunk-vendors.41ea2f5f.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u39F5nUIyWwteICeXWF/fTa4eVDY/f9B6wLrpb1NnVY="
+        }
+      ]
+    },
+    {
+      "Route": "js/chunk-vendors.b6hmvdpnjp.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2657843"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cyMcTKbvTi1mnx3iqzr9WiGiwAG3IwHduE+NkYEA5MU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 23:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b6hmvdpnjp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chunk-vendors.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cyMcTKbvTi1mnx3iqzr9WiGiwAG3IwHduE+NkYEA5MU="
+        }
+      ]
+    },
+    {
+      "Route": "js/chunk-vendors.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2657843"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cyMcTKbvTi1mnx3iqzr9WiGiwAG3IwHduE+NkYEA5MU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 23:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cyMcTKbvTi1mnx3iqzr9WiGiwAG3IwHduE+NkYEA5MU="
+        }
+      ]
+    },
+    {
+      "Route": "manifest.0ej3vn690t.json",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\manifest.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "555"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GKDf9d+yaAb4huI+7nYSYzhfrzuXyyM4uLksG97TpZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0ej3vn690t"
+        },
+        {
+          "Name": "label",
+          "Value": "manifest.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GKDf9d+yaAb4huI+7nYSYzhfrzuXyyM4uLksG97TpZA="
+        }
+      ]
+    },
+    {
+      "Route": "manifest.json",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\manifest.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "555"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GKDf9d+yaAb4huI+7nYSYzhfrzuXyyM4uLksG97TpZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GKDf9d+yaAb4huI+7nYSYzhfrzuXyyM4uLksG97TpZA="
+        }
+      ]
+    },
+    {
+      "Route": "robots.79d4vcjbz7.txt",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\robots.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5cS4RITuQhbpNzvpk4AyDCXdlIBfmfCoBYRvCHY2VT8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "79d4vcjbz7"
+        },
+        {
+          "Name": "label",
+          "Value": "robots.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5cS4RITuQhbpNzvpk4AyDCXdlIBfmfCoBYRvCHY2VT8="
+        }
+      ]
+    },
+    {
+      "Route": "robots.txt",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\robots.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5cS4RITuQhbpNzvpk4AyDCXdlIBfmfCoBYRvCHY2VT8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5cS4RITuQhbpNzvpk4AyDCXdlIBfmfCoBYRvCHY2VT8="
+        }
+      ]
+    },
+    {
+      "Route": "service-worker.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\service-worker.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1221"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WecmxTuR2Kv1NHZ9CLi/7R2fDWsccB1coLqblq9SUxw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WecmxTuR2Kv1NHZ9CLi/7R2fDWsccB1coLqblq9SUxw="
+        }
+      ]
+    },
+    {
+      "Route": "service-worker.js.map",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\service-worker.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2478"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iA797ZcQWux9zxzUjDhhNN5xxmLZdwPoPBbpNl3aME0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iA797ZcQWux9zxzUjDhhNN5xxmLZdwPoPBbpNl3aME0="
+        }
+      ]
+    },
+    {
+      "Route": "service-worker.js.sbmavgk62v.map",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\service-worker.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2478"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iA797ZcQWux9zxzUjDhhNN5xxmLZdwPoPBbpNl3aME0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sbmavgk62v"
+        },
+        {
+          "Name": "label",
+          "Value": "service-worker.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iA797ZcQWux9zxzUjDhhNN5xxmLZdwPoPBbpNl3aME0="
+        }
+      ]
+    },
+    {
+      "Route": "service-worker.nkoh2kvm8g.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\service-worker.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1221"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WecmxTuR2Kv1NHZ9CLi/7R2fDWsccB1coLqblq9SUxw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nkoh2kvm8g"
+        },
+        {
+          "Name": "label",
+          "Value": "service-worker.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WecmxTuR2Kv1NHZ9CLi/7R2fDWsccB1coLqblq9SUxw="
+        }
+      ]
+    },
+    {
+      "Route": "taller-be.bundle.scp.css",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H5P4Mmdm3CrXibk1XdyjA0attYI600EVgEDeFq3eU1U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 01:24:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H5P4Mmdm3CrXibk1XdyjA0attYI600EVgEDeFq3eU1U="
+        }
+      ]
+    },
+    {
+      "Route": "taller-be.d13a76wwz8.bundle.scp.css",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H5P4Mmdm3CrXibk1XdyjA0attYI600EVgEDeFq3eU1U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 01:24:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d13a76wwz8"
+        },
+        {
+          "Name": "label",
+          "Value": "taller-be.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H5P4Mmdm3CrXibk1XdyjA0attYI600EVgEDeFq3eU1U="
+        }
+      ]
+    },
+    {
+      "Route": "taller-be.d13a76wwz8.styles.css",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\taller-be.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H5P4Mmdm3CrXibk1XdyjA0attYI600EVgEDeFq3eU1U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 01:24:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d13a76wwz8"
+        },
+        {
+          "Name": "label",
+          "Value": "taller-be.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H5P4Mmdm3CrXibk1XdyjA0attYI600EVgEDeFq3eU1U="
+        }
+      ]
+    },
+    {
+      "Route": "taller-be.styles.css",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\taller-be.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H5P4Mmdm3CrXibk1XdyjA0attYI600EVgEDeFq3eU1U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 01:24:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H5P4Mmdm3CrXibk1XdyjA0attYI600EVgEDeFq3eU1U="
+        }
+      ]
+    },
+    {
+      "Route": "workbox-6567b62a.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JaOIXNejzOmFziHVgLs3PkgRQDZovuJ0XVKgwcIRpLE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JaOIXNejzOmFziHVgLs3PkgRQDZovuJ0XVKgwcIRpLE="
+        }
+      ]
+    },
+    {
+      "Route": "workbox-6567b62a.js.map",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ogwcq62MGwELW7GEWTgl6lSIXbeuVyqygNpShpKDnA4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ogwcq62MGwELW7GEWTgl6lSIXbeuVyqygNpShpKDnA4="
+        }
+      ]
+    },
+    {
+      "Route": "workbox-6567b62a.js.qe1eukmc64.map",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ogwcq62MGwELW7GEWTgl6lSIXbeuVyqygNpShpKDnA4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qe1eukmc64"
+        },
+        {
+          "Name": "label",
+          "Value": "workbox-6567b62a.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ogwcq62MGwELW7GEWTgl6lSIXbeuVyqygNpShpKDnA4="
+        }
+      ]
+    },
+    {
+      "Route": "workbox-6567b62a.nxupcefa03.js",
+      "AssetFile": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JaOIXNejzOmFziHVgLs3PkgRQDZovuJ0XVKgwcIRpLE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 23:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nxupcefa03"
+        },
+        {
+          "Name": "label",
+          "Value": "workbox-6567b62a.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JaOIXNejzOmFziHVgLs3PkgRQDZovuJ0XVKgwcIRpLE="
+        }
+      ]
+    }
+  ]
+}

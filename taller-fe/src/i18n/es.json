@@ -1,0 +1,41 @@
+{
+    "slctVisible": "T",
+
+    "app": {
+    "appName": "Mis listas",
+    "titulo": "Mis listas de tareas",
+    "inicio": "Inicio",
+    "acerca_de": "Acerca de",
+    "btnAtras": "Volver",
+    "otros": "Otros"
+  },
+  "acerca_de": {
+    "titulo": "Sobre esta App",
+    "text": "Aplicación de gestión de mis listas de tareas"
+  },
+  "add": {
+    "titulo": "Añadir nueva lista",
+    "lblNombre": "Nombre: ",
+    "ttpNombre": "Nombre de la lista",
+    "btnAdd": "Nueva lista",
+    "btnAddList": "Crear",
+    "lblColor": "Añadir color",
+    "lblFecha": "Fecha",
+    "errNombre": "El nombre no puede ser vacío"
+  },
+  "delete": {
+    "ttpBtn": "Eliminar"
+  },
+  "list": {
+    "titulo": "Mis listas",
+    "noLists": "No has creado ninguna lista todavía",
+    "ttpNoVisible": "Ocultar lista",
+    "ttpVisible": "Mostrar lista",
+    "optTodas": "Ver todas",
+    "optVisibles": "Ver visibles",
+    "optNOVisibles": "No visibles",
+    "ordenNombre": "Por nombre",
+    "ordenFecha": "Por fecha",
+    "ttpEditar": "Editar"
+  }
+}
