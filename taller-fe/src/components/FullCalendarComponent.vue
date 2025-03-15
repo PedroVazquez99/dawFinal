@@ -36,31 +36,34 @@ export default class FullCalendarComponent extends Vue {
     this.calendar.render(); // Renderiza el calendario, debe llamarse al final
   }
 
+  // Para liberar memoria
   beforeDestroy() {
     if (this.calendar) {
       this.calendar.destroy();
     }
   }
 
+  // Cuando hago click en el día.
   private handleDateClick(info: any): void {
-    const eventTitle = prompt("Introduce el nombre de la reserva:");
-    const eventTime = prompt("Introduce la hora en formato HH:mm (por ejemplo, 14:30):");
+    const eventoTitulo = prompt("Introduce el nombre de la reserva:"); // Cambiar con Swal
+    const eventoFecha = prompt("Introduce la hora en formato HH:mm (por ejemplo, 14:30):"); // Cambiar con Swal
 
-    if (eventTitle && eventTime) {
-      const startDateTime = `${info.dateStr}T${eventTime}:00`;
+    if (eventoTitulo && eventoFecha) {
+      const fechaCompleta = `${info.dateStr}T${eventoFecha}:00`;
 
       this.calendar.addEvent({
-        title: eventTitle,
-        start: startDateTime,
+        title: eventoTitulo,
+        start: fechaCompleta,
       });
 
       // Renderizar para asegurarnos de que el evento se muestre
       this.calendar.render();
     } else {
-      alert("Nombre y hora son requeridos para crear la reserva.");
+      alert("Nombre y hora son requeridos para crear la reserva."); // Cambiar con Swal
     }
   }
 
+  // Cuando se arrastra un evento
   private handleEventDrop(info: any): void {
     // Actualiza las fechas después de que se arrastre el evento
     const { event } = info;
