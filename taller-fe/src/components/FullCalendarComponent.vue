@@ -13,25 +13,27 @@ import interactionPlugin from "@fullcalendar/interaction";
 
 @Component
 export default class FullCalendarComponent extends Vue {
-  private calendar!: Calendar;
+  private calendar!: Calendar; // Instancia de FullCalendar
 
   mounted() {
     if (!this.$refs.calendar) return;
 
     this.calendar = new Calendar(this.$refs.calendar as HTMLElement, {
-      plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
-      initialView: "dayGridMonth",
+      plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin], // Plugins de FullCalendar
+      locale: "es", // Idioma
+      initialView: "dayGridMonth", // Vista inicial
       editable: true, // Hace que los eventos sean editables (drag and drop)
-      selectable: true,
+      selectable: true, // Permite seleccionar eventos
+      firstDay: 1, // Lunes como primer día de la semana
       events: [
         { title: "Reserva 1", start: "2025-03-16T10:00:00" },
         { title: "Reserva 2", start: "2025-03-17T12:00:00" },
-      ],
-      dateClick: this.handleDateClick,
+      ], // Eventos iniciales, se cargarán desde la API, es decir, desde la base de datos
+      dateClick: this.handleDateClick, // Maneja cuando se hace clic en una fecha
       eventDrop: this.handleEventDrop, // Maneja cuando un evento es arrastrado
     });
 
-    this.calendar.render();
+    this.calendar.render(); // Renderiza el calendario, debe llamarse al final
   }
 
   beforeDestroy() {
