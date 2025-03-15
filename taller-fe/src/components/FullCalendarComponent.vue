@@ -21,12 +21,14 @@ export default class FullCalendarComponent extends Vue {
     this.calendar = new Calendar(this.$refs.calendar as HTMLElement, {
       plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
       initialView: "dayGridMonth",
+      editable: true, // Hace que los eventos sean editables (drag and drop)
       selectable: true,
       events: [
         { title: "Reserva 1", start: "2025-03-16T10:00:00" },
         { title: "Reserva 2", start: "2025-03-17T12:00:00" },
       ],
       dateClick: this.handleDateClick,
+      eventDrop: this.handleEventDrop, // Maneja cuando un evento es arrastrado
     });
 
     this.calendar.render();
@@ -55,6 +57,12 @@ export default class FullCalendarComponent extends Vue {
     } else {
       alert("Nombre y hora son requeridos para crear la reserva.");
     }
+  }
+
+  private handleEventDrop(info: any): void {
+    // Actualiza las fechas después de que se arrastre el evento
+    const { event } = info;
+    alert(`Evento "${event.title}" movido a ${event.start?.toISOString()}`);
   }
 }
 </script>
