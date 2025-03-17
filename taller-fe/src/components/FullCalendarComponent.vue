@@ -11,6 +11,7 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import TaskList from "@/models/TaskList";
+import ConfirmarHoraModal from "./modals/ConfirmarHoraModal.vue";
 
 @Component
 export default class FullCalendarComponent extends Vue {
@@ -127,6 +128,15 @@ export default class FullCalendarComponent extends Vue {
     alert(`Evento "${event.title}" movido a ${event.start?.toISOString()}`);
   }
 
+  private convertirAEventSource = (datos: TaskList[]): EventSourceInput => {
+    return {
+      events: datos.map((item) => ({
+        title: item.nombre, // Mapeamos 'nombre' a 'title'
+        start: item.fecha.toString(),  // Convertir 'fecha' a 'Date'
+      })),
+    }
+  }
+
   hayError() {
     return this.$store.getters.getError != "";
   }
@@ -139,17 +149,6 @@ export default class FullCalendarComponent extends Vue {
     return this.$store.getters.getAll;
   }
   
-  private convertirAEventSource = (datos: TaskList[]): EventSourceInput => {
-    return {
-      events: datos.map((item) => ({
-        title: item.nombre, // Mapeamos 'nombre' a 'title'
-        start: item.fecha.toString(),  // Convertir 'fecha' a 'Date'
-      })),
-    }
-  }
-
-
-
 
 
 }
