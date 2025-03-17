@@ -6,12 +6,14 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import { Calendar, EventSourceInput } from "@fullcalendar/core";
+import { Calendar, EventInput, EventSourceInput } from "@fullcalendar/core";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import TaskList from "@/models/TaskList";
 import Swal from "sweetalert2";
+import OkModal from "@/components/modals/OkModal.vue";
+import moment from "moment";
 
 @Component
 export default class FullCalendarComponent extends Vue {
@@ -88,7 +90,7 @@ export default class FullCalendarComponent extends Vue {
 
   private async handleDateClick(info: any): Promise<void> {
   const { value } = await Swal.fire({
-    title: "Crear evento",
+    title: "Crear cita",
     html: `
       <div style="display: flex; align-items: center; gap: 10px;">
         <i class="fas fa-user"></i>
@@ -107,6 +109,13 @@ export default class FullCalendarComponent extends Vue {
   });
 
   if (value?.nombre && value?.hora) {
+    // añadimos a la BBDD
+    const newTask = new TaskList();
+    newTask.nombre = value.nombre;
+    newTask.fecha = moment(`${info.dateStr}T${value.hora}:00`);
+    this.addList(newTask);
+
+    // Añadir evento al calendario del FRONT
     this.calendar.addEvent({
       title: value.nombre,
       start: `${info.dateStr}T${value.hora}:00`,
@@ -114,7 +123,7 @@ export default class FullCalendarComponent extends Vue {
   }
 }
 
-  // Cuando se arrastra un evento
+  // Cuando se arrastra una cita
   private handleEventDrop(info: any): void {
     const { event } = info;
 
@@ -126,7 +135,7 @@ export default class FullCalendarComponent extends Vue {
       return;
     }
 
-    alert(`Evento "${event.title}" movido a ${event.start?.toISOString()}`);
+    alert(`Cita "${event.title}" movida a ${event.start?.toISOString()}`);
   }
 
   private convertirAEventSource = (datos: TaskList[]): EventSourceInput => {
@@ -138,7 +147,31 @@ export default class FullCalendarComponent extends Vue {
     }
   }
 
-  // Cuando hago click en el día.
+  addList(item: TaskList): void {
+    if (item.nombre != "") {
+      
+      this.$store.dispatch("addList", item);
+      
+      this.errAdd = "";
+      if (this.hayError()) {
+        this.errAdd = this.getError();
+      }
+    } 
+  }
+
+  hayError() {
+    return this.$store.getters.getError != "";
+  }
+
+  getError() {
+    return this.$store.getters.getError;
+  }
+
+  getAll(): TaskList[] {
+    return this.$store.getters.getAll;
+  }
+  
+ // Cuando hago click en el día.
   // private handleDateClick(info: any): void {
   //   const hoy = new Date();
   //   const fechaSeleccionada = new Date(info.dateStr);
@@ -167,25 +200,11 @@ export default class FullCalendarComponent extends Vue {
   //   }
   // }
 
-
-
-  hayError() {
-    return this.$store.getters.getError != "";
-  }
-
-  getError() {
-    return this.$store.getters.getError;
-  }
-
-  getAll(): TaskList[] {
-    return this.$store.getters.getAll;
-  }
-  
-
-
 }
 </script>
 
 <style scoped>
 /* Añade estilos si es necesario */
 </style>
+
+
