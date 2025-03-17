@@ -11,7 +11,7 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import TaskList from "@/models/TaskList";
-import ConfirmarHoraModal from "./modals/ConfirmarHoraModal.vue";
+import Swal from "sweetalert2";
 
 @Component
 export default class FullCalendarComponent extends Vue {
@@ -84,34 +84,35 @@ export default class FullCalendarComponent extends Vue {
     }
   }
 
-  // Cuando hago click en el día.
-  private handleDateClick(info: any): void {
-    const hoy = new Date();
-    const fechaSeleccionada = new Date(info.dateStr);
 
-    // Validar que no sea una hora posterior al momento actual en la fecha actual
-    if (fechaSeleccionada < hoy) {
-      alert("No puedes seleccionar fechas u horas anteriores a ahora."); // Validación
-      return;
-    }
 
-    const eventoTitulo = prompt("Introduce el nombre de la reserva:"); // Cambiar con Swal
-    const eventoFecha = prompt("Introduce la hora en formato HH:mm (por ejemplo, 14:30):"); // Cambiar con Swal
+  private async handleDateClick(info: any): Promise<void> {
+  const { value } = await Swal.fire({
+    title: "Crear evento",
+    html: `
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <i class="fas fa-user"></i>
+        <input id="nombre" class="swal2-input" placeholder="Nombre del cliente" style="flex: 1;">
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <i class="fas fa-clock"></i>
+        <input id="hora" type="time" class="swal2-input" style="flex: 1;">
+      </div>
+    `,
+    preConfirm: () => ({
+      nombre: (document.getElementById("nombre") as HTMLInputElement).value,
+      hora: (document.getElementById("hora") as HTMLInputElement).value,
+    }),
+    showCancelButton: true,
+  });
 
-    if (eventoTitulo && eventoFecha) {
-      const fechaCompleta = `${info.dateStr}T${eventoFecha}:00`;
-
-      this.calendar.addEvent({
-        title: eventoTitulo,
-        start: fechaCompleta,
-      });
-
-      // Renderizar para asegurarnos de que el evento se muestre
-      this.calendar.render();
-    } else {
-      alert("Nombre y hora son requeridos para crear la reserva."); // Validación
-    }
+  if (value?.nombre && value?.hora) {
+    this.calendar.addEvent({
+      title: value.nombre,
+      start: `${info.dateStr}T${value.hora}:00`,
+    });
   }
+}
 
   // Cuando se arrastra un evento
   private handleEventDrop(info: any): void {
@@ -136,6 +137,37 @@ export default class FullCalendarComponent extends Vue {
       })),
     }
   }
+
+  // Cuando hago click en el día.
+  // private handleDateClick(info: any): void {
+  //   const hoy = new Date();
+  //   const fechaSeleccionada = new Date(info.dateStr);
+
+  //   // Validar que no sea una hora posterior al momento actual en la fecha actual
+  //   if (fechaSeleccionada < hoy) {
+  //     alert("No puedes seleccionar fechas u horas anteriores a ahora."); // Validación
+  //     return;
+  //   }
+
+  //   const eventoTitulo = prompt("Introduce el nombre de la reserva:"); // Cambiar con Swal
+  //   const eventoFecha = prompt("Introduce la hora en formato HH:mm (por ejemplo, 14:30):"); // Cambiar con Swal
+
+  //   if (eventoTitulo && eventoFecha) {
+  //     const fechaCompleta = `${info.dateStr}T${eventoFecha}:00`;
+
+  //     this.calendar.addEvent({
+  //       title: eventoTitulo,
+  //       start: fechaCompleta,
+  //     });
+
+  //     // Renderizar para asegurarnos de que el evento se muestre
+  //     this.calendar.render();
+  //   } else {
+  //     alert("Nombre y hora son requeridos para crear la reserva."); // Validación
+  //   }
+  // }
+
+
 
   hayError() {
     return this.$store.getters.getError != "";
