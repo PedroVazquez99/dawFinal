@@ -168,6 +168,7 @@ export default class Item extends Vue {
     getError() {
         return this.$store.getters.getError;
     }
+    
 
 }
 </script>

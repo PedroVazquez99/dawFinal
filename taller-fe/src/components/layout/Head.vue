@@ -19,7 +19,7 @@
                             <router-link to="/otros" class="nav-link text-dark">{{$t('app.otros')}}</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link to="/reserva" class="nav-link text-dark">{{$t('app.otros')}}</router-link>
+                            <router-link to="/reserva" class="nav-link text-dark">{{$t('app.reserva')}}</router-link>
                         </li>
                     </ul>
                 </div>

@@ -1,7 +1,7 @@
 <template>
     <div class="home">
-      <img alt="Vue logo" src="../assets/logo.png">
-      <h1>Paginna de reservas</h1>
+      <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
+      <h1>Pagina de reservas</h1>
       <FullCalendarComponent></FullCalendarComponent>
     </div>
   </template>

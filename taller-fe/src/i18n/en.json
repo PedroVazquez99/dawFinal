@@ -7,7 +7,8 @@
       "inicio": "Home",
       "acerca_de": "About",
       "btnAtras": "Back",
-      "otros": "Others"
+      "otros": "Others",
+      "reserva": "Booking"
     },
     "acerca_de": {
       "titulo": "About this App",
@@ -37,6 +38,9 @@
       "ordenNombre": "By name",
       "ordenFecha": "By date",
       "ttpEditar": "Edit"
-    }
+    },
+    "calendar": {
+      "btnHoy": "Today"
+     }
   }
   
