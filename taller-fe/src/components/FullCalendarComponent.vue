@@ -49,8 +49,8 @@ export default class FullCalendarComponent extends Vue {
       plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin], // Plugins de FullCalendar
       locale: "es", // Idioma
       initialView: "dayGridMonth", // Vista inicial
-      editable: true, // Hace que los eventos sean editables (drag and drop)
-      selectable: true, // Permite seleccionar eventos
+      editable: true, // Hace que las citas sean editables (drag and drop)
+      selectable: true, // Permite seleccionar citas
       firstDay: 1, // Lunes como primer día de la semana
       headerToolbar: {
         left: "dayGridMonth,timeGridWeek,timeGridDay",
@@ -111,21 +111,35 @@ export default class FullCalendarComponent extends Vue {
     }),
     showCancelButton: true,
   });
-
+  console.log('Paso por aqui'); // Verificar si se ejecuta el código
   if (value?.nombre && value?.hora) {
-    // añadimos a la BBDD
+    const nuevaFecha = `${info.dateStr}T${value.hora}:00`;
+
+    // Verificar colisión
+    const duracion = 30; // Duración en minutos del evento
+    if (this.isColision(nuevaFecha, duracion)) {
+      await Swal.fire({
+        icon: "error",
+        title: "Conflicto de horarios",
+        text: "Ya existe un evento en esta franja horaria.",
+      });
+      console.log('Paso por aqui 2'); // Verificar si se ejecuta el código
+      return; // No añadir el evento debido a la colisión
+    }
+
+    // Si no hay colisión, añadir el evento
     const newTask = new TaskList();
     newTask.nombre = value.nombre;
-    newTask.fecha = moment(`${info.dateStr}T${value.hora}:00`);
+    newTask.fecha = moment(nuevaFecha);
     this.addList(newTask);
 
-    // Añadir evento al calendario del FRONT
     this.calendar.addEvent({
       title: value.nombre,
-      start: `${info.dateStr}T${value.hora}:00`,
+      start: nuevaFecha,
     });
   }
 }
+
 
   // Cuando se arrastra una cita
   private handleEventDrop(info: any): void {
@@ -134,7 +148,7 @@ export default class FullCalendarComponent extends Vue {
     // Validar si la nueva fecha es posterior al día actual
     const hoy = new Date();
     if (event.start && event.start < hoy) {
-      alert("No puedes mover un evento a una fecha pasada.");
+      alert("No puedes mover una cita a una fecha pasada.");
       info.revert(); // Revertir el cambio
       return;
     }
@@ -162,6 +176,43 @@ export default class FullCalendarComponent extends Vue {
       }
     } 
   }
+
+  // Verificar si hay colisión con otra cita
+  private isColision(fecha: string, duracionEnMinutos: number): boolean {
+  const inicio = moment(fecha);
+  const fin = moment(fecha).add(duracionEnMinutos, 'minutes');
+  const eventos = this.calendar.getEvents();
+
+  return eventos.some((evento) => this.eventoEnRango(evento, inicio, fin));
+}
+
+// Función auxiliar para verificar si una cita existente solapa con el rango propuesto
+private eventoEnRango(evento: any, inicio: moment.Moment, fin: moment.Moment): boolean {
+  const eventoInicio = moment(evento.start);
+  const eventoFin = moment(evento.end || evento.start);
+
+  return (
+    this.rangoSeSolapa(inicio, fin, eventoInicio, eventoFin) || 
+    this.colisionPorProximidad(inicio, fin, eventoInicio, eventoFin)
+  );
+}
+
+// Verificar si el rango de fechas se solapa
+private rangoSeSolapa(inicio: moment.Moment, fin: moment.Moment, eventoInicio: moment.Moment, eventoFin: moment.Moment): boolean {
+  return inicio.isBefore(eventoFin) && fin.isAfter(eventoInicio);
+}
+
+// Verificar colisiones por proximidad exacta (antes o después del rango)
+private colisionPorProximidad(inicio: moment.Moment, fin: moment.Moment, eventoInicio: moment.Moment, eventoFin: moment.Moment): boolean {
+  return (
+    inicio.isSameOrBefore(eventoInicio) && fin.isAfter(eventoInicio) || // Termina justo al inicio de otro cita
+    inicio.isBefore(eventoFin) && fin.isSameOrAfter(eventoFin)         // Comienza justo al final de otro cita
+  );
+}
+
+
+
+
 
   hayError() {
     return this.$store.getters.getError != "";
@@ -197,7 +248,7 @@ export default class FullCalendarComponent extends Vue {
   //       start: fechaCompleta,
   //     });
 
-  //     // Renderizar para asegurarnos de que el evento se muestre
+  //     // Renderizar para asegurarnos de que la cita se muestre
   //     this.calendar.render();
   //   } else {
   //     alert("Nombre y hora son requeridos para crear la reserva."); // Validación
