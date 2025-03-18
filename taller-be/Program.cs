@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<taller_be.Models.DBTallerVUE>();
+builder.Services.AddDbContext<taller_be.Models.PeluqueriaBDDContext>();
 
 var app = builder.Build();
 

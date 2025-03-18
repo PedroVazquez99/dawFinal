@@ -1,102 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\",
+  "WorkspaceRootPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\apilistascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:apilistascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\api_getlistas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\dawfinal\\taller-be\\api_getlistas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:api_getlistas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\models\\dbtallervue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:models\\dbtallervue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\taller-be.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:taller-be.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\controllers\\listascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:controllers\\listascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\models\\itemtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:models\\itemtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\models\\tasklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:models\\tasklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\models\\servicecms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:models\\servicecms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\api_getabout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\dawfinal\\taller-be\\api_getabout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:api_getabout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\dawfinal\\taller-be\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\models\\apiresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:models\\apiresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\dawfinal\\taller-be\\controllers\\listascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:controllers\\listascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\wwwroot\\css\\app.bd071c00.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:wwwroot\\css\\app.bd071c00.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\resources\\textos.en.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:resources\\textos.en.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\users\\pedra\\desktop\\master-ua\\desarrolloappsweb\\dawfinal\\taller-be\\resources\\textos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:resources\\textos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\dawfinal\\taller-be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,11 +38,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
               "$type": "Bookmark",
@@ -129,297 +53,69 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "APIListasController.cs",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\APIListasController.cs",
-              "RelativeDocumentMoniker": "APIListasController.cs",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\APIListasController.cs",
-              "RelativeToolTip": "APIListasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T01:32:41.742Z",
+              "WhenOpened": "2025-03-17T23:41:32.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "taller-be.csproj",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\taller-be.csproj",
-              "RelativeDocumentMoniker": "taller-be.csproj",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\taller-be.csproj",
-              "RelativeToolTip": "taller-be.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-21T01:18:13.874Z"
+              "DocumentIndex": 3,
+              "Title": "ListasController.cs",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\Controllers\\ListasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ListasController.cs",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\Controllers\\ListasController.cs",
+              "RelativeToolTip": "Controllers\\ListasController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAGcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T23:44:13.645Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ItemTask.cs",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Models\\ItemTask.cs",
-              "RelativeDocumentMoniker": "Models\\ItemTask.cs",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Models\\ItemTask.cs",
-              "RelativeToolTip": "Models\\ItemTask.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "API_getListas.cs",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\API_getListas.cs",
+              "RelativeDocumentMoniker": "API_getListas.cs",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\API_getListas.cs",
+              "RelativeToolTip": "API_getListas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T19:44:43.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T19:39:40.551Z"
+              "WhenOpened": "2025-03-17T23:43:52.02Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "API_getListas.cs",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\API_getListas.cs",
-              "RelativeDocumentMoniker": "API_getListas.cs",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\API_getListas.cs",
-              "RelativeToolTip": "API_getListas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T21:23:49.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-21T09:37:10.375Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TaskList.cs",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Models\\TaskList.cs",
-              "RelativeDocumentMoniker": "Models\\TaskList.cs",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Models\\TaskList.cs",
-              "RelativeToolTip": "Models\\TaskList.cs",
+              "Title": "API_getAbout.cs",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\API_getAbout.cs",
+              "RelativeDocumentMoniker": "API_getAbout.cs",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\API_getAbout.cs",
+              "RelativeToolTip": "API_getAbout.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T19:39:01.683Z"
+              "WhenOpened": "2025-03-17T23:43:42.206Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DBTallerVUE.cs",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Models\\DBTallerVUE.cs",
-              "RelativeDocumentMoniker": "Models\\DBTallerVUE.cs",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Models\\DBTallerVUE.cs",
-              "RelativeToolTip": "Models\\DBTallerVUE.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA4AAAAAAAAAA==",
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T19:37:30.18Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T12:00:29.122Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ListasController.cs",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Controllers\\ListasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ListasController.cs",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Controllers\\ListasController.cs",
-              "RelativeToolTip": "Controllers\\ListasController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T19:55:27.328Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "app.bd071c00.css",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\css\\app.bd071c00.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\app.bd071c00.css",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\wwwroot\\css\\app.bd071c00.css",
-              "RelativeToolTip": "wwwroot\\css\\app.bd071c00.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAACNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-14T11:41:14.755Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-13T21:25:19.06Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-13T21:05:19.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-13T21:05:19.284Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T23:30:29.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T23:17:39.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Textos.en.resx",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Resources\\Textos.en.resx",
-              "RelativeDocumentMoniker": "Resources\\Textos.en.resx",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Resources\\Textos.en.resx",
-              "RelativeToolTip": "Resources\\Textos.en.resx",
-              "ViewState": "AgIAAB8AAAAAAAAAAABBwCQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-01-08T19:46:11.369Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "API_getAbout.cs",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\API_getAbout.cs",
-              "RelativeDocumentMoniker": "API_getAbout.cs",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\API_getAbout.cs",
-              "RelativeToolTip": "API_getAbout.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T19:16:52.156Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ServiceCMS.cs",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Models\\ServiceCMS.cs",
-              "RelativeDocumentMoniker": "Models\\ServiceCMS.cs",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Models\\ServiceCMS.cs",
-              "RelativeToolTip": "Models\\ServiceCMS.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T19:12:42.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "APIResult.cs",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Models\\APIResult.cs",
-              "RelativeDocumentMoniker": "Models\\APIResult.cs",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Models\\APIResult.cs",
-              "RelativeToolTip": "Models\\APIResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T19:10:53.35Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T19:10:34.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Textos.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Resources\\Textos.Designer.cs",
-              "RelativeDocumentMoniker": "Resources\\Textos.Designer.cs",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Resources\\Textos.Designer.cs",
-              "RelativeToolTip": "Resources\\Textos.Designer.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAABRwA8AAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T17:16:30.513Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T17:11:00.694Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T17:08:00.853Z"
+              "WhenOpened": "2025-03-17T23:42:27.468Z",
+              "EditorCaption": ""
             }
           ]
         }

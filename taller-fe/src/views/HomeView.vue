@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <Mislistas v-bind:msg="$t('app.titulo')"/>
+     <Mislistas v-bind:msg="$t('app.titulo')"/>
   </div>
 </template>
 
