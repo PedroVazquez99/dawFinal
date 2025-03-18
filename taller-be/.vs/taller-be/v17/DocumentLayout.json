@@ -78,8 +78,7 @@
               "RelativeToolTip": "Models\\Class.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T15:42:37.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T15:42:37.452Z"
             },
             {
               "$type": "Document",
@@ -91,8 +90,7 @@
               "RelativeToolTip": "Controllers\\APIUsuariosController.cs",
               "ViewState": "AgIAAIMAAAAAAAAAAAAAwJkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T12:09:52.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T12:09:52.033Z"
             },
             {
               "$type": "Document",
@@ -104,8 +102,7 @@
               "RelativeToolTip": "API_getListas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T23:43:52.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T23:43:52.02Z"
             },
             {
               "$type": "Document",
@@ -117,8 +114,7 @@
               "RelativeToolTip": "Controllers\\ListasController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T23:44:13.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T23:44:13.645Z"
             }
           ]
         }

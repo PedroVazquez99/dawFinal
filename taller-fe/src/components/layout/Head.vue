@@ -15,14 +15,20 @@
                         <li class="nav-item">
                             <router-link to="/about" class="nav-link text-dark">{{$t('app.acerca_de')}}</router-link>
                         </li>
-                        <li class="nav-item">
+                        <li v-if="isAdmin" class="nav-item">
                             <router-link to="/otros" class="nav-link text-dark">{{$t('app.otros')}}</router-link>
                         </li>
-                        <li class="nav-item">
+                        <li v-if="isAuthenticated" class="nav-item">
                             <router-link to="/reserva" class="nav-link text-dark">{{$t('app.reserva')}}</router-link>
                         </li>
-                        <li class="nav-item">
+                        <li v-if="!isAuthenticated" class="nav-item">
                             <router-link to="/login" class="nav-link text-dark">Login</router-link>
+                        </li>
+                        <li v-if="isAuthenticated">
+                            <button @click="logout">Logout</button>
+                        </li>
+                        <li v-if="isAuthenticated" class="nav-item">
+                            <p class="nav-link text-dark">Bienvenido, {{ userName }}</p>
                         </li>
                     </ul>
                 </div>
@@ -36,7 +42,27 @@
     
     @Component
     export default class Head extends Vue {
+        
+        //Comprobar si hay login
+        get isAuthenticated() {
+            return this.$store.getters.isAuthenticated;
+        } 
 
+        //Comprobar si el usuario es admin
+        get isAdmin() {
+            const user = this.$store.getters.getAuthenticatedUser;
+            return user && user.rol === "admin";
+        }
 
+        get userName() {
+            const user = this.$store.getters.getAuthenticatedUser;
+            return user ? user.nombre : "";
+        }
+
+        // Método para cerrar sesión
+        logout() {
+            this.$store.dispatch("logout");
+            this.$router.push("/login");
+        }
     }
 </script>
