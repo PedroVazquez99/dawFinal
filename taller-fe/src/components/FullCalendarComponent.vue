@@ -71,6 +71,10 @@ export default class FullCalendarComponent extends Vue {
         minute: '2-digit',
         meridiem: false, // Omite AM/PM, usa formato 24 horas
       },
+      selectAllow: (selectInfo) => {
+        // Solo permitir selecciones de un día
+        return selectInfo.startStr === selectInfo.endStr.split("T")[0];
+      },
       events: this.convertirAEventSource(this.getAll()), // Eventos iniciales, se cargarán desde la API, es decir, desde la base de datos
       dateClick: this.handleDateClick, // Maneja cuando se hace clic en una fecha
       eventDrop: this.handleEventDrop, // Maneja cuando un evento es arrastrado
