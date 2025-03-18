@@ -113,6 +113,21 @@ class APIService {
     
         return resp;
     }
+
+    // Valida el usuario
+    async login(ruta: string, credentials: { email: string; password: string }) {
+        const resp = new APIResponse();
+        await http.post(
+            ruta, credentials
+        ).then((respuesta) => {
+            resp.status = APIStatus.OK;
+            resp.respuesta = respuesta.data; // Aquí puedes manejar la respuesta del servidor
+        }).catch((error) => {
+            resp.status = APIStatus.ERR;
+            resp.error = error.toString();
+        });
+        return resp;
+    }
     
 
 

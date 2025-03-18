@@ -10746,23 +10746,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pedra\\.nuget\\packages\\": {},
+    "C:\\Users\\jordi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\taller-be.csproj",
+      "projectUniqueName": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\taller-be.csproj",
       "projectName": "taller-be",
-      "projectPath": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\taller-be.csproj",
-      "packagesPath": "C:\\Users\\pedra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pedra\\Desktop\\MASTER-UA\\DesarrolloAppsWeb\\dawFinal\\taller-be\\obj\\",
+      "projectPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\taller-be.csproj",
+      "packagesPath": "C:\\Users\\jordi\\.nuget\\packages\\",
+      "outputPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\pedra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jordi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10833,7 +10833,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
