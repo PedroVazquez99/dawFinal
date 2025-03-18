@@ -21,6 +21,9 @@
                         <li class="nav-item">
                             <router-link to="/reserva" class="nav-link text-dark">{{$t('app.reserva')}}</router-link>
                         </li>
+                        <li class="nav-item">
+                            <router-link to="/login" class="nav-link text-dark">Login</router-link>
+                        </li>
                     </ul>
                 </div>
             </div>

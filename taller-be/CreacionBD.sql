@@ -31,3 +31,20 @@ CREATE TABLE Usuarios (
     fecha_registro DATETIME NOT NULL DEFAULT GETDATE()
 );
 
+-- Usuarios 
+
+INSERT INTO Usuarios (nombre, email, password_hash, rol)
+VALUES (
+    'user',
+    'user@example.com',
+    CONVERT(VARCHAR(250), HASHBYTES('SHA2_256', '1234'), 2), -- Convierte a hexadecimal
+    'user'
+);
+
+INSERT INTO Usuarios (nombre, email, password_hash, rol)
+VALUES (
+    'admin',
+    'admin@example.com',
+    CONVERT(VARCHAR(250), HASHBYTES('SHA2_256', '1234'), 2),
+    'admin'
+);

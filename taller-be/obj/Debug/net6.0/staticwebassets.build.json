@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m8sriU1Ie2eajSmE7C0bh/rHfNSztPLLdeb6HOfUWb0=",
+  "Hash": "CTJdYMbpVJoPQo3BCWw0DC1m6HW0roTlG4ZH7U9J0I4=",
   "Source": "taller-be",
   "BasePath": "_content/taller-be",
   "Mode": "Default",
@@ -493,8 +493,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "psqqkqbzwz",
-      "Integrity": "10mT/PeFdjLBDuqGBrxvrU5+nupciZVUpPKmHmxgq4g=",
+      "Fingerprint": "jx9qkmbd6p",
+      "Integrity": "Oa9JhgyyLfblnFITyW0C0W7s0lCpHfMAehzoJ54j2ZE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\about.js"
@@ -556,8 +556,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "heto4i4qko",
-      "Integrity": "J4nFDoFLbzaqYSh3tqKie4CiCi9mDyfWFi9gEel9oPA=",
+      "Fingerprint": "nrufq5sv93",
+      "Integrity": "g1f/6C3q57wkdCoDq4hZQ+dtG/dVkQ0USPGixUgEITE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\app.js"
@@ -2170,7 +2170,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 01:17:36 GMT"
+          "Value": "Tue, 18 Mar 2025 20:06:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2215,7 +2215,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 01:17:36 GMT"
+          "Value": "Tue, 18 Mar 2025 20:06:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2404,7 +2404,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "760623"
+          "Value": "805874"
         },
         {
           "Name": "Content-Type",
@@ -2412,11 +2412,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"10mT/PeFdjLBDuqGBrxvrU5+nupciZVUpPKmHmxgq4g=\""
+          "Value": "\"Oa9JhgyyLfblnFITyW0C0W7s0lCpHfMAehzoJ54j2ZE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 01:17:30 GMT"
+          "Value": "Tue, 18 Mar 2025 16:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2426,12 +2426,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-10mT/PeFdjLBDuqGBrxvrU5+nupciZVUpPKmHmxgq4g="
+          "Value": "sha256-Oa9JhgyyLfblnFITyW0C0W7s0lCpHfMAehzoJ54j2ZE="
         }
       ]
     },
     {
-      "Route": "js/about.psqqkqbzwz.js",
+      "Route": "js/about.jx9qkmbd6p.js",
       "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\js\\about.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2441,7 +2441,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "760623"
+          "Value": "805874"
         },
         {
           "Name": "Content-Type",
@@ -2449,11 +2449,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"10mT/PeFdjLBDuqGBrxvrU5+nupciZVUpPKmHmxgq4g=\""
+          "Value": "\"Oa9JhgyyLfblnFITyW0C0W7s0lCpHfMAehzoJ54j2ZE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 01:17:30 GMT"
+          "Value": "Tue, 18 Mar 2025 16:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2463,7 +2463,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "psqqkqbzwz"
+          "Value": "jx9qkmbd6p"
         },
         {
           "Name": "label",
@@ -2471,7 +2471,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-10mT/PeFdjLBDuqGBrxvrU5+nupciZVUpPKmHmxgq4g="
+          "Value": "sha256-Oa9JhgyyLfblnFITyW0C0W7s0lCpHfMAehzoJ54j2ZE="
         }
       ]
     },
@@ -2640,51 +2640,6 @@
       ]
     },
     {
-      "Route": "js/app.heto4i4qko.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "195417"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"J4nFDoFLbzaqYSh3tqKie4CiCi9mDyfWFi9gEel9oPA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 01:17:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "heto4i4qko"
-        },
-        {
-          "Name": "label",
-          "Value": "js/app.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-J4nFDoFLbzaqYSh3tqKie4CiCi9mDyfWFi9gEel9oPA="
-        }
-      ]
-    },
-    {
       "Route": "js/app.js",
       "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
       "Selectors": [],
@@ -2695,7 +2650,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "195417"
+          "Value": "200124"
         },
         {
           "Name": "Content-Type",
@@ -2703,11 +2658,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"J4nFDoFLbzaqYSh3tqKie4CiCi9mDyfWFi9gEel9oPA=\""
+          "Value": "\"g1f/6C3q57wkdCoDq4hZQ+dtG/dVkQ0USPGixUgEITE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 01:17:30 GMT"
+          "Value": "Tue, 18 Mar 2025 20:07:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2717,7 +2672,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-J4nFDoFLbzaqYSh3tqKie4CiCi9mDyfWFi9gEel9oPA="
+          "Value": "sha256-g1f/6C3q57wkdCoDq4hZQ+dtG/dVkQ0USPGixUgEITE="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.nrufq5sv93.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "200124"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g1f/6C3q57wkdCoDq4hZQ+dtG/dVkQ0USPGixUgEITE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 20:07:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nrufq5sv93"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g1f/6C3q57wkdCoDq4hZQ+dtG/dVkQ0USPGixUgEITE="
         }
       ]
     },

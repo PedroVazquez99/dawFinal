@@ -11,6 +11,7 @@ export default new Vuex.Store({
   state: {
     listas: Array<TaskList>(),
     error: "",
+    authenticatedUser: null as { username: string } | null
   },
   getters: {
     getAll(state) {
@@ -29,6 +30,12 @@ export default new Vuex.Store({
     },
     getError(state) {
       return state.error;
+    },
+    getAuthenticatedUser(state) {
+      return state.authenticatedUser; // Getter para obtener el usuario autenticado
+    },
+    isAuthenticated(state) {
+      return !!state.authenticatedUser; // Verifica si hay un usuario autenticado
     },
   },
   mutations: { // CRUD del listado, cambia el estado en local
@@ -53,7 +60,13 @@ export default new Vuex.Store({
       // lista.visible = lista.visible == "S" ? true : false;
       if(lista && index >= 0)
       state.listas[index] = lista;
-    }
+    },
+    setAuthenticatedUser(state, user) {
+      state.authenticatedUser = user; // Establece el usuario autenticado
+    },
+    clearAuthenticatedUser(state) {
+      state.authenticatedUser = null; // Limpia el usuario autenticado
+    },
  
   },
   actions: {
@@ -142,8 +155,19 @@ export default new Vuex.Store({
         .catch((e) => {
           this.state.error = e;
         });
-    }
-
+    },
+    async login({ commit }, { email, password }) {
+      const response = await serviceAPI.login("/APIUsuarios/login", { email, password });
+      if (response.status === APIStatus.OK) {
+        commit("setAuthenticatedUser", response.respuesta.Usuario); // Guarda los datos del usuario autenticado
+      } else {
+        throw new Error(response.error);
+      }
+    },
+    logout({ commit }) {
+      commit("clearAuthenticatedUser");
+    },
+    
   },
   
   modules: {},

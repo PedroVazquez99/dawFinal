@@ -3,8 +3,8 @@
     <h2>Login</h2>
     <form @submit.prevent="handleLogin">
       <div class="form-group">
-        <label for="username">Username</label>
-        <input type="text" id="username" v-model="username" required />
+        <label for="username">Mail</label>
+        <input type="text" id="username" v-model="email" required />
       </div>
       <div class="form-group">
         <label for="password">Password</label>
@@ -21,18 +21,21 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class LoginComponent extends Vue {
-  private username: string = "";
-  private password: string = "";
-  private error: string = "";
+  private email = "";
+  private password = "";
+  private error = "";
 
-    //Metodo para logearte
+  // Método para manejar el login
   private handleLogin() {
-    this.$store.dispatch("login", { username: this.username, password: this.password })
+    this.$store
+      .dispatch("login", { email: this.email, password: this.password }) // Llama a la acción 'login' del store
       .then(() => {
+        // Redirige al usuario a la página principal después de un login exitoso
         this.$router.push({ name: "Home" });
       })
-      .catch((err: string) => {
-        this.error = err;
+      .catch((err: Error) => {
+        // Muestra el error si ocurre un problema durante el login
+        this.error = err.message;
       });
   }
 }
