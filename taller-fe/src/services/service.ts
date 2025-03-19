@@ -1,5 +1,7 @@
 import TaskList from "@/models/TaskList";
 import http, { APIStatus, APIResponse } from "../http-config";
+import router from '@/router';
+
 class APIService {
     async get(ruta: string, id = "") {
         let dato = "";
@@ -120,8 +122,17 @@ class APIService {
         await http.post(
             ruta, credentials
         ).then((respuesta) => {
+            const data = respuesta.data;
             resp.status = APIStatus.OK;
-            resp.respuesta = respuesta.data; // Aquí puedes manejar la respuesta del servidor
+            resp.respuesta = data; // Aquí puedes manejar la respuesta del servidor
+            console.log(data);
+            if (data.usuario.rol === 'admin') {
+                console.log("Es admin");
+                window.location.href = '/Usuarios'; // Redirige a Razor Pages
+            } else if (data.usuario.rol === 'user') {
+                console.log("Es user");
+                router.push('/reserva'); // Navega dentro de la SPA de Vue
+            }
         }).catch((error) => {
             resp.status = APIStatus.ERR;
             resp.error = error.toString();
