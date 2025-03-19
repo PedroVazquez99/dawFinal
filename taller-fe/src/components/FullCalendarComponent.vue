@@ -116,7 +116,7 @@ export default class FullCalendarComponent extends Vue {
 
     // Verificar colisión
     const duracion = 30; // Duración en minutos del evento
-    if (!this.isColision(nuevaFecha, duracion)) {
+    if (this.isColision(nuevaFecha, duracion)) {
       await Swal.fire({
         icon: "error",
         title: "Conflicto de horarios",
