@@ -30,6 +30,10 @@
                         <li v-if="isAuthenticated" class="nav-item">
                             <p class="nav-link text-dark">Bienvenido, {{ userName }}</p>
                         </li>
+                        <li v-if="isAdmin">
+                            <button @click="usuarios">Usuarios</button>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -63,6 +67,10 @@
         logout() {
             this.$store.dispatch("logout");
             this.$router.push("/login");
+        }
+
+        usuarios() {
+            window.location.href = '/Usuarios';
         }
     }
 </script>

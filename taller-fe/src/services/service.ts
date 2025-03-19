@@ -128,7 +128,7 @@ class APIService {
             console.log(data);
             if (data.usuario.rol === 'admin') {
                 console.log("Es admin");
-                window.location.href = '/Usuarios'; // Redirige a Razor Pages
+                // window.location.href = '/Usuarios'; // Redirige a Razor Pages
             } else if (data.usuario.rol === 'user') {
                 console.log("Es user");
                 router.push('/reserva'); // Navega dentro de la SPA de Vue
