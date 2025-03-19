@@ -6,14 +6,12 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import { Calendar, EventInput, EventSourceInput } from "@fullcalendar/core";
+import { Calendar, EventSourceInput } from "@fullcalendar/core";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import TaskList from "@/models/TaskList";
-import Swal from "sweetalert2";
-import OkModal from "@/components/modals/OkModal.vue";
-import moment from "moment";
+import ConfirmarHoraModal from "./modals/ConfirmarHoraModal.vue";
 
 @Component
 export default class FullCalendarComponent extends Vue {
@@ -86,44 +84,36 @@ export default class FullCalendarComponent extends Vue {
     }
   }
 
+  // Cuando hago click en el día.
+  private handleDateClick(info: any): void {
+    const hoy = new Date();
+    const fechaSeleccionada = new Date(info.dateStr);
 
+    // Validar que no sea una hora posterior al momento actual en la fecha actual
+    if (fechaSeleccionada < hoy) {
+      alert("No puedes seleccionar fechas u horas anteriores a ahora."); // Validación
+      return;
+    }
 
-  private async handleDateClick(info: any): Promise<void> {
-  const { value } = await Swal.fire({
-    title: "Crear cita",
-    html: `
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <i class="fas fa-user"></i>
-        <input id="nombre" class="swal2-input" placeholder="Nombre del cliente" style="flex: 1;">
-      </div>
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <i class="fas fa-clock"></i>
-        <input id="hora" type="time" class="swal2-input" style="flex: 1;">
-      </div>
-    `,
-    preConfirm: () => ({
-      nombre: (document.getElementById("nombre") as HTMLInputElement).value,
-      hora: (document.getElementById("hora") as HTMLInputElement).value,
-    }),
-    showCancelButton: true,
-  });
+    const eventoTitulo = prompt("Introduce el nombre de la reserva:"); // Cambiar con Swal
+    const eventoFecha = prompt("Introduce la hora en formato HH:mm (por ejemplo, 14:30):"); // Cambiar con Swal
 
-  if (value?.nombre && value?.hora) {
-    // añadimos a la BBDD
-    const newTask = new TaskList();
-    newTask.nombre = value.nombre;
-    newTask.fecha = moment(`${info.dateStr}T${value.hora}:00`);
-    this.addList(newTask);
+    if (eventoTitulo && eventoFecha) {
+      const fechaCompleta = `${info.dateStr}T${eventoFecha}:00`;
 
-    // Añadir evento al calendario del FRONT
-    this.calendar.addEvent({
-      title: value.nombre,
-      start: `${info.dateStr}T${value.hora}:00`,
-    });
+      this.calendar.addEvent({
+        title: eventoTitulo,
+        start: fechaCompleta,
+      });
+
+      // Renderizar para asegurarnos de que el evento se muestre
+      this.calendar.render();
+    } else {
+      alert("Nombre y hora son requeridos para crear la reserva."); // Validación
+    }
   }
-}
 
-  // Cuando se arrastra una cita
+  // Cuando se arrastra un evento
   private handleEventDrop(info: any): void {
     const { event } = info;
 
@@ -135,7 +125,7 @@ export default class FullCalendarComponent extends Vue {
       return;
     }
 
-    alert(`Cita "${event.title}" movida a ${event.start?.toISOString()}`);
+    alert(`Evento "${event.title}" movido a ${event.start?.toISOString()}`);
   }
 
   private convertirAEventSource = (datos: TaskList[]): EventSourceInput => {
@@ -145,18 +135,6 @@ export default class FullCalendarComponent extends Vue {
         start: item.fecha.toString(),  // Convertir 'fecha' a 'Date'
       })),
     }
-  }
-
-  addList(item: TaskList): void {
-    if (item.nombre != "") {
-      
-      this.$store.dispatch("addList", item);
-      
-      this.errAdd = "";
-      if (this.hayError()) {
-        this.errAdd = this.getError();
-      }
-    } 
   }
 
   hayError() {
@@ -171,34 +149,7 @@ export default class FullCalendarComponent extends Vue {
     return this.$store.getters.getAll;
   }
   
- // Cuando hago click en el día.
-  // private handleDateClick(info: any): void {
-  //   const hoy = new Date();
-  //   const fechaSeleccionada = new Date(info.dateStr);
 
-  //   // Validar que no sea una hora posterior al momento actual en la fecha actual
-  //   if (fechaSeleccionada < hoy) {
-  //     alert("No puedes seleccionar fechas u horas anteriores a ahora."); // Validación
-  //     return;
-  //   }
-
-  //   const eventoTitulo = prompt("Introduce el nombre de la reserva:"); // Cambiar con Swal
-  //   const eventoFecha = prompt("Introduce la hora en formato HH:mm (por ejemplo, 14:30):"); // Cambiar con Swal
-
-  //   if (eventoTitulo && eventoFecha) {
-  //     const fechaCompleta = `${info.dateStr}T${eventoFecha}:00`;
-
-  //     this.calendar.addEvent({
-  //       title: eventoTitulo,
-  //       start: fechaCompleta,
-  //     });
-
-  //     // Renderizar para asegurarnos de que el evento se muestre
-  //     this.calendar.render();
-  //   } else {
-  //     alert("Nombre y hora son requeridos para crear la reserva."); // Validación
-  //   }
-  // }
 
 }
 </script>
@@ -206,5 +157,3 @@ export default class FullCalendarComponent extends Vue {
 <style scoped>
 /* Añade estilos si es necesario */
 </style>
-
-

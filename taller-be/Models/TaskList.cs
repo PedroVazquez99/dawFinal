@@ -11,10 +11,10 @@ namespace taller_be.Models
         }
 
         public decimal Id { get; set; }
-        public string Nombre { get; set; } = null!;
-        public DateTime Fecha { get; set; }
-        public string Visible { get; set; } = null!;
         public string Color { get; set; } = null!;
+        public DateTime Fecha { get; set; }
+        public string Nombre { get; set; } = null!;
+        public string Visible { get; set; } = null!;
 
         public virtual ICollection<ItemTask> ItemTasks { get; set; }
     }

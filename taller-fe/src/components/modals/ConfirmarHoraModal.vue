@@ -13,25 +13,15 @@
   
     mounted() {
       // Mostrar el modal cuando se monte el componente
-      Swal.fire({
-    title: 'Introduce los datos',
-    html: `
-      <input id="nombre" class="swal2-input" placeholder="Nombre">
-      <input id="fecha" type="datetime-local" class="swal2-input">
-    `,
-    focusConfirm: false,
-    showCancelButton: true,
-    confirmButtonText: 'Guardar',
-    cancelButtonText: 'Cancelar',
-    preConfirm: () => {
-      const nombre = (document.getElementById("nombre") as HTMLInputElement).value;
-      const fecha = (document.getElementById("fecha") as HTMLInputElement).value;
-      if (!nombre || !fecha) {
-        Swal.showValidationMessage("¡Todos los campos son obligatorios!");
-      }
-      return { nombre, fecha };
-    },
-  });
+      Swal.fire(this.config).then((result) => {
+        if (result.isConfirmed) {
+          this.$emit("confirm"); // Emitir evento si el usuario confirma
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+          this.$emit("cancel"); // Emitir evento si el usuario cancela
+        } else {
+          this.$emit("close"); // Emitir evento si simplemente cierra
+        }
+      });
     }
   }
   </script>
