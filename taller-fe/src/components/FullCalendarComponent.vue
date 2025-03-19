@@ -12,7 +12,8 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import TaskList from "@/models/TaskList";
 import ConfirmarHoraModal from "./modals/ConfirmarHoraModal.vue";
-
+import Swal from "sweetalert2";
+import moment from "moment";
 @Component
 export default class FullCalendarComponent extends Vue {
   
@@ -47,8 +48,8 @@ export default class FullCalendarComponent extends Vue {
       plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin], // Plugins de FullCalendar
       locale: "es", // Idioma
       initialView: "dayGridMonth", // Vista inicial
-      editable: true, // Hace que los eventos sean editables (drag and drop)
-      selectable: true, // Permite seleccionar eventos
+      editable: true, // Hace que las citas sean editables (drag and drop)
+      selectable: true, // Permite seleccionar citas
       firstDay: 1, // Lunes como primer día de la semana
       headerToolbar: {
         left: "dayGridMonth,timeGridWeek,timeGridDay",
@@ -69,6 +70,10 @@ export default class FullCalendarComponent extends Vue {
         minute: '2-digit',
         meridiem: false, // Omite AM/PM, usa formato 24 horas
       },
+      selectAllow: (selectInfo) => {
+        // Solo permitir selecciones de un día
+        return selectInfo.startStr === selectInfo.endStr.split("T")[0];
+      },
       events: this.convertirAEventSource(this.getAll()), // Eventos iniciales, se cargarán desde la API, es decir, desde la base de datos
       dateClick: this.handleDateClick, // Maneja cuando se hace clic en una fecha
       eventDrop: this.handleEventDrop, // Maneja cuando un evento es arrastrado
@@ -85,42 +90,63 @@ export default class FullCalendarComponent extends Vue {
   }
 
   // Cuando hago click en el día.
-  private handleDateClick(info: any): void {
-    const hoy = new Date();
-    const fechaSeleccionada = new Date(info.dateStr);
 
-    // Validar que no sea una hora posterior al momento actual en la fecha actual
-    if (fechaSeleccionada < hoy) {
-      alert("No puedes seleccionar fechas u horas anteriores a ahora."); // Validación
-      return;
-    }
+  private async handleDateClick(info: any): Promise<void> {
+  const { value } = await Swal.fire({
+    title: "Crear cita",
+    html: `
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <i class="fas fa-user"></i>
+        <input id="nombre" class="swal2-input" placeholder="Nombre del cliente" style="flex: 1;">
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <i class="fas fa-clock"></i>
+        <input id="hora" type="time" class="swal2-input" style="flex: 1;">
+      </div>
+    `,
+    preConfirm: () => ({
+      nombre: (document.getElementById("nombre") as HTMLInputElement).value,
+      hora: (document.getElementById("hora") as HTMLInputElement).value,
+    }),
+    showCancelButton: true,
+  });
+  console.log('Paso por aqui'); // Verificar si se ejecuta el código
+  if (value?.nombre && value?.hora) {
+    const nuevaFecha = `${info.dateStr}T${value.hora}:00`;
 
-    const eventoTitulo = prompt("Introduce el nombre de la reserva:"); // Cambiar con Swal
-    const eventoFecha = prompt("Introduce la hora en formato HH:mm (por ejemplo, 14:30):"); // Cambiar con Swal
-
-    if (eventoTitulo && eventoFecha) {
-      const fechaCompleta = `${info.dateStr}T${eventoFecha}:00`;
-
-      this.calendar.addEvent({
-        title: eventoTitulo,
-        start: fechaCompleta,
+    // Verificar colisión
+    const duracion = 30; // Duración en minutos del evento
+    if (this.isColision(nuevaFecha, duracion)) {
+      await Swal.fire({
+        icon: "error",
+        title: "Conflicto de horarios",
+        text: "Ya existe un evento en esta franja horaria.",
       });
-
-      // Renderizar para asegurarnos de que el evento se muestre
-      this.calendar.render();
-    } else {
-      alert("Nombre y hora son requeridos para crear la reserva."); // Validación
+      console.log('Paso por aqui 2'); // Verificar si se ejecuta el código
+      return; // No añadir el evento debido a la colisión
     }
-  }
 
-  // Cuando se arrastra un evento
+    // Si no hay colisión, añadir el evento
+    const newTask = new TaskList();
+    newTask.nombre = value.nombre;
+    newTask.fecha = moment(nuevaFecha);
+    this.addList(newTask);
+
+    this.calendar.addEvent({
+      title: value.nombre,
+      start: nuevaFecha,
+    });
+  }
+}
+
+  // Cuando se arrastra una cita
   private handleEventDrop(info: any): void {
     const { event } = info;
 
     // Validar si la nueva fecha es posterior al día actual
     const hoy = new Date();
     if (event.start && event.start < hoy) {
-      alert("No puedes mover un evento a una fecha pasada.");
+      alert("No puedes mover una cita a una fecha pasada.");
       info.revert(); // Revertir el cambio
       return;
     }
@@ -137,6 +163,55 @@ export default class FullCalendarComponent extends Vue {
     }
   }
 
+  addList(item: TaskList): void {
+    if (item.nombre != "") {
+      
+      this.$store.dispatch("addList", item);
+      
+      this.errAdd = "";
+      if (this.hayError()) {
+        this.errAdd = this.getError();
+      }
+    } 
+  }
+
+  // Verificar si hay colisión con otra cita
+  private isColision(fecha: string, duracionEnMinutos: number): boolean {
+  const inicio = moment(fecha);
+  const fin = moment(fecha).add(duracionEnMinutos, 'minutes');
+  const eventos = this.calendar.getEvents();
+
+  return eventos.some((evento) => this.eventoEnRango(evento, inicio, fin));
+}
+
+// Función auxiliar para verificar si una cita existente solapa con el rango propuesto
+private eventoEnRango(evento: any, inicio: moment.Moment, fin: moment.Moment): boolean {
+  const eventoInicio = moment(evento.start);
+  const eventoFin = moment(evento.end || evento.start);
+
+  return (
+    this.rangoSeSolapa(inicio, fin, eventoInicio, eventoFin) || 
+    this.colisionPorProximidad(inicio, fin, eventoInicio, eventoFin)
+  );
+}
+
+// Verificar si el rango de fechas se solapa
+private rangoSeSolapa(inicio: moment.Moment, fin: moment.Moment, eventoInicio: moment.Moment, eventoFin: moment.Moment): boolean {
+  return inicio.isBefore(eventoFin) && fin.isAfter(eventoInicio);
+}
+
+// Verificar colisiones por proximidad exacta (antes o después del rango)
+private colisionPorProximidad(inicio: moment.Moment, fin: moment.Moment, eventoInicio: moment.Moment, eventoFin: moment.Moment): boolean {
+  return (
+    inicio.isSameOrBefore(eventoInicio) && fin.isAfter(eventoInicio) || // Termina justo al inicio de otro cita
+    inicio.isBefore(eventoFin) && fin.isSameOrAfter(eventoFin)         // Comienza justo al final de otro cita
+  );
+}
+
+
+
+
+
   hayError() {
     return this.$store.getters.getError != "";
   }
@@ -150,6 +225,29 @@ export default class FullCalendarComponent extends Vue {
   }
   
 
+  //   // Validar que no sea una hora posterior al momento actual en la fecha actual
+  //   if (fechaSeleccionada < hoy) {
+  //     alert("No puedes seleccionar fechas u horas anteriores a ahora."); // Validación
+  //     return;
+  //   }
+
+  //   const eventoTitulo = prompt("Introduce el nombre de la reserva:"); // Cambiar con Swal
+  //   const eventoFecha = prompt("Introduce la hora en formato HH:mm (por ejemplo, 14:30):"); // Cambiar con Swal
+
+  //   if (eventoTitulo && eventoFecha) {
+  //     const fechaCompleta = `${info.dateStr}T${eventoFecha}:00`;
+
+  //     this.calendar.addEvent({
+  //       title: eventoTitulo,
+  //       start: fechaCompleta,
+  //     });
+
+  //     // Renderizar para asegurarnos de que la cita se muestre
+  //     this.calendar.render();
+  //   } else {
+  //     alert("Nombre y hora son requeridos para crear la reserva."); // Validación
+  //   }
+  // }
 
 }
 </script>
