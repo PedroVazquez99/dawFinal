@@ -13,6 +13,8 @@ import interactionPlugin from "@fullcalendar/interaction";
 import TaskList from "@/models/TaskList";
 import Swal from "sweetalert2";
 import moment, { Moment } from "moment";
+import { OkModal, errorModal } from "./modals/ModalAdapter";
+
 @Component
 export default class FullCalendarComponent extends Vue {
   
@@ -116,13 +118,8 @@ export default class FullCalendarComponent extends Vue {
     // Verificar colisión
     const duracion = 30; // Duración en minutos del evento
     if (this.isColision(nuevaFecha, duracion)) {
-      await Swal.fire({
-        icon: "error",
-        title: "Conflicto de horarios",
-        text: "Ya existe un evento en esta franja horaria.",
-      });
-      console.log('Paso por aqui 2'); // Verificar si se ejecuta el código
-      return; // No añadir el evento debido a la colisión
+      errorModal("Conflicto de horarios", "Ya existe un evento en esta franja horaria.");
+      return;
     }
 
     // Si no hay colisión, añadir el evento
@@ -144,13 +141,13 @@ export default class FullCalendarComponent extends Vue {
 
     // Validar si la nueva fecha es posterior al día actual
     const hoy = new Date();
-    if (event.start && event.start < hoy) {
-      alert("No puedes mover una cita a una fecha pasada.");
+    if (event.start && (event.start < hoy || this.isColision(event.start.toISOString(), 30))) {
+      errorModal("Acción cancelada", "No se puede mover la cita a una fecha anterior o con conflicto de horarios.");
       info.revert(); // Revertir el cambio
       return;
     }
 
-    alert(`Evento "${event.title}" movido a ${event.start?.toISOString()}`);
+    OkModal("Cita actualizada", "La cita se ha movido correctamente.");
   }
 
   private convertirAEventSource = (datos: TaskList[]): EventSourceInput => {
@@ -199,10 +196,6 @@ export default class FullCalendarComponent extends Vue {
     return inicio.isBefore(eventoFin) && fin.isAfter(eventoInicio);
   }
 
-
-
-
-
   hayError() {
     return this.$store.getters.getError != "";
   }
@@ -214,31 +207,7 @@ export default class FullCalendarComponent extends Vue {
   getAll(): TaskList[] {
     return this.$store.getters.getAll;
   }
-  
 
-  //   // Validar que no sea una hora posterior al momento actual en la fecha actual
-  //   if (fechaSeleccionada < hoy) {
-  //     alert("No puedes seleccionar fechas u horas anteriores a ahora."); // Validación
-  //     return;
-  //   }
-
-  //   const eventoTitulo = prompt("Introduce el nombre de la reserva:"); // Cambiar con Swal
-  //   const eventoFecha = prompt("Introduce la hora en formato HH:mm (por ejemplo, 14:30):"); // Cambiar con Swal
-
-  //   if (eventoTitulo && eventoFecha) {
-  //     const fechaCompleta = `${info.dateStr}T${eventoFecha}:00`;
-
-  //     this.calendar.addEvent({
-  //       title: eventoTitulo,
-  //       start: fechaCompleta,
-  //     });
-
-  //     // Renderizar para asegurarnos de que la cita se muestre
-  //     this.calendar.render();
-  //   } else {
-  //     alert("Nombre y hora son requeridos para crear la reserva."); // Validación
-  //   }
-  // }
 
 }
 </script>
