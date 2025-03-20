@@ -11,9 +11,8 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import TaskList from "@/models/TaskList";
-import ConfirmarHoraModal from "./modals/ConfirmarHoraModal.vue";
 import Swal from "sweetalert2";
-import moment from "moment";
+import moment, { Moment } from "moment";
 @Component
 export default class FullCalendarComponent extends Vue {
   
@@ -176,37 +175,29 @@ export default class FullCalendarComponent extends Vue {
   }
 
   // Verificar si hay colisión con otra cita
-  private isColision(fecha: string, duracionEnMinutos: number): boolean {
-  const inicio = moment(fecha);
-  const fin = moment(fecha).add(duracionEnMinutos, 'minutes');
-  const eventos = this.calendar.getEvents();
+    private isColision(fecha: string, duracionEnMinutos: number): boolean {
+    const inicio = moment(fecha);
+    const fin = moment(fecha).add(duracionEnMinutos, 'minutes');
+    const eventos = this.calendar.getEvents();
 
-  return eventos.some((evento) => this.eventoEnRango(evento, inicio, fin));
-}
+    return eventos.some((evento) => this.eventoEnRango(evento, inicio, fin));
+  }
 
-// Función auxiliar para verificar si una cita existente solapa con el rango propuesto
-private eventoEnRango(evento: any, inicio: moment.Moment, fin: moment.Moment): boolean {
-  const eventoInicio = moment(evento.start);
-  const eventoFin = moment(evento.end || evento.start);
+  // Función auxiliar para verificar si una cita existente solapa con el rango propuesto
+  private eventoEnRango(evento: any, inicio: Moment, fin: Moment): boolean {
+    // Añadir un margen de 30 minutos antes y después del evento existente
+    const eventoInicio = moment(evento.start)
+    const eventoFin = moment(evento.end || evento.start)
 
-  return (
-    this.rangoSeSolapa(inicio, fin, eventoInicio, eventoFin) || 
-    this.colisionPorProximidad(inicio, fin, eventoInicio, eventoFin)
-  );
-}
+    return (
+      this.rangoSeSolapa(inicio, fin, eventoInicio, eventoFin)
+    );
+  }
 
-// Verificar si el rango de fechas se solapa
-private rangoSeSolapa(inicio: moment.Moment, fin: moment.Moment, eventoInicio: moment.Moment, eventoFin: moment.Moment): boolean {
-  return inicio.isBefore(eventoFin) && fin.isAfter(eventoInicio);
-}
-
-// Verificar colisiones por proximidad exacta (antes o después del rango)
-private colisionPorProximidad(inicio: moment.Moment, fin: moment.Moment, eventoInicio: moment.Moment, eventoFin: moment.Moment): boolean {
-  return (
-    inicio.isSameOrBefore(eventoInicio) && fin.isAfter(eventoInicio) || // Termina justo al inicio de otro cita
-    inicio.isBefore(eventoFin) && fin.isSameOrAfter(eventoFin)         // Comienza justo al final de otro cita
-  );
-}
+  // Verificar si el rango de fechas se solapa
+  private rangoSeSolapa(inicio: Moment, fin: Moment, eventoInicio: Moment, eventoFin: Moment): boolean {
+    return inicio.isBefore(eventoFin) && fin.isAfter(eventoInicio);
+  }
 
 
 
