@@ -14,6 +14,7 @@ import TaskList from "@/models/TaskList";
 import Swal from "sweetalert2";
 import moment, { Moment } from "moment";
 import { OkModal, errorModal } from "./modals/ModalAdapter";
+import { serviciosPeluqueriaMock } from "@/mocks/servicios.mock";
 
 @Component
 export default class FullCalendarComponent extends Vue {
@@ -52,6 +53,7 @@ export default class FullCalendarComponent extends Vue {
       editable: true, // Hace que las citas sean editables (drag and drop)
       selectable: true, // Permite seleccionar citas
       firstDay: 1, // Lunes como primer día de la semana
+      dayMaxEvents: 3, // Máximo de eventos por día
       headerToolbar: {
         left: "dayGridMonth,timeGridWeek,timeGridDay",
         center: "title",
@@ -76,8 +78,10 @@ export default class FullCalendarComponent extends Vue {
         return selectInfo.startStr === selectInfo.endStr.split("T")[0];
       },
       events: this.convertirAEventSource(this.getAll()), // Eventos iniciales, se cargarán desde la API, es decir, desde la base de datos
+      eventClick: this.handleEventClick, // Maneja cuando se hace clic en un evento
       dateClick: this.handleDateClick, // Maneja cuando se hace clic en una fecha
       eventDrop: this.handleEventDrop, // Maneja cuando un evento es arrastrado
+      moreLinkText: (num) => `Ver ${num} más`, // Cambia "+X more" por "Ver X más"
     });
 
     this.calendar.render(); // Renderiza el calendario, debe llamarse al final
@@ -90,50 +94,71 @@ export default class FullCalendarComponent extends Vue {
     }
   }
 
+  // ........................................................................................................
+  // ----------------------------------------------- HANDLERS -----------------------------------------------
+  // ........................................................................................................
+
   // Cuando hago click en el día.
-
   private async handleDateClick(info: any): Promise<void> {
-  const { value } = await Swal.fire({
-    title: "Crear cita",
-    html: `
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <i class="fas fa-user"></i>
-        <input id="nombre" class="swal2-input" placeholder="Nombre del cliente" style="flex: 1;">
-      </div>
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <i class="fas fa-clock"></i>
-        <input id="hora" type="time" class="swal2-input" style="flex: 1;">
-      </div>
-    `,
-    preConfirm: () => ({
-      nombre: (document.getElementById("nombre") as HTMLInputElement).value,
-      hora: (document.getElementById("hora") as HTMLInputElement).value,
-    }),
-    showCancelButton: true,
-  });
-  console.log('Paso por aqui'); // Verificar si se ejecuta el código
-  if (value?.nombre && value?.hora) {
-    const nuevaFecha = `${info.dateStr}T${value.hora}:00`;
+    
+    const opcionesServicios = serviciosPeluqueriaMock
+      .map(servicio => `<option value="${servicio.nombre}">${servicio.nombre}</option>`)
+      .join("");
 
-    // Verificar colisión
-    const duracion = 30; // Duración en minutos del evento
-    if (this.isColision(nuevaFecha, duracion)) {
-      errorModal("Conflicto de horarios", "Ya existe un evento en esta franja horaria.");
-      return;
-    }
-
-    // Si no hay colisión, añadir el evento
-    const newTask = new TaskList();
-    newTask.nombre = value.nombre;
-    newTask.fecha = moment(nuevaFecha);
-    this.addList(newTask);
-
-    this.calendar.addEvent({
-      title: value.nombre,
-      start: nuevaFecha,
+    const { value } = await Swal.fire({
+      title: "Crear cita",
+      html: `
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <i class="fas fa-user"></i>
+          <input id="nombre" class="swal2-input" placeholder="Nombre del cliente" style="flex: 1;">
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <i class="fas fa-clock"></i>
+          <input id="hora" type="time" class="swal2-input" style="flex: 1;">
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <i class="fas fa-cut"></i>
+          <select id="servicio" class="swal2-input" style="flex: 1;">
+            <option value="" disabled selected>Selecciona un servicio</option>
+            ${opcionesServicios}
+          </select>
+        </div>
+      `,
+      preConfirm: () => ({
+        nombre: (document.getElementById("nombre") as HTMLInputElement).value,
+        hora: (document.getElementById("hora") as HTMLInputElement).value,
+      }),
+      showCancelButton: true,
     });
+
+    if (value?.nombre && value?.hora) {
+      const nuevaFecha = `${info.dateStr}T${value.hora}:00`;
+
+      // Verificar colisión
+      const duracion = 30; // Duración en minutos del evento
+      if (this.isColision(nuevaFecha, duracion)) {
+        errorModal("Conflicto de horarios", "Ya existe un evento en esta franja horaria.");
+        return;
+      }
+
+      // Si no hay colisión, añadir el evento
+      const newTask = new TaskList();
+      newTask.nombre = value.nombre;
+      newTask.fecha = moment(nuevaFecha);
+      this.addList(newTask);
+
+      this.calendar.addEvent({
+        title: value.nombre,
+        start: nuevaFecha,
+      });
+    }
   }
-}
+
+  // Cuando hago click en un evento.
+  private handleEventClick(info: any) {
+    console.log("Evento seleccionado:", info.event);
+    alert(`Hiciste clic en: ${info.event.title}`);
+  }
 
   // Cuando se arrastra una cita
   private handleEventDrop(info: any): void {
@@ -149,6 +174,10 @@ export default class FullCalendarComponent extends Vue {
 
     OkModal("Cita actualizada", "La cita se ha movido correctamente.");
   }
+
+  // ........................................................................................................
+  // ----------------------------------------------- MÉTODOS ------------------------------------------------
+  // ........................................................................................................
 
   private convertirAEventSource = (datos: TaskList[]): EventSourceInput => {
     return {
