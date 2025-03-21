@@ -42,9 +42,20 @@ async function errorModal(title: string, text?: string) {
   await showAlert({
     title,
     text,
-    icon: 'error',
+    icon: 'warning',
+  });
+}
+
+async function deleteModal(title: string, text?: string) {
+  await showAlert({
+    title,
+    text: text,
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: '<i class="fas fa-trash"></i> Sí, borrar',
+    cancelButtonText: '<i class="fas fa-times"></i> Cancelar'
   });
 }
 
 // Exportar funciones
-export { showAlert, OkModal, errorModal };
+export { showAlert, OkModal, errorModal, deleteModal };

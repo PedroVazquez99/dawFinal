@@ -13,7 +13,7 @@ import interactionPlugin from "@fullcalendar/interaction";
 import TaskList from "@/models/TaskList";
 import Swal from "sweetalert2";
 import moment, { Moment } from "moment";
-import { OkModal, errorModal } from "./modals/ModalAdapter";
+import { OkModal, deleteModal, errorModal } from "./modals/ModalAdapter";
 import { serviciosPeluqueriaMock } from "@/mocks/servicios.mock";
 
 @Component
@@ -156,9 +156,14 @@ export default class FullCalendarComponent extends Vue {
 
   // Cuando hago click en un evento.
   private handleEventClick(info: any) {
-    console.log("Evento seleccionado:", info);
-    console.log("Evento seleccionado:", info.event);
-    alert(`Hiciste clic en: ${info.event.title}`);
+
+    deleteModal('¿Desea borrar la cita?', 'Se borrará la cita para ' + info.event.title).then(() => {
+      const id: string = info.event.id;
+      console.log(id);
+      this.$store.dispatch("deleteList", id);
+      info.event.remove();
+      this.calendar.render();
+    })
   }
 
   // Cuando se arrastra una cita

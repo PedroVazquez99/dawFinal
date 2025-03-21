@@ -107,13 +107,13 @@ export default new Vuex.Store({
         });
     },
     // Elimina una lista contra la BBDD
-    deleteList({ commit }, {list, index}) {
-    
+    deleteList({ commit }, index) {
+      console.log('Index de la lista a borrar');
+      console.log(index);
       serviceAPI
-        .delete("APIListas", list.id)
+        .delete("APIListas", index)
         .then((r) => {
           if (r.status == APIStatus.OK) {
-            console.log(list);
             commit("del", index);
           } else {
             this.state.error = r.error;
