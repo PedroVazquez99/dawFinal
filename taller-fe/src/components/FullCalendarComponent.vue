@@ -156,6 +156,7 @@ export default class FullCalendarComponent extends Vue {
 
   // Cuando hago click en un evento.
   private handleEventClick(info: any) {
+    console.log("Evento seleccionado:", info);
     console.log("Evento seleccionado:", info.event);
     alert(`Hiciste clic en: ${info.event.title}`);
   }
@@ -171,7 +172,14 @@ export default class FullCalendarComponent extends Vue {
       info.revert(); // Revertir el cambio
       return;
     }
+    console.log(info);
 
+    let t = new TaskList();
+    t.id = parseInt(info.event.id);
+    t.nombre = info.event.title;
+    t.fecha = info.event.start;
+
+    this.$store.dispatch('setLista', [t, t.id]);
     OkModal("Cita actualizada", "La cita se ha movido correctamente.");
   }
 
@@ -182,6 +190,7 @@ export default class FullCalendarComponent extends Vue {
   private convertirAEventSource = (datos: TaskList[]): EventSourceInput => {
     return {
       events: datos.map((item) => ({
+        id: item.id.toString(), // Mapeamos 'id' a 'id'
         title: item.nombre, // Mapeamos 'nombre' a 'title'
         start: item.fecha.toString(),  // Convertir 'fecha' a 'Date'
       })),
