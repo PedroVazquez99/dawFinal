@@ -12,7 +12,7 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import TaskList from "@/models/TaskList";
 import Swal from "sweetalert2";
-import moment, { Moment } from "moment";
+import moment, { duration, Moment } from "moment";
 import { OkModal, deleteModal, errorModal } from "./modals/ModalAdapter";
 import { serviciosPeluqueriaMock } from "@/mocks/servicios.mock";
 
@@ -49,6 +49,7 @@ export default class FullCalendarComponent extends Vue {
     this.calendar = new Calendar(this.$refs.calendar as HTMLElement, {
       plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin], // Plugins de FullCalendar
       locale: "es", // Idioma
+      timeZone: 'UTC',
       initialView: "dayGridMonth", // Vista inicial
       editable: true, // Hace que las citas sean editables (drag and drop)
       selectable: true, // Permite seleccionar citas
@@ -184,8 +185,11 @@ export default class FullCalendarComponent extends Vue {
     t.nombre = info.event.title;
     t.fecha = info.event.start;
 
-    this.$store.dispatch('setLista', [t, t.id]);
-    OkModal("Cita actualizada", "La cita se ha movido correctamente.");
+    if(!this.isColision(t.fecha.toISOString(), 30)){
+      
+      this.$store.dispatch('setLista', [t, t.id]);
+      OkModal("Cita actualizada", "La cita se ha movido correctamente.");
+    }
   }
 
   // ........................................................................................................
@@ -215,23 +219,24 @@ export default class FullCalendarComponent extends Vue {
   }
 
   // Verificar si hay colisión con otra cita
-    private isColision(fecha: string, duracionEnMinutos: number): boolean {
+  private isColision(fecha: string, duracionEnMinutos: number): boolean {
     const inicio = moment(fecha);
     const fin = moment(fecha).add(duracionEnMinutos, 'minutes');
     const eventos = this.calendar.getEvents();
-
-    return eventos.some((evento) => this.eventoEnRango(evento, inicio, fin));
+    return eventos.some((evento) => this.eventoEnRango(evento, inicio, fin, duracionEnMinutos));
   }
 
   // Función auxiliar para verificar si una cita existente solapa con el rango propuesto
-  private eventoEnRango(evento: any, inicio: Moment, fin: Moment): boolean {
-    // Añadir un margen de 30 minutos antes y después del evento existente
-    const eventoInicio = moment(evento.start)
-    const eventoFin = moment(evento.end || evento.start)
+  private eventoEnRango(evento: any, inicio: Moment, fin: Moment, duracionEnMinutos: number): boolean {
+    // Calcular el margen dinámico antes y después
+    const margen = moment.duration(duracionEnMinutos, 'minutes');
 
-    return (
-      this.rangoSeSolapa(inicio, fin, eventoInicio, eventoFin)
-    );
+    // Ajustar el rango del evento existente
+    const eventoInicio = moment(evento.start).subtract(margen); // Reducir el inicio
+    const eventoFin = moment(evento.end || evento.start).add(margen); // Ampliar el fin
+
+    // Comprobar si los rangos se solapan
+    return this.rangoSeSolapa(inicio, fin, eventoInicio, eventoFin);
   }
 
   // Verificar si el rango de fechas se solapa

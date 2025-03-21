@@ -42,7 +42,7 @@ async function errorModal(title: string, text?: string) {
   await showAlert({
     title,
     text,
-    icon: 'warning',
+    icon: 'error',
   });
 }
 
