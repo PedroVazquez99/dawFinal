@@ -57,5 +57,16 @@ async function deleteModal(title: string, text?: string) {
   });
 }
 
+async function personalizadoModal(html: string, title: string, text?: string) {
+  await showAlert({
+    title,
+    text: text,
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: '<i class="fas fa-trash"></i> Sí, borrar',
+    cancelButtonText: '<i class="fas fa-times"></i> Cancelar'
+  });
+}
+
 // Exportar funciones
 export { showAlert, OkModal, errorModal, deleteModal };

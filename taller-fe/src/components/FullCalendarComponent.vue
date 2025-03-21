@@ -25,15 +25,8 @@ export default class FullCalendarComponent extends Vue {
     @Prop() 
       private titulo!: string;
       private calendar!: Calendar; // Instancia de FullCalendar
-      mode = "list";
-      newList: TaskList = new TaskList();
-      errList = { nombre: false };
-      slctVisible = "T";
-      orden = "N";
-      showModal = false;
       errGet = "";
       errAdd = "";
-      editList: TaskList = new TaskList();
 
   mounted() {
     if (!this.$refs.calendar) return; // Devuelve undefined si no hay referencia al calendario
@@ -52,6 +45,7 @@ export default class FullCalendarComponent extends Vue {
       timeZone: 'UTC',
       initialView: "dayGridMonth", // Vista inicial
       editable: true, // Hace que las citas sean editables (drag and drop)
+      eventDurationEditable: false, // Para que no pueda cambiar las horas desde la interfaz
       selectable: true, // Permite seleccionar citas
       firstDay: 1, // Lunes como primer día de la semana
       dayMaxEvents: 3, // Máximo de eventos por día
@@ -133,8 +127,8 @@ export default class FullCalendarComponent extends Vue {
     });
 
     if (value?.nombre && value?.hora) {
-      const nuevaFecha = `${info.dateStr}T${value.hora}:00`;
-
+      const nuevaFecha = `${info.dateStr.split('T')[0]}T${value.hora}:00`;
+      console.log(nuevaFecha);
       // Verificar colisión
       const duracion = 30; // Duración en minutos del evento
       if (this.isColision(nuevaFecha, duracion)) {
@@ -155,16 +149,21 @@ export default class FullCalendarComponent extends Vue {
     }
   }
 
-  // Cuando hago click en un evento.
-  private handleEventClick(info: any) {
-
+  private handleDelete(info: any){
     deleteModal('¿Desea borrar la cita?', 'Se borrará la cita para ' + info.event.title).then(() => {
       const id: string = info.event.id;
       console.log(id);
       this.$store.dispatch("deleteList", id);
       info.event.remove();
       this.calendar.render();
-    })
+    });
+  }
+
+  // Cuando hago click en un evento.
+  private handleEventClick(info: any) {
+    console.log('')
+
+
   }
 
   // Cuando se arrastra una cita
@@ -184,7 +183,7 @@ export default class FullCalendarComponent extends Vue {
     t.id = parseInt(info.event.id);
     t.nombre = info.event.title;
     t.fecha = info.event.start;
-
+    console.log('Pasa por aqui');
     if(!this.isColision(t.fecha.toISOString(), 30)){
       
       this.$store.dispatch('setLista', [t, t.id]);
