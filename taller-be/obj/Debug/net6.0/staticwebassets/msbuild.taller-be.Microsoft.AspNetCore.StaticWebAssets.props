@@ -336,8 +336,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0httqiosvd</Fingerprint>
-      <Integrity>dJw6EYEGH6VskV715/8Wkb7potJHlshBjhHp01owV2E=</Integrity>
+      <Fingerprint>agt0sgirzq</Fingerprint>
+      <Integrity>5q6cGfSFM4Wu4qDKPcI/f+v5k10+hxrFikuWzIv8Y44=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\about.js'))</OriginalItemSpec>
@@ -390,8 +390,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>cn7sz0ci8d</Fingerprint>
-      <Integrity>SKf5sz28wxesUQqf3kDLj0XfyCmhJL9jGl7Kk/uXLNE=</Integrity>
+      <Fingerprint>n5ohtw0g7t</Fingerprint>
+      <Integrity>i1GnMCmYdv8AyqCJJaF/grR75g1um1gUqHQH/OYYOfM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\app.js'))</OriginalItemSpec>
@@ -444,8 +444,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>b6hmvdpnjp</Fingerprint>
-      <Integrity>cyMcTKbvTi1mnx3iqzr9WiGiwAG3IwHduE+NkYEA5MU=</Integrity>
+      <Fingerprint>m49g3do8jb</Fingerprint>
+      <Integrity>yrZSO07vu0zdmZzZgc0CCGfzcEP9aOOfDfxT8VtKHSo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\chunk-vendors.js'))</OriginalItemSpec>

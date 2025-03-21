@@ -1,139 +1,139 @@
 {
   "Files": [
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css",
       "PackagePath": "staticwebassets\\taller-be.d13a76wwz8.bundle.scp.css"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\css\\app.bd071c00.css",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\css\\app.bd071c00.css",
       "PackagePath": "staticwebassets\\css\\app.bd071c00.css"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\favicon.ico",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-192x192.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-192x192.png",
       "PackagePath": "staticwebassets\\img\\icons\\android-chrome-192x192.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-512x512.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-512x512.png",
       "PackagePath": "staticwebassets\\img\\icons\\android-chrome-512x512.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-192x192.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-192x192.png",
       "PackagePath": "staticwebassets\\img\\icons\\android-chrome-maskable-192x192.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-512x512.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-512x512.png",
       "PackagePath": "staticwebassets\\img\\icons\\android-chrome-maskable-512x512.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-120x120.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-120x120.png",
       "PackagePath": "staticwebassets\\img\\icons\\apple-touch-icon-120x120.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-152x152.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-152x152.png",
       "PackagePath": "staticwebassets\\img\\icons\\apple-touch-icon-152x152.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-180x180.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-180x180.png",
       "PackagePath": "staticwebassets\\img\\icons\\apple-touch-icon-180x180.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-60x60.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-60x60.png",
       "PackagePath": "staticwebassets\\img\\icons\\apple-touch-icon-60x60.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-76x76.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-76x76.png",
       "PackagePath": "staticwebassets\\img\\icons\\apple-touch-icon-76x76.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon.png",
       "PackagePath": "staticwebassets\\img\\icons\\apple-touch-icon.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-16x16.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-16x16.png",
       "PackagePath": "staticwebassets\\img\\icons\\favicon-16x16.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-32x32.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-32x32.png",
       "PackagePath": "staticwebassets\\img\\icons\\favicon-32x32.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\msapplication-icon-144x144.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\msapplication-icon-144x144.png",
       "PackagePath": "staticwebassets\\img\\icons\\msapplication-icon-144x144.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\mstile-150x150.png",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\mstile-150x150.png",
       "PackagePath": "staticwebassets\\img\\icons\\mstile-150x150.png"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\img\\icons\\safari-pinned-tab.svg",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\img\\icons\\safari-pinned-tab.svg",
       "PackagePath": "staticwebassets\\img\\icons\\safari-pinned-tab.svg"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\index.html",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js",
       "PackagePath": "staticwebassets\\js\\about.4a4183d6.js"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js.map",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js.map",
       "PackagePath": "staticwebassets\\js\\about.4a4183d6.js.map"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\js\\about.js",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\js\\about.js",
       "PackagePath": "staticwebassets\\js\\about.js"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js",
       "PackagePath": "staticwebassets\\js\\app.e32529b0.js"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js.map",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js.map",
       "PackagePath": "staticwebassets\\js\\app.e32529b0.js.map"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
       "PackagePath": "staticwebassets\\js\\app.js"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js",
       "PackagePath": "staticwebassets\\js\\chunk-vendors.41ea2f5f.js"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js.map",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js.map",
       "PackagePath": "staticwebassets\\js\\chunk-vendors.41ea2f5f.js.map"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.js",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.js",
       "PackagePath": "staticwebassets\\js\\chunk-vendors.js"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\manifest.json",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\manifest.json",
       "PackagePath": "staticwebassets\\manifest.json"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\robots.txt",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\robots.txt",
       "PackagePath": "staticwebassets\\robots.txt"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\service-worker.js",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\service-worker.js",
       "PackagePath": "staticwebassets\\service-worker.js"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\service-worker.js.map",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\service-worker.js.map",
       "PackagePath": "staticwebassets\\service-worker.js.map"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js",
       "PackagePath": "staticwebassets\\workbox-6567b62a.js"
     },
     {
-      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js.map",
+      "Id": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js.map",
       "PackagePath": "staticwebassets\\workbox-6567b62a.js.map"
     },
     {
