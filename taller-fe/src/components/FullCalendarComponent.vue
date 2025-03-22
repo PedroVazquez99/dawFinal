@@ -12,7 +12,7 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import TaskList from "@/models/TaskList";
 import Swal from "sweetalert2";
-import moment, { Moment } from "moment";
+import moment from "moment";
 import { OkModal, deleteModal, errorModal } from "./modals/ModalAdapter";
 import { serviciosPeluqueriaMock } from "@/mocks/servicios.mock";
 
@@ -38,6 +38,7 @@ export default class FullCalendarComponent extends Vue {
       selectable: true,
       firstDay: 1,
       dayMaxEvents: 3,
+      timeZone: 'UTC',
       headerToolbar: {
         left: "dayGridMonth,timeGridWeek,timeGridDay",
         center: "title",
@@ -75,7 +76,7 @@ export default class FullCalendarComponent extends Vue {
 
   private async handleEventClick(info: any): Promise<void> {
     const evento = info.event;
-    const { value, isDenied } = await this.showSwal("Editar cita", evento.title, moment(evento.start).format("HH:mm"));
+    const { value, isDenied } = await this.showSwal("Editar cita", evento.title, moment(evento.start).format("HH:mm"), true);
     if (isDenied) {
       this.deleteEvent(evento);
       return;
@@ -132,7 +133,7 @@ export default class FullCalendarComponent extends Vue {
     this.updateTask(evento.id, nombre, fecha);
   }
 
-  private async showSwal(title: string, nombre = "", hora = "") {
+  private async showSwal(title: string, nombre = "", hora = "", showDeleteButton = false) {
     const opcionesServicios = serviciosPeluqueriaMock
       .map((servicio) => `<option value="${servicio.nombre}">${servicio.nombre}</option>`)
       .join("");
@@ -160,7 +161,7 @@ export default class FullCalendarComponent extends Vue {
         hora: (document.getElementById("hora") as HTMLInputElement).value,
       }),
       showCancelButton: true,
-      showDenyButton: true,
+      showDenyButton: showDeleteButton,
       denyButtonText: "Eliminar",
     });
   }
