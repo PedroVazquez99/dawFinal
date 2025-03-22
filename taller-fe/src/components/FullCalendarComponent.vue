@@ -45,7 +45,6 @@ export default class FullCalendarComponent extends Vue {
         right: "prev,next today",
       },
       buttonText: { today: "Hoy", month: "Mes", week: "Semana", day: "Día" },
-      validRange: { start: this.getToday() },
       eventTimeFormat: { hour: "2-digit", minute: "2-digit", meridiem: false },
       selectAllow: (selectInfo) => selectInfo.startStr === selectInfo.endStr.split("T")[0],
       events: this.convertirAEventSource(this.getAll()),

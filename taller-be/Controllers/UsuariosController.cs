@@ -19,12 +19,27 @@ namespace taller_be.Controllers
         }
 
         // GET: Usuarios
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1, int pageSize = 10)
         {
-              return _context.Usuarios != null ? 
-                          View(await _context.Usuarios.ToListAsync()) :
-                          Problem("Entity set 'PeluqueriaBDDContext.Usuarios'  is null.");
+            // Total de usuarios
+            var totalItems = await _context.Usuarios.CountAsync();
+
+            // Usuarios para la página actual
+            var usuarios = await _context.Usuarios
+                .OrderBy(u => u.Nombre) // Cambiar por otra columna si lo prefieres
+                .Skip((page - 1) * pageSize) // Saltar los elementos de las páginas anteriores
+                .Take(pageSize) // Tomar solo los elementos de la página actual
+                .ToListAsync();
+
+            // Pasar datos a la vista
+            ViewData["TotalItems"] = totalItems; // Total de elementos
+            ViewData["Page"] = page; // Página actual
+            ViewData["PageSize"] = pageSize; // Tamaño de página
+            ViewData["TotalPages"] = (int)Math.Ceiling((double)totalItems / pageSize); // Total de páginas
+
+            return View(usuarios);
         }
+
 
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(decimal? id)
