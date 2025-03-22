@@ -45,12 +45,15 @@
                         <td>@Html.DisplayFor(modelItem => item.Rol)</td>
                         <td>@Html.DisplayFor(modelItem => item.FechaRegistro)</td>
                         <td class="text-center">
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-info">
-                                <i class="fas fa-edit"></i>
+                            <!-- Botón Editar -->
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-info btn-sm">
+                                <i class="fas fa-edit"></i> Editar
                             </a>
-                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger">
-                                <i class="fas fa-trash-alt"></i>
-                            </a>
+                            <!-- Botón Eliminar con confirmación usando SweetAlert2 -->
+                            <button class="btn btn-outline-danger btn-sm"
+                                    onclick="confirmDelete('@Url.Action("Delete", new { id = item.Id })')">
+                                <i class="fas fa-trash-alt"></i> Eliminar
+                            </button>
                         </td>
                     </tr>
                 }
@@ -80,5 +83,26 @@
             </li>
         </ul>
     </nav>
+
 </div>
 
+@section Scripts {
+    <script>
+        function confirmDelete(url) {
+            Swal.fire({
+                title: '¿Estás seguro?',
+                text: "No podrás revertir esta acción.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Sí, eliminar',
+                cancelButtonText: 'Cancelar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = url;
+                }
+            });
+        }
+    </script>
+}

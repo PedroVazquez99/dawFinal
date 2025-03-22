@@ -1,48 +1,71 @@
 ﻿@model taller_be.Models.Usuario
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalles del Usuario";
 }
 
-<h1>Details</h1>
+<div class="container mt-5">
+    <!-- Título -->
+    <div class="text-center mb-4">
+        <h1 class="display-4 text-primary fw-bold">Detalles del Usuario</h1>
+        <p class="text-muted">Visualiza la información completa del usuario.</p>
+    </div>
 
-<div>
-    <h4>Usuario</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nombre)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nombre)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PasswordHash)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PasswordHash)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Rol)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Rol)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaRegistro)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaRegistro)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <!-- Card con detalles -->
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-primary text-white text-center">
+                    <i class="fas fa-user-circle fa-3x"></i>
+                    <h3 class="mt-2">Información de Usuario</h3>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <!-- Nombre -->
+                        <dt class="col-sm-4 text-secondary fw-bold">
+                            <i class="fas fa-user me-2"></i> @Html.DisplayNameFor(model => model.Nombre)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Nombre)
+                        </dd>
+
+                        <!-- Email -->
+                        <dt class="col-sm-4 text-secondary fw-bold">
+                            <i class="fas fa-envelope me-2"></i> @Html.DisplayNameFor(model => model.Email)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Email)
+                        </dd>
+
+                        <!-- Rol -->
+                        <dt class="col-sm-4 text-secondary fw-bold">
+                            <i class="fas fa-briefcase me-2"></i> @Html.DisplayNameFor(model => model.Rol)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.Rol)
+                        </dd>
+
+                        <!-- Fecha de Registro -->
+                        <dt class="col-sm-4 text-secondary fw-bold">
+                            <i class="fas fa-calendar-alt me-2"></i> @Html.DisplayNameFor(model => model.FechaRegistro)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.DisplayFor(model => model.FechaRegistro)
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card-footer text-center">
+                    <div class="d-flex justify-content-center">
+                        <a asp-action="Index" class="btn btn-outline-secondary">
+                            <i class="fas fa-arrow-left"></i> Regresar
+                        </a>
+                        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-outline-primary me-2">
+                            <i class="fas fa-edit"></i> Editar
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
