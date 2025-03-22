@@ -9,9 +9,9 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <router-link to="/" class="nav-link text-dark">{{$t('app.inicio')}}</router-link>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <router-link to="/about" class="nav-link text-dark">{{$t('app.acerca_de')}}</router-link>
                         </li>

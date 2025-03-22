@@ -1,0 +1,65 @@
+﻿@using Microsoft.AspNetCore.Authentication.Cookies
+@using System.Security.Claims
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Peluquería</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <!-- Enlace para la página de inicio -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Inicio</a>
+                </li>
+
+                <!-- Enlaces comunes -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="/#/about">About</a>
+                </li>
+
+
+                <!-- Si el usuario está autenticado, mostrar el enlace de "Usuarios" -->
+                @if (User.Identity.IsAuthenticated)
+                {
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/#/reserva">Reservas</a>
+                    </li>
+
+                    <!-- Mostrar enlaces específicos Admin-->
+                    @if (User.IsInRole("admin"))
+                    {
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Usuarios">Usuarios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Servicios">Servicios</a>
+                        </li>
+
+                    }
+
+                    <!-- Enlace de Logout -->
+                    <li class="nav-item">
+                        <form action="/api/APIUsuarios/logout" method="post" class="d-inline">
+                            <button type="submit" class="nav-link btn btn-link" style="border: none; background: transparent;">Cerrar sesión</button>
+                        </form>
+                    </li>
+                }
+                else
+                {
+                    <!-- Si no está autenticado, mostrar enlaces de Login y Register -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Account/Login">Login</a>
+                    </li>
+
+                }
+            </ul>
+        </div>
+    </div>
+</nav>
+
+

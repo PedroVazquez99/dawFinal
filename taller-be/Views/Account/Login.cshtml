@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Inicio de sesión";
+}
+
+@if (ViewData["error"] != null && ViewData["error"].ToString() != "")
+{
+    <div class="alert alert-danger">Error: @ViewData["error"].ToString()</div>
+}
+
+<form method="post" action="/api/APIUsuarios/login" class="form" id="loginForm">
+    <div class="form-group row">
+        <label for="usu" class="form-label col-md-1">Correo Electrónico:</label>
+        <div class="col-md-3">
+            <input type="email" name="email" id="email" class="form-control" required />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="pwd" class="form-label col-md-1">Contraseña:</label>
+        <div class="col-md-3">
+            <input type="password" name="password" id="password" class="form-control" required />
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="offset-md-3">
+            <input type="submit" class="btn btn-primary" value="Acceder" />
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        // Evento de submit del formulario
+        document.getElementById("loginForm").onsubmit = async function (event) {
+            event.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            const loginRequest = {
+                email: email,
+                password: password
+            };
+
+            try {
+                const response = await fetch('/api/APIUsuarios/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(loginRequest),
+                });
+
+                if (response.ok) {
+                    window.location.href = '/#';
+                } else {
+                    const errorData = await response.json();
+                    alert('Error: ' + errorData.message);
+                }
+            } catch (error) {
+                console.error('Error en la solicitud de login:', error);
+                alert('Ocurrió un error al intentar iniciar sesión.');
+            }
+        };
+    </script>
+}

@@ -8,13 +8,16 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<taller_be.Models.PeluqueriaBDDContext>();
 
-//Servicio de autenticación
-builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromMinutes(30); // Tiempo de expiración de la sesión
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
-});
+
+builder.Services.AddSession();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options => {
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
+        options.SlidingExpiration = true;
+        options.LoginPath = "/Account/Login";
+        options.AccessDeniedPath = "/Account/Login";
+    });
 
 var app = builder.Build();
 
@@ -33,6 +36,7 @@ app.UseRouting();
 
 app.UseSession();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
