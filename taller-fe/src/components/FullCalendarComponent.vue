@@ -11,244 +11,214 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import TaskList from "@/models/TaskList";
-import ConfirmarHoraModal from "./modals/ConfirmarHoraModal.vue";
 import Swal from "sweetalert2";
 import moment from "moment";
+import { OkModal, deleteModal, errorModal } from "./modals/ModalAdapter";
+import { serviciosPeluqueriaMock } from "@/mocks/servicios.mock";
+
 @Component
 export default class FullCalendarComponent extends Vue {
-  
- 
-
-    // Variables
-    @Prop() 
-      private titulo!: string;
-      private calendar!: Calendar; // Instancia de FullCalendar
-      mode = "list";
-      newList: TaskList = new TaskList();
-      errList = { nombre: false };
-      slctVisible = "T";
-      orden = "N";
-      showModal = false;
-      errGet = "";
-      errAdd = "";
-      editList: TaskList = new TaskList();
+  @Prop() private titulo!: string;
+  private calendar!: Calendar;
+  private errGet = "";
+  private errAdd = "";
+  private usuarioID = 1; // Cogerlo desde el store, ver como hacer
+  private servicioID = 1; // Cogerlo desde el store, ver como hacer
 
   mounted() {
-    if (!this.$refs.calendar) return; // Devuelve undefined si no hay referencia al calendario
-    
-    this.$store.dispatch("getLists");
-    this.errGet = "";
-    if (this.hayError()) {
-      this.errGet = this.getError();
-    }
+    if (!this.$refs.calendar) return;
 
-    const today = new Date().toISOString().split("T")[0]; // Obtener la fecha actual en formato YYYY-MM-DD
+    this.$store.dispatch("getLists");
+    this.errGet = this.getErrorIfExists();
 
     this.calendar = new Calendar(this.$refs.calendar as HTMLElement, {
-      plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin], // Plugins de FullCalendar
-      locale: "es", // Idioma
-      initialView: "dayGridMonth", // Vista inicial
-      editable: true, // Hace que las citas sean editables (drag and drop)
-      selectable: true, // Permite seleccionar citas
-      firstDay: 1, // Lunes como primer día de la semana
+      plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
+      locale: "es",
+      initialView: "dayGridMonth",
+      editable: true,
+      eventDurationEditable: false,
+      selectable: true,
+      firstDay: 1,
+      dayMaxEvents: 3,
+      timeZone: 'UTC',
       headerToolbar: {
         left: "dayGridMonth,timeGridWeek,timeGridDay",
         center: "title",
         right: "prev,next today",
       },
-      buttonText: {
-        today: "Hoy", // Cambia el texto del botón "Today"
-        month: "Mes",
-        week: "Semana",
-        day: "Día",
-      },
-      validRange: {
-        start: today, // Restringe los días anteriores a hoy
-      },
-      eventTimeFormat: { // Personalización del formato de la hora
-        hour: '2-digit',
-        minute: '2-digit',
-        meridiem: false, // Omite AM/PM, usa formato 24 horas
-      },
-      selectAllow: (selectInfo) => {
-        // Solo permitir selecciones de un día
-        return selectInfo.startStr === selectInfo.endStr.split("T")[0];
-      },
-      events: this.convertirAEventSource(this.getAll()), // Eventos iniciales, se cargarán desde la API, es decir, desde la base de datos
-      dateClick: this.handleDateClick, // Maneja cuando se hace clic en una fecha
-      eventDrop: this.handleEventDrop, // Maneja cuando un evento es arrastrado
+      buttonText: { today: "Hoy", month: "Mes", week: "Semana", day: "Día" },
+      eventTimeFormat: { hour: "2-digit", minute: "2-digit", meridiem: false },
+      selectAllow: (selectInfo) => selectInfo.startStr === selectInfo.endStr.split("T")[0],
+      events: this.convertirAEventSource(this.getAll()),
+      eventClick: this.handleEventClick,
+      dateClick: this.handleDateClick,
+      eventDrop: this.handleEventDrop,
+      moreLinkText: (num) => `Ver ${num} más`,
     });
 
-    this.calendar.render(); // Renderiza el calendario, debe llamarse al final
+    this.calendar.render();
   }
 
-  // Para liberar memoria
   beforeDestroy() {
-    if (this.calendar) {
-      this.calendar.destroy();
+      this.calendar?.destroy();
     }
-  }
-
-  // Cuando hago click en el día.
-
-  private async handleDateClick(info: any): Promise<void> {
-  const { value } = await Swal.fire({
-    title: "Crear cita",
-    html: `
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <i class="fas fa-user"></i>
-        <input id="nombre" class="swal2-input" placeholder="Nombre del cliente" style="flex: 1;">
-      </div>
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <i class="fas fa-clock"></i>
-        <input id="hora" type="time" class="swal2-input" style="flex: 1;">
-      </div>
-    `,
-    preConfirm: () => ({
-      nombre: (document.getElementById("nombre") as HTMLInputElement).value,
-      hora: (document.getElementById("hora") as HTMLInputElement).value,
-    }),
-    showCancelButton: true,
-  });
-  console.log('Paso por aqui'); // Verificar si se ejecuta el código
-  if (value?.nombre && value?.hora) {
-    const nuevaFecha = `${info.dateStr}T${value.hora}:00`;
-
-    // Verificar colisión
-    const duracion = 30; // Duración en minutos del evento
-    if (this.isColision(nuevaFecha, duracion)) {
-      await Swal.fire({
-        icon: "error",
-        title: "Conflicto de horarios",
-        text: "Ya existe un evento en esta franja horaria.",
-      });
-      console.log('Paso por aqui 2'); // Verificar si se ejecuta el código
-      return; // No añadir el evento debido a la colisión
-    }
-
-    // Si no hay colisión, añadir el evento
-    const newTask = new TaskList();
-    newTask.nombre = value.nombre;
-    newTask.fecha = moment(nuevaFecha);
-    this.addList(newTask);
-
-    this.calendar.addEvent({
-      title: value.nombre,
-      start: nuevaFecha,
-    });
-  }
-}
-
-  // Cuando se arrastra una cita
-  private handleEventDrop(info: any): void {
-    const { event } = info;
-
-    // Validar si la nueva fecha es posterior al día actual
-    const hoy = new Date();
-    if (event.start && event.start < hoy) {
-      alert("No puedes mover una cita a una fecha pasada.");
-      info.revert(); // Revertir el cambio
-      return;
-    }
-
-    alert(`Evento "${event.title}" movido a ${event.start?.toISOString()}`);
-  }
-
-  private convertirAEventSource = (datos: TaskList[]): EventSourceInput => {
-    return {
-      events: datos.map((item) => ({
-        title: item.nombre, // Mapeamos 'nombre' a 'title'
-        start: item.fecha.toString(),  // Convertir 'fecha' a 'Date'
-      })),
-    }
-  }
-
-  addList(item: TaskList): void {
-    if (item.nombre != "") {
-      
-      this.$store.dispatch("addList", item);
-      
-      this.errAdd = "";
-      if (this.hayError()) {
-        this.errAdd = this.getError();
-      }
-    } 
-  }
-
-  // Verificar si hay colisión con otra cita
-  private isColision(fecha: string, duracionEnMinutos: number): boolean {
-  const inicio = moment(fecha);
-  const fin = moment(fecha).add(duracionEnMinutos, 'minutes');
-  const eventos = this.calendar.getEvents();
-
-  return eventos.some((evento) => this.eventoEnRango(evento, inicio, fin));
-}
-
-// Función auxiliar para verificar si una cita existente solapa con el rango propuesto
-private eventoEnRango(evento: any, inicio: moment.Moment, fin: moment.Moment): boolean {
-  const eventoInicio = moment(evento.start);
-  const eventoFin = moment(evento.end || evento.start);
-
-  return (
-    this.rangoSeSolapa(inicio, fin, eventoInicio, eventoFin) || 
-    this.colisionPorProximidad(inicio, fin, eventoInicio, eventoFin)
-  );
-}
-
-// Verificar si el rango de fechas se solapa
-private rangoSeSolapa(inicio: moment.Moment, fin: moment.Moment, eventoInicio: moment.Moment, eventoFin: moment.Moment): boolean {
-  return inicio.isBefore(eventoFin) && fin.isAfter(eventoInicio);
-}
-
-// Verificar colisiones por proximidad exacta (antes o después del rango)
-private colisionPorProximidad(inicio: moment.Moment, fin: moment.Moment, eventoInicio: moment.Moment, eventoFin: moment.Moment): boolean {
-  return (
-    inicio.isSameOrBefore(eventoInicio) && fin.isAfter(eventoInicio) || // Termina justo al inicio de otro cita
-    inicio.isBefore(eventoFin) && fin.isSameOrAfter(eventoFin)         // Comienza justo al final de otro cita
-  );
-}
-
-
-
-
-
-  hayError() {
-    return this.$store.getters.getError != "";
-  }
-
-  getError() {
-    return this.$store.getters.getError;
-  }
-
-  getAll(): TaskList[] {
-    return this.$store.getters.getAll;
-  }
   
-
-  //   // Validar que no sea una hora posterior al momento actual en la fecha actual
-  //   if (fechaSeleccionada < hoy) {
-  //     alert("No puedes seleccionar fechas u horas anteriores a ahora."); // Validación
-  //     return;
-  //   }
-
-  //   const eventoTitulo = prompt("Introduce el nombre de la reserva:"); // Cambiar con Swal
-  //   const eventoFecha = prompt("Introduce la hora en formato HH:mm (por ejemplo, 14:30):"); // Cambiar con Swal
-
-  //   if (eventoTitulo && eventoFecha) {
-  //     const fechaCompleta = `${info.dateStr}T${eventoFecha}:00`;
-
-  //     this.calendar.addEvent({
-  //       title: eventoTitulo,
-  //       start: fechaCompleta,
-  //     });
-
-  //     // Renderizar para asegurarnos de que la cita se muestre
-  //     this.calendar.render();
-  //   } else {
-  //     alert("Nombre y hora son requeridos para crear la reserva."); // Validación
-  //   }
-  // }
-
+    private async handleDateClick(info: any): Promise<void> {
+      const { value } = await this.showSwal("Crear cita");
+      if (value?.nombre && value?.hora) {
+        const nuevaFecha = this.combineDateAndTime(info.dateStr, value.hora);
+        if (this.isColision(nuevaFecha, 30)) {
+          errorModal("Conflicto de horarios", "Ya existe un evento en esta franja horaria.");
+          return;
+        }
+        this.addEvent(value.nombre, nuevaFecha);
+      }
+    }
+  
+    private async handleEventClick(info: any): Promise<void> {
+      const evento = info.event;
+      const { value, isDenied } = await this.showSwal("Editar cita", evento.title, moment(evento.start).format("HH:mm"), true);
+      if (isDenied) {
+        this.deleteEvent(evento);
+        return;
+      }
+      if (value?.nombre && value?.hora) {
+        const nuevaFecha = this.combineDateAndTime(moment(evento.start).format("YYYY-MM-DD"), value.hora);
+        if (this.isColision(nuevaFecha, 30)) {
+          errorModal("Conflicto de horarios", "Ya existe un evento en esta franja horaria.");
+          return;
+        }
+        this.updateEvent(evento, value.nombre, nuevaFecha);
+      }
+    }
+  
+    private handleEventDrop(info: any): void {
+      const { event } = info;
+      if (event.start && (event.start < new Date() || this.isColision(event.start.toISOString(), 30))) {
+        errorModal("Acción cancelada", "No se puede mover la cita a una fecha anterior o con conflicto de horarios.");
+        info.revert();
+        return;
+      }
+      this.updateTask(event.id, event.title, event.start.toISOString());
+    }
+  
+    private deleteEvent(evento: any): void {
+      deleteModal("¿Desea borrar la cita?", `Se borrará la cita para ${evento.title}`).then(() => {
+        this.$store.dispatch("deleteList", evento.id);
+        evento.remove();
+        OkModal("Cita eliminada", "La cita ha sido eliminada correctamente.");
+      });
+    }
+  
+    private convertirAEventSource(datos: TaskList[]): EventSourceInput {
+      return {
+        events: datos.map((item) => ({
+          id: item.id.toString(),
+          title: item.nombre,
+          start: item.fecha.toString(),
+        })),
+      };
+    }
+  
+    private addEvent(nombre: string, fecha: string): void {
+      const newTask = new TaskList();
+      newTask.nombre = nombre;
+      newTask.fecha = moment(fecha);
+      newTask.usuarioId = this.usuarioID; // Cogerlo desde el store, ver como hacerlo
+      newTask.servicioId = this.servicioID; // Cogerlo desde el store, ver como hacerlo
+      this.addList(newTask);
+      this.calendar.addEvent({ title: nombre, start: fecha, usuarioId: this.usuarioID, servicioId: this.servicioID });
+    }
+  
+    private updateEvent(evento: any, nombre: string, fecha: string): void {
+      evento.setProp("title", nombre);
+      evento.setStart(fecha);
+      this.updateTask(evento.id, nombre, fecha);
+    }
+  
+    private async showSwal(title: string, nombre = "", hora = "", showDeleteButton = false) {
+      const opcionesServicios = serviciosPeluqueriaMock
+        .map((servicio) => `<option value="${servicio.nombre}">${servicio.nombre}</option>`)
+        .join("");
+      return Swal.fire({
+        title,
+        html: `
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <i class="fas fa-user"></i>
+            <input id="nombre" class="swal2-input" placeholder="Nombre del cliente" style="flex: 1;" value="${nombre}">
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <i class="fas fa-clock"></i>
+            <input id="hora" type="time" class="swal2-input" style="flex: 1;" value="${hora}">
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <i class="fas fa-cut"></i>
+            <select id="servicio" class="swal2-input" style="flex: 1;">
+              <option value="" disabled selected>Selecciona un servicio</option>
+              ${opcionesServicios}
+            </select>
+          </div>
+        `,
+        preConfirm: () => ({
+          nombre: (document.getElementById("nombre") as HTMLInputElement).value,
+          hora: (document.getElementById("hora") as HTMLInputElement).value,
+        }),
+        showCancelButton: true,
+        showDenyButton: showDeleteButton,
+        denyButtonText: "Eliminar",
+      });
+    }
+  
+    // mira las colisiones entre citas
+    private isColision(fecha: string, duracionEnMinutos: number): boolean {
+      const inicio = moment(fecha);
+      const fin = moment(fecha).add(duracionEnMinutos, "minutes");
+      return this.calendar.getEvents().some((evento) => {
+        if (evento.start?.toISOString() === fecha) return false;
+        const eventoInicio = moment(evento.start).subtract(duracionEnMinutos, "minutes");
+        const eventoFin = moment(evento.end || evento.start).add(duracionEnMinutos, "minutes");
+        return inicio.isBefore(eventoFin) && fin.isAfter(eventoInicio);
+      });
+    }
+  
+    // añade una cita
+    private addList(item: TaskList): void {
+      if (item.nombre) {
+        this.$store.dispatch("addList", item);
+        this.errAdd = this.getErrorIfExists();
+      }
+    }
+  
+    // actializa los valores de una cita
+    private updateTask(id: string, nombre: string, fecha: string): void {
+      const task = this.getAll().find((t) => t.id === Number(id));
+      if (task) {
+        task.nombre = nombre;
+        task.fecha = moment(fecha);
+        if (!this.isColision(task.fecha.toISOString(), 30)) {
+          this.$store.dispatch("setLista", [task, task.id]);
+          OkModal("Cita actualizada", "La cita se ha movido correctamente.");
+        }
+      }
+    }
+  
+    // ----------------------------------------------------------------------- HELPERS -----------------------------------------------------------------------
+  
+    private getErrorIfExists(): string {
+      return this.$store.getters.getError || "";
+    }
+  
+    private getToday(): string {
+      return new Date().toISOString().split("T")[0];
+    }
+  
+    private combineDateAndTime(date: string, time: string): string {
+      return `${date.split('T')[0]}T${time}:00`;
+    }
+  
+    private getAll(): TaskList[] {
+      return this.$store.getters.getAll;
+    }
 }
 </script>
 

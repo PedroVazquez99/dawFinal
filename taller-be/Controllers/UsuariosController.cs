@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -19,12 +20,27 @@ namespace taller_be.Controllers
         }
 
         // GET: Usuarios
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1, int pageSize = 10)
         {
-              return _context.Usuarios != null ? 
-                          View(await _context.Usuarios.ToListAsync()) :
-                          Problem("Entity set 'PeluqueriaBDDContext.Usuarios'  is null.");
+            // Total de usuarios
+            var totalItems = await _context.Usuarios.CountAsync();
+
+            // Usuarios para la página actual
+            var usuarios = await _context.Usuarios
+                .OrderBy(u => u.Nombre) // Cambiar por otra columna si lo prefieres
+                .Skip((page - 1) * pageSize) // Saltar los elementos de las páginas anteriores
+                .Take(pageSize) // Tomar solo los elementos de la página actual
+                .ToListAsync();
+
+            // Pasar datos a la vista
+            ViewData["TotalItems"] = totalItems; // Total de elementos
+            ViewData["Page"] = page; // Página actual
+            ViewData["PageSize"] = pageSize; // Tamaño de página
+            ViewData["TotalPages"] = (int)Math.Ceiling((double)totalItems / pageSize); // Total de páginas
+
+            return View(usuarios);
         }
+
 
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(decimal? id)
@@ -67,7 +83,7 @@ namespace taller_be.Controllers
         }
 
         // GET: Usuarios/Edit/5
-        public async Task<IActionResult> Edit(decimal? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Usuarios == null)
             {
@@ -87,7 +103,7 @@ namespace taller_be.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(decimal id, [Bind("Id,Nombre,Email,PasswordHash,Rol,FechaRegistro")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Email,Rol,FechaRegistro")] Usuario usuario)
         {
             if (id != usuario.Id)
             {
@@ -98,7 +114,26 @@ namespace taller_be.Controllers
             {
                 try
                 {
-                    _context.Update(usuario);
+                    var usuarioExistente = await _context.Usuarios.FindAsync(id);
+
+                    if (usuarioExistente == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // Actualizar solo los campos modificables
+                    usuarioExistente.Nombre = usuario.Nombre;
+                    usuarioExistente.Email = usuario.Email;
+                    usuarioExistente.Rol = usuario.Rol;
+                    usuarioExistente.FechaRegistro = usuario.FechaRegistro;
+
+                    if (!string.IsNullOrEmpty(usuario.PasswordHash))
+                    {
+                        var passwordHasher = new PasswordHasher<Usuario>();
+                        usuarioExistente.PasswordHash = passwordHasher.HashPassword(usuarioExistente, usuario.PasswordHash);
+                    }
+
+                    _context.Update(usuarioExistente);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -117,8 +152,9 @@ namespace taller_be.Controllers
             return View(usuario);
         }
 
+
         // GET: Usuarios/Delete/5
-        public async Task<IActionResult> Delete(decimal? id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Usuarios == null)
             {
@@ -138,7 +174,7 @@ namespace taller_be.Controllers
         // POST: Usuarios/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(decimal id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Usuarios == null)
             {

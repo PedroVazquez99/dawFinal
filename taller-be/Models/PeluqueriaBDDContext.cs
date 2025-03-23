@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using taller_be.Models;
 
 namespace taller_be.Models
 {
@@ -70,12 +71,6 @@ namespace taller_be.Models
                     .HasColumnName("visible")
                     .HasDefaultValueSql("('S')")
                     .IsFixedLength();
-
-                entity.HasOne(d => d.ListaNavigation)
-                    .WithMany(p => p.ItemTasks)
-                    .HasForeignKey(d => d.Lista)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Tasks_Lists");
             });
 
             modelBuilder.Entity<TaskList>(entity =>
@@ -151,5 +146,7 @@ namespace taller_be.Models
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+        public DbSet<taller_be.Models.Servicio>? Servicio { get; set; }
     }
 }

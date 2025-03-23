@@ -107,13 +107,13 @@ export default new Vuex.Store({
         });
     },
     // Elimina una lista contra la BBDD
-    deleteList({ commit }, {list, index}) {
-    
+    deleteList({ commit }, index) {
+      console.log('Index de la lista a borrar');
+      console.log(index);
       serviceAPI
-        .delete("APIListas", list.id)
+        .delete("APIListas", index)
         .then((r) => {
           if (r.status == APIStatus.OK) {
-            console.log(list);
             commit("del", index);
           } else {
             this.state.error = r.error;
@@ -167,6 +167,17 @@ export default new Vuex.Store({
     logout({ commit }) {
       commit("clearAuthenticatedUser");
     },
+
+    // Obtiene el usuario autenticado
+    async fetchCurrentUser({ commit }) {
+      const response = await serviceAPI.getCurrentUser();
+      if (response.status === APIStatus.OK) {
+        commit("setAuthenticatedUser", response.respuesta); // Guarda los datos del usuario en el state
+      } else {
+        commit("clearAuthenticatedUser"); // Limpia el usuario si no está autenticado
+        throw new Error(response.error);
+      }
+    }
     
   },
   

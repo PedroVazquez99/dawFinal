@@ -33,7 +33,7 @@ namespace taller_be
 
         // GET: api/APIListas/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TaskList>> GetTaskList(decimal id)
+        public async Task<ActionResult<TaskList>> GetTaskList(int id)
         {
             if (_context.TaskLists == null)
             {
@@ -52,7 +52,7 @@ namespace taller_be
         // PUT: api/APIListas/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTaskList(decimal id, TaskList taskList)
+        public async Task<IActionResult> PutTaskList(int id, TaskList taskList)
         {
             if (id != taskList.Id)
             {
@@ -98,7 +98,7 @@ namespace taller_be
 
         // DELETE: api/APIListas/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTaskList(decimal id)
+        public async Task<IActionResult> DeleteTaskList(int id)
         {
             if (_context.TaskLists == null)
             {
@@ -116,7 +116,7 @@ namespace taller_be
             return NoContent();
         }
 
-        private bool TaskListExists(decimal id)
+        private bool TaskListExists(int id)
         {
             return (_context.TaskLists?.Any(e => e.Id == id)).GetValueOrDefault();
         }

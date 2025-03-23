@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Inicio de sesión";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <div class="card shadow-sm p-4 border-0 rounded-3">
+                <h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+                @if (ViewData["error"] != null && ViewData["error"].ToString() != "")
+                {
+                    <div class="alert alert-danger text-center">
+                        Error: @ViewData["error"].ToString()
+                    </div>
+                }
+
+                <form method="post" action="/api/APIUsuarios/login" id="loginForm">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico:</label>
+                        <input type="email" name="email" id="email" class="form-control rounded-pill" placeholder="Ingresa tu correo" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <input type="password" name="password" id="password" class="form-control rounded-pill" placeholder="Ingresa tu contraseña" required />
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary rounded-pill">Acceder</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+        // Evento de submit del formulario
+        document.getElementById("loginForm").onsubmit = async function (event) {
+            event.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            const loginRequest = {
+                email: email,
+                password: password
+            };
+
+            try {
+                const response = await fetch('/api/APIUsuarios/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(loginRequest),
+                });
+
+                if (response.ok) {
+                    window.location.href = '/#';
+                } else {
+                    const errorData = await response.json();
+                    alert('Error: ' + errorData.message);
+                }
+            } catch (error) {
+                console.error('Error en la solicitud de login:', error);
+                alert('Ocurrió un error al intentar iniciar sesión.');
+            }
+        };
+    </script>
+}

@@ -1,4 +1,5 @@
 wwwroot\css\app.bd071c00.css
+wwwroot\css\bootstrap.min.css
 wwwroot\favicon.ico
 wwwroot\img\icons\android-chrome-192x192.png
 wwwroot\img\icons\android-chrome-512x512.png
@@ -22,6 +23,7 @@ wwwroot\js\about.js
 wwwroot\js\app.e32529b0.js
 wwwroot\js\app.e32529b0.js.map
 wwwroot\js\app.js
+wwwroot\js\bootstrap.bundle.min.js
 wwwroot\js\chunk-vendors.41ea2f5f.js
 wwwroot\js\chunk-vendors.41ea2f5f.js.map
 wwwroot\js\chunk-vendors.js

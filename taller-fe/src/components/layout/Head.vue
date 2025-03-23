@@ -9,9 +9,9 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <router-link to="/" class="nav-link text-dark">{{$t('app.inicio')}}</router-link>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <router-link to="/about" class="nav-link text-dark">{{$t('app.acerca_de')}}</router-link>
                         </li>
@@ -19,7 +19,7 @@
                             <router-link to="/otros" class="nav-link text-dark">{{$t('app.otros')}}</router-link>
                         </li>
                         <li v-if="isAuthenticated" class="nav-item">
-                            <router-link to="/reserva" class="nav-link text-dark">{{$t('app.reserva')}}</router-link>
+                            <router-link :to="isAdmin ? '/reserva' : '/mi-reserva'"  class="nav-link text-dark">{{$t('app.reserva')}}</router-link>
                         </li>
                         <li v-if="!isAuthenticated" class="nav-item">
                             <router-link to="/login" class="nav-link text-dark">Login</router-link>
