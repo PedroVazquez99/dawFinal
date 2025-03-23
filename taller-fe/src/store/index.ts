@@ -167,6 +167,17 @@ export default new Vuex.Store({
     logout({ commit }) {
       commit("clearAuthenticatedUser");
     },
+
+    // Obtiene el usuario autenticado
+    async fetchCurrentUser({ commit }) {
+      const response = await serviceAPI.getCurrentUser();
+      if (response.status === APIStatus.OK) {
+        commit("setAuthenticatedUser", response.respuesta); // Guarda los datos del usuario en el state
+      } else {
+        commit("clearAuthenticatedUser"); // Limpia el usuario si no está autenticado
+        throw new Error(response.error);
+      }
+    }
     
   },
   

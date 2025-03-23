@@ -26,6 +26,15 @@
     mounted() {
       if (!this.$refs.calendar) return;
   
+      //Recupera el usuario
+      this.$store.dispatch("fetchCurrentUser")
+      .then(() => {
+        console.log("Usuario cargado:", this.currentUser);
+      })
+      .catch((error) => {
+        console.error("Error al cargar el usuario:", error);
+      });
+
       this.$store.dispatch("getLists");
       this.errGet = this.getErrorIfExists();
   
@@ -60,6 +69,11 @@
   
     beforeDestroy() {
       this.calendar?.destroy();
+    }
+
+    //Metodo para obtener usuario de store
+    get currentUser() {
+    return this.$store.getters.getCurrentUser;
     }
   
     private async handleDateClick(info: any): Promise<void> {

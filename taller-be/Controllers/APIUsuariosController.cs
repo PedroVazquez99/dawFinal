@@ -204,5 +204,29 @@ namespace taller_be.Controllers
 
             return Redirect("/Account/Login");
         }
+
+        [HttpGet("currentUser")]
+        public IActionResult GetCurrentUser()
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Unauthorized("El usuario no está autenticado.");
+            }
+
+            var userIdClaim = User.FindFirst("UsuarioId");
+            if (userIdClaim == null)
+            {
+                return NotFound("El ID del usuario no está disponible.");
+            }
+
+            return Ok(new
+            {
+                UserId = userIdClaim.Value,
+                Name = User.FindFirst(ClaimTypes.Name)?.Value,
+                Email = User.FindFirst(ClaimTypes.Email)?.Value,
+                Role = User.FindFirst(ClaimTypes.Role)?.Value
+            });
+        }
+
     }
 }
