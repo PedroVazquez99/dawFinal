@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -82,7 +83,7 @@ namespace taller_be.Controllers
         }
 
         // GET: Usuarios/Edit/5
-        public async Task<IActionResult> Edit(decimal? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Usuarios == null)
             {
@@ -102,7 +103,7 @@ namespace taller_be.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(decimal id, [Bind("Id,Nombre,Email,PasswordHash,Rol,FechaRegistro")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Email,Rol,FechaRegistro")] Usuario usuario)
         {
             if (id != usuario.Id)
             {
@@ -113,7 +114,26 @@ namespace taller_be.Controllers
             {
                 try
                 {
-                    _context.Update(usuario);
+                    var usuarioExistente = await _context.Usuarios.FindAsync(id);
+
+                    if (usuarioExistente == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // Actualizar solo los campos modificables
+                    usuarioExistente.Nombre = usuario.Nombre;
+                    usuarioExistente.Email = usuario.Email;
+                    usuarioExistente.Rol = usuario.Rol;
+                    usuarioExistente.FechaRegistro = usuario.FechaRegistro;
+
+                    if (!string.IsNullOrEmpty(usuario.PasswordHash))
+                    {
+                        var passwordHasher = new PasswordHasher<Usuario>();
+                        usuarioExistente.PasswordHash = passwordHasher.HashPassword(usuarioExistente, usuario.PasswordHash);
+                    }
+
+                    _context.Update(usuarioExistente);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -131,6 +151,7 @@ namespace taller_be.Controllers
             }
             return View(usuario);
         }
+
 
         // GET: Usuarios/Delete/5
         public async Task<IActionResult> Delete(decimal? id)
