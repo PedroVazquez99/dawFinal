@@ -28,6 +28,15 @@ export default class FullCalendarComponent extends Vue {
   mounted() {
     if (!this.$refs.calendar) return;
 
+    // Recupera los servicios
+    this.$store.dispatch("fetchServicios")
+      .then(() => {
+        console.log("Servicios cargados:", this.servicios);
+      })
+      .catch((error) => {
+        console.error("Error al cargar los servicios:", error);
+      });
+      
     this.$store.dispatch("getLists");
     this.errGet = this.getErrorIfExists();
 
@@ -57,6 +66,11 @@ export default class FullCalendarComponent extends Vue {
     });
 
     this.calendar.render();
+  }
+
+  // Acceso a los servicios
+  private get serviciosDelStore() {
+    return this.$store.state.servicios;
   }
 
   beforeDestroy() {
