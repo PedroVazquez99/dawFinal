@@ -1,0 +1,68 @@
+﻿@using Microsoft.AspNetCore.Authentication.Cookies
+@using System.Security.Claims
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212529;">
+    <div class="container-fluid">
+        <!-- Título a la izquierda -->
+        <a class="navbar-brand fs-3 text-white" href="/">Peluquería</a>
+
+        <!-- Botón para colapsar el menú en pantallas pequeñas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces centrados (colapsables en pantallas pequeñas) -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <!-- mx-auto para centrar los enlaces -->
+                <li class="nav-item mx-3">
+                    <a class="nav-link text-white fs-4" href="/">Inicio</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link text-white fs-4" href="/#/about">About</a>
+                </li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white fs-4" href="/#/reserva">Reservas</a>
+                    </li>
+
+                    @if (User.IsInRole("admin"))
+                    {
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-white fs-4" href="/Usuarios">Usuarios</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-white fs-4" href="/Servicios">Servicios</a>
+                        </li>
+                    }
+                }
+                else
+                {
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white fs-4" href="/Account/Login">Login</a>
+                    </li>
+                }
+            </ul>
+        </div>
+
+        <!-- Avatar a la derecha -->
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="nav-item dropdown ms-3">
+                <a class="nav-link dropdown-toggle text-white fs-4 d-flex align-items-center" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; font-size: 20px;">
+                        @User.Identity.Name.Substring(0, 1).ToUpper() <!-- Inicial del usuario -->
+                    </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li>
+                        <form action="/api/APIUsuarios/logout" method="post" class="d-inline">
+                            <button type="submit" class="dropdown-item btn btn-danger w-100">Cerrar sesión</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        }
+    </div>
+</nav>

@@ -1,0 +1,51 @@
+﻿@model taller_be.Models.Servicio
+
+@{
+    ViewData["Title"] = "Eliminar Servicio";
+}
+
+<!-- Título centrado con mayor separación -->
+<h1 class="text-center mb-4">Eliminar Servicio</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <!-- Mensaje de confirmación -->
+            <h3 class="text-center text-danger mb-4">¿Estás seguro de que deseas eliminar este servicio?</h3>
+
+            <h4>Información del Servicio</h4>
+            <hr />
+
+            <!-- Detalles del servicio -->
+            <dl class="row">
+                <dt class="col-sm-3">Nombre:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Nombre)</dd>
+
+                <dt class="col-sm-3">Descripción:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Descripcion)</dd>
+
+                <dt class="col-sm-3">Precio:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Precio)</dd>
+
+                <dt class="col-sm-3">Duración:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Duracion)</dd>
+            </dl>
+
+            <!-- Botones de confirmación con más separación -->
+            <div class="d-flex justify-content-between mt-4">
+                <!-- Formulario para eliminar con botón más grande -->
+                <form asp-action="Delete" class="d-inline">
+                    <input type="hidden" asp-for="Id" />
+                    <button type="submit" class="btn btn-danger btn-sm w-100">
+                        <i class="bi bi-trash"></i> Eliminar Servicio
+                    </button>
+                </form>
+
+                <!-- Botón para volver a la lista, más estrecho -->
+                <a class="btn btn-secondary btn-sm" asp-action="Index">
+                    <i class="bi bi-arrow-left"></i> Volver a la lista
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

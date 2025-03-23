@@ -9,6 +9,9 @@ using taller_be.Models;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using NuGet.Protocol.Plugins;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 
 namespace taller_be.Controllers
 {
@@ -147,10 +150,21 @@ namespace taller_be.Controllers
                 return Unauthorized("Contraseña incorrecta.");
             }
 
-            // Guardar datos en la sesión
-            HttpContext.Session.SetString("UsuarioId", usuario.Id.ToString());
-            HttpContext.Session.SetString("UsuarioNombre", usuario.Nombre);
-            HttpContext.Session.SetString("UsuarioRol", usuario.Rol);
+            // Crear los claims
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Name, usuario.Nombre),
+                new Claim(ClaimTypes.Email, usuario.Email),
+                new Claim(ClaimTypes.Role, usuario.Rol),
+                new Claim("UsuarioId", usuario.Id.ToString())
+            };
+
+            // Crear un ClaimsIdentity con los claims
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+            // Crear un ClaimsPrincipal y autenticar al usuario
+            var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimsPrincipal);
 
             return Ok(new
             {
@@ -180,6 +194,15 @@ namespace taller_be.Controllers
                 // Comparar con el hash almacenado
                 return hashString == storedHash.ToLower();
             }
+        }
+
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout()
+        {
+            // Eliminar la cookie de autenticación
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            return Redirect("/Account/Login");
         }
     }
 }

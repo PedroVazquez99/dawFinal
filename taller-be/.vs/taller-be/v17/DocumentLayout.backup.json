@@ -1,30 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\",
+  "WorkspaceRootPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\dawfinal\\taller-be\\creacionbd.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:creacionbd.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\navbar\\dawfinal\\taller-be\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\dawfinal\\taller-be\\controllers\\apiusuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:controllers\\apiusuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\navbar\\dawfinal\\taller-be\\views\\servicios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\servicios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\dawfinal\\taller-be\\controllers\\listascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:controllers\\listascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\navbar\\dawfinal\\taller-be\\views\\servicios\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\servicios\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\dawfinal\\taller-be\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\navbar\\dawfinal\\taller-be\\views\\servicios\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\servicios\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\dawfinal\\taller-be\\api_getlistas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:api_getlistas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\navbar\\dawfinal\\taller-be\\views\\servicios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\servicios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\dawfinal\\taller-be\\creacionbd.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:creacionbd.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\navbar\\dawfinal\\taller-be\\views\\servicios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\servicios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\navbar\\dawfinal\\taller-be\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,63 +62,94 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreacionBD.sql ",
-              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\CreacionBD.sql",
-              "RelativeDocumentMoniker": "CreacionBD.sql",
-              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\CreacionBD.sql",
-              "RelativeToolTip": "CreacionBD.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-03-18T20:33:42.23Z",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Servicios\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Servicios\\Delete.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Servicios\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Servicios\\Delete.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAwwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T01:42:16.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Servicios\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Servicios\\Create.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Servicios\\Create.cshtml",
+              "RelativeToolTip": "Views\\Servicios\\Create.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T01:42:16.218Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Class.cs",
-              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\Models\\Class.cs",
-              "RelativeDocumentMoniker": "Models\\Class.cs",
-              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\Models\\Class.cs",
-              "RelativeToolTip": "Models\\Class.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T15:42:37.452Z"
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Servicios\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Servicios\\Details.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Servicios\\Details.cshtml",
+              "RelativeToolTip": "Views\\Servicios\\Details.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T01:42:15.183Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "APIUsuariosController.cs",
-              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\Controllers\\APIUsuariosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\APIUsuariosController.cs",
-              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\Controllers\\APIUsuariosController.cs",
-              "RelativeToolTip": "Controllers\\APIUsuariosController.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAAwJkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T12:09:52.033Z"
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Servicios\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Servicios\\Edit.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Servicios\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Servicios\\Edit.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAwwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T01:42:14.237Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "API_getListas.cs",
-              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\API_getListas.cs",
-              "RelativeDocumentMoniker": "API_getListas.cs",
-              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\API_getListas.cs",
-              "RelativeToolTip": "API_getListas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T23:43:52.02Z"
+              "DocumentIndex": 0,
+              "Title": "_NavBar.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_NavBar.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_NavBar.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAADwv0QAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T01:32:32.804Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ListasController.cs",
-              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\Controllers\\ListasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ListasController.cs",
-              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\dawFinal\\taller-be\\Controllers\\ListasController.cs",
-              "RelativeToolTip": "Controllers\\ListasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T23:44:13.645Z"
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T01:18:09.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Servicios\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Servicios\\Index.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\NavBar\\dawFinal\\taller-be\\Views\\Servicios\\Index.cshtml",
+              "RelativeToolTip": "Views\\Servicios\\Index.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T01:14:00.016Z",
+              "EditorCaption": ""
             }
           ]
         }
