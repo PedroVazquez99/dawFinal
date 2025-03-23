@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ceVfh8QRZzlAWoZBRvRifS7Q2gZGGmy1gKstr3TXd9A=",
+  "Hash": "Syw1g5iBldNP1tuJdag836k5LUY3h6pj3Bg40AGe7fE=",
   "Source": "taller-be",
   "BasePath": "_content/taller-be",
   "Mode": "Default",
@@ -2170,7 +2170,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 00:52:22 GMT"
+          "Value": "Sun, 23 Mar 2025 01:04:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2215,7 +2215,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Mar 2025 00:52:22 GMT"
+          "Value": "Sun, 23 Mar 2025 01:04:17 GMT"
         },
         {
           "Name": "Cache-Control",

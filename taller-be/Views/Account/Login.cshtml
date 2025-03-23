@@ -2,30 +2,39 @@
     ViewData["Title"] = "Inicio de sesión";
 }
 
-@if (ViewData["error"] != null && ViewData["error"].ToString() != "")
-{
-    <div class="alert alert-danger">Error: @ViewData["error"].ToString()</div>
-}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <div class="card shadow-sm p-4 border-0 rounded-3">
+                <h2 class="text-center mb-4">@ViewData["Title"]</h2>
 
-<form method="post" action="/api/APIUsuarios/login" class="form" id="loginForm">
-    <div class="form-group row">
-        <label for="usu" class="form-label col-md-1">Correo Electrónico:</label>
-        <div class="col-md-3">
-            <input type="email" name="email" id="email" class="form-control" required />
+                @if (ViewData["error"] != null && ViewData["error"].ToString() != "")
+                {
+                    <div class="alert alert-danger text-center">
+                        Error: @ViewData["error"].ToString()
+                    </div>
+                }
+
+                <form method="post" action="/api/APIUsuarios/login" id="loginForm">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico:</label>
+                        <input type="email" name="email" id="email" class="form-control rounded-pill" placeholder="Ingresa tu correo" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <input type="password" name="password" id="password" class="form-control rounded-pill" placeholder="Ingresa tu contraseña" required />
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary rounded-pill">Acceder</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-    <div class="form-group row">
-        <label for="pwd" class="form-label col-md-1">Contraseña:</label>
-        <div class="col-md-3">
-            <input type="password" name="password" id="password" class="form-control" required />
-        </div>
-    </div>
-    <div class="form-group row">
-        <div class="offset-md-3">
-            <input type="submit" class="btn btn-primary" value="Acceder" />
-        </div>
-    </div>
-</form>
+</div>
+
 
 @section Scripts {
     <script>
