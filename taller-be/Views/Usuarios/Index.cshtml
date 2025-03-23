@@ -1,59 +1,108 @@
 ﻿@model IEnumerable<taller_be.Models.Usuario>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Lista de Usuarios";
+    int totalItems = ViewData["TotalItems"] as int? ?? 0;
+    int page = ViewData["Page"] as int? ?? 1;
+    int pageSize = ViewData["PageSize"] as int? ?? 10;
+    int totalPages = ViewData["TotalPages"] as int? ?? 1;
 }
 
-<h1>Index</h1>
+<div class="container mt-5">
+    <!-- Título -->
+    <div class="text-center mb-4">
+        <h1 class="display-4 text-primary fw-bold">Gestión de Usuarios</h1>
+        <p class="text-muted">Administra usuarios con facilidad utilizando esta herramienta dinámica.</p>
+    </div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PasswordHash)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Rol)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaRegistro)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PasswordHash)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rol)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaRegistro)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+    <!-- Botón para crear usuario -->
+    <div class="d-flex justify-content-end mb-3">
+        <a asp-action="Create" class="btn btn-success btn-lg shadow-sm">
+            <i class="fas fa-user-plus"></i>
+        </a>
+    </div>
+
+    <!-- Tabla de usuarios -->
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered shadow-sm">
+            <thead class="bg-primary text-white">
+                <tr class="text-center">
+                    <th>@Html.DisplayNameFor(model => model.Nombre)</th>
+                    <th>@Html.DisplayNameFor(model => model.Email)</th>
+                    <th>@Html.DisplayNameFor(model => model.PasswordHash)</th>
+                    <th>@Html.DisplayNameFor(model => model.Rol)</th>
+                    <th>@Html.DisplayNameFor(model => model.FechaRegistro)</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                        <td>@Html.DisplayFor(modelItem => item.PasswordHash)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Rol)</td>
+                        <td>@Html.DisplayFor(modelItem => item.FechaRegistro)</td>
+                        <td class="text-center">
+                            <!-- Botón Editar -->
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-info btn-sm">
+                                <i class="fas fa-edit"></i> Editar
+                            </a>
+                            <!-- Botón Eliminar con confirmación usando SweetAlert2 -->
+                            <button class="btn btn-outline-danger btn-sm"
+                                    onclick="confirmDelete('@Url.Action("Delete", new { id = item.Id })')">
+                                <i class="fas fa-trash-alt"></i> Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Controles de paginación -->
+    <nav class="mt-4">
+        <ul class="pagination justify-content-center">
+            <!-- Botón Anterior -->
+            <li class="page-item @(page <= 1 ? "disabled" : "")">
+                <a class="page-link" asp-action="Index" asp-route-page="@(page - 1)">Anterior</a>
+            </li>
+
+            <!-- Números de página -->
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == page ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
+                </li>
+            }
+
+            <!-- Botón Siguiente -->
+            <li class="page-item @(page >= totalPages ? "disabled" : "")">
+                <a class="page-link" asp-action="Index" asp-route-page="@(page + 1)">Siguiente</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+
+@section Scripts {
+    <script>
+        function confirmDelete(url) {
+            Swal.fire({
+                title: '¿Estás seguro?',
+                text: "No podrás revertir esta acción.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Sí, eliminar',
+                cancelButtonText: 'Cancelar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = url;
+                }
+            });
+        }
+    </script>
 }
-    </tbody>
-</table>
