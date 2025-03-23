@@ -43,7 +43,7 @@ namespace taller_be.Controllers
 
 
         // GET: Usuarios/Details/5
-        public async Task<IActionResult> Details(decimal? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Usuarios == null)
             {

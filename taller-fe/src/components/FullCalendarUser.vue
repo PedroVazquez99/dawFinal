@@ -37,6 +37,16 @@
         console.error("Error al cargar el usuario:", error);
       });
 
+      // Recupera los servicios
+      this.$store.dispatch("fetchServicios")
+      .then(() => {
+        console.log("Servicios cargados:", this.servicios);
+      })
+      .catch((error) => {
+        console.error("Error al cargar los servicios:", error);
+      });
+
+
       this.$store.dispatch("getLists");
       this.errGet = this.getErrorIfExists();
   
@@ -76,6 +86,10 @@
     //Metodo para obtener usuario de store
     get currentUser() {
     return this.$store.getters.getCurrentUser;
+    }
+    // Acceso a los servicios
+    private get serviciosDelStore() {
+    return this.$store.state.servicios;
     }
   
     private async handleDateClick(info: any): Promise<void> {
