@@ -11,7 +11,8 @@ export default new Vuex.Store({
   state: {
     listas: Array<TaskList>(),
     error: "",
-    authenticatedUser: null as { username: string } | null
+    authenticatedUser: null as { username: string } | null,
+    servicios: []
   },
   getters: {
     getAll(state) {
@@ -67,7 +68,9 @@ export default new Vuex.Store({
     clearAuthenticatedUser(state) {
       state.authenticatedUser = null; // Limpia el usuario autenticado
     },
- 
+    setServicios(state, servicios) {
+      state.servicios = servicios; // Recoge los servicios
+    },
   },
   actions: {
     // Obtiene el listado de la BBDD
@@ -177,7 +180,23 @@ export default new Vuex.Store({
         commit("clearAuthenticatedUser"); // Limpia el usuario si no está autenticado
         throw new Error(response.error);
       }
-    }
+    },
+
+    // Obtiene los servicios
+    async fetchServicios({ commit }) {
+      try {
+        const response = await serviceAPI.getServicios("APIServicios");
+        if (response.status === APIStatus.OK) {
+          commit("setServicios", response.respuesta);
+        } else {
+          throw new Error(response.error);
+        }
+      } catch (error) {
+        console.error("Error fetching servicios:", error);
+        commit("setServicios", []);
+        this.state.error = error instanceof Error ? error.message : String(error);
+      }
+    },
     
   },
   

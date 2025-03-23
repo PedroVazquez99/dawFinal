@@ -144,7 +144,7 @@ class APIService {
     async getCurrentUser() {
         const resp = new APIResponse();
       
-        await http.get("/APIUsuarios/me")
+        await http.get("/APIUsuarios/currentUser")
           .then((respuesta) => {
             resp.status = APIStatus.OK;
             resp.respuesta = respuesta.data; // Información del usuario
@@ -155,8 +155,24 @@ class APIService {
           });
       
         return resp;
-      }
-      
+    }
+    
+    //Recuperar Servicios
+    async getServicios(ruta:string) {
+        const resp = new APIResponse();
+
+        await http.get(ruta)
+            .then((respuesta) => {
+                resp.status = APIStatus.OK;
+                resp.respuesta = respuesta.data;
+            })
+            .catch((error) => {
+                resp.status = APIStatus.ERR;
+                resp.error = error.toString();
+            });
+
+        return resp;
+    }
 
 }
 export default new APIService();
