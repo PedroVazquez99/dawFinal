@@ -219,6 +219,16 @@
   },
   {
     "ContainingType": "taller_be.Controllers.APIUsuariosController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "api/APIUsuarios/currentUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "taller_be.Controllers.APIUsuariosController",
     "Method": "Login",
     "RelativePath": "api/APIUsuarios/login",
     "HttpMethod": "POST",

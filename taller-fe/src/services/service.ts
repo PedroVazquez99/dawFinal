@@ -140,7 +140,23 @@ class APIService {
         return resp;
     }
     
-
+    //Recupera el usuario actual
+    async getCurrentUser() {
+        const resp = new APIResponse();
+      
+        await http.get("/APIUsuarios/me")
+          .then((respuesta) => {
+            resp.status = APIStatus.OK;
+            resp.respuesta = respuesta.data; // Información del usuario
+          })
+          .catch((error) => {
+            resp.status = APIStatus.ERR;
+            resp.error = error.toString();
+          });
+      
+        return resp;
+      }
+      
 
 }
 export default new APIService();
