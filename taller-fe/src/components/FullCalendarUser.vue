@@ -15,6 +15,7 @@
   import moment from "moment";
   import { OkModal, deleteModal, errorModal } from "./modals/ModalAdapter";
   import { serviciosPeluqueriaMock } from "@/mocks/servicios.mock";
+  import { Citas } from "@/mocks/miscitas.mock";
   
   @Component
   export default class FullCalendarUser extends Vue {
@@ -22,7 +23,8 @@
     private calendar!: Calendar;
     private errGet = "";
     private errAdd = "";
-  
+    private usuarioID = 1; // Cogerlo desde el store, ver como hacerlo
+    private servicioID = 1; // Cogerlo desde el store, ver como hacerlo
     mounted() {
       if (!this.$refs.calendar) return;
   
@@ -49,7 +51,7 @@
         dayMaxEvents: 3,
         timeZone: 'UTC',
         headerToolbar: {
-          left: "dayGridMonth,timeGridWeek,timeGridDay",
+          left: "",
           center: "title",
           right: "prev,next today",
         },
@@ -137,8 +139,10 @@
       const newTask = new TaskList();
       newTask.nombre = nombre;
       newTask.fecha = moment(fecha);
+      newTask.usuarioId = this.usuarioID; // Cogerlo desde el store, ver como hacerlo
+      newTask.servicioId = this.servicioID; // Cogerlo desde el store, ver como hacerlo
       this.addList(newTask);
-      this.calendar.addEvent({ title: nombre, start: fecha });
+      this.calendar.addEvent({ title: nombre, start: fecha, usuarioId: this.usuarioID, servicioId: this.servicioID });
     }
   
     private updateEvent(evento: any, nombre: string, fecha: string): void {

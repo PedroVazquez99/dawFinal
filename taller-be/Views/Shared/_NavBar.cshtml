@@ -24,7 +24,7 @@
                 @if (User.Identity.IsAuthenticated)
                 {
                     <li class="nav-item mx-3">
-                        <a class="nav-link text-white fs-4" href="/#/reserva">Reservas</a>
+                        <a class="nav-link text-white fs-4" href="@((User.IsInRole("admin") ? "/#/reserva" : "/#/mi-reserva"))">Reservas</a>
                     </li>
 
                     @if (User.IsInRole("admin"))

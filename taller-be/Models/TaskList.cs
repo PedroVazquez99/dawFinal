@@ -30,13 +30,13 @@ namespace taller_be.Models
         public int UsuarioId { get; set; } 
 
         [ForeignKey("UsuarioId")]
-        public virtual Usuario Usuario { get; set; } = null!;
+        public virtual Usuario? Usuario { get; set; }
 
         [Required]
         public int ServicioId { get; set; } 
 
         [ForeignKey("ServicioId")]
-        public virtual Servicio Servicio { get; set; } = null!;
+        public virtual Servicio? Servicio { get; set; }
 
     }
 }

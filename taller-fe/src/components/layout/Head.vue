@@ -19,7 +19,7 @@
                             <router-link to="/otros" class="nav-link text-dark">{{$t('app.otros')}}</router-link>
                         </li>
                         <li v-if="isAuthenticated" class="nav-item">
-                            <router-link to="/reserva" class="nav-link text-dark">{{$t('app.reserva')}}</router-link>
+                            <router-link :to="isAdmin ? '/reserva' : '/mi-reserva'"  class="nav-link text-dark">{{$t('app.reserva')}}</router-link>
                         </li>
                         <li v-if="!isAuthenticated" class="nav-item">
                             <router-link to="/login" class="nav-link text-dark">Login</router-link>

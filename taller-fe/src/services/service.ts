@@ -125,7 +125,7 @@ class APIService {
             const data = respuesta.data;
             resp.status = APIStatus.OK;
             resp.respuesta = data; // Aquí puedes manejar la respuesta del servidor
-            console.log(data);
+            console.log(respuesta);
             if (data.usuario.rol === 'admin') {
                 console.log("Es admin");
                 // window.location.href = '/Usuarios'; // Redirige a Razor Pages
