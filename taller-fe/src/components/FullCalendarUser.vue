@@ -42,7 +42,7 @@
         dayMaxEvents: 3,
         timeZone: 'UTC',
         headerToolbar: {
-          left: "dayGridMonth,timeGridWeek,timeGridDay",
+          left: "",
           center: "title",
           right: "prev,next today",
         },
@@ -125,10 +125,10 @@
       const newTask = new TaskList();
       newTask.nombre = nombre;
       newTask.fecha = moment(fecha);
-      newTask.UsuarioId = this.usuarioID; // Cogerlo desde el store, ver como hacerlo
-      newTask.ServicioId = this.servicioID; // Cogerlo desde el store, ver como hacerlo
+      newTask.usuarioId = this.usuarioID; // Cogerlo desde el store, ver como hacerlo
+      newTask.servicioId = this.servicioID; // Cogerlo desde el store, ver como hacerlo
       this.addList(newTask);
-      this.calendar.addEvent({ title: nombre, start: fecha, UsuarioId: this.usuarioID, ServicioId: this.servicioID });
+      this.calendar.addEvent({ title: nombre, start: fecha, usuarioId: this.usuarioID, servicioId: this.servicioID });
     }
   
     private updateEvent(evento: any, nombre: string, fecha: string): void {

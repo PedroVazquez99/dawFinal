@@ -6,6 +6,6 @@ export default class TaskList {
   color = "#FFFFFF";
   visible=true;
   fecha:moment.Moment=moment();
-  UsuarioId = 0;
-  ServicioId = 0;
+  usuarioId = 0;
+  servicioId = 0;
 }
