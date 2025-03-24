@@ -106,13 +106,18 @@
   
     private async handleEventClick(info: any): Promise<void> {
       const evento = info.event;
-      const { value, isDenied } = await this.showSwal("Editar cita", evento.title, moment(evento.start).format("HH:mm"), true);
+      const { value, isDenied } = await this.showSwal(
+        "Editar cita",
+        evento.title,
+        moment.utc(evento.start).format("HH:mm"), // Display time in UTC
+        true
+      );
       if (isDenied) {
         this.deleteEvent(evento);
         return;
       }
       if (value?.nombre && value?.hora) {
-        const nuevaFecha = this.combineDateAndTime(moment(evento.start).format("YYYY-MM-DD"), value.hora);
+        const nuevaFecha = this.combineDateAndTime(moment.utc(evento.start).format("YYYY-MM-DD"), value.hora);
         if (this.isColision(nuevaFecha, 30)) {
           errorModal("Conflicto de horarios", "Ya existe un evento en esta franja horaria.");
           return;
@@ -152,11 +157,15 @@
     private addEvent(nombre: string, fecha: string): void {
       const newTask = new TaskList();
       newTask.nombre = nombre;
-      newTask.fecha = moment(fecha);
+      newTask.fecha = moment.utc(fecha); // Store in UTC
       newTask.usuarioId = this.usuarioID; // Cogerlo desde el store, ver como hacerlo
       newTask.servicioId = this.servicioID; // Cogerlo desde el store, ver como hacerlo
       this.addList(newTask);
-      this.calendar.addEvent({ title: nombre, start: fecha, usuarioId: this.usuarioID, servicioId: this.servicioID });
+      this.calendar.addEvent({
+        title: nombre,
+        start: fecha, // Use UTC ISO string
+        extendedProps: { usuarioId: this.usuarioID, servicioId: this.servicioID },
+      });
     }
   
     private updateEvent(evento: any, nombre: string, fecha: string): void {
@@ -223,7 +232,7 @@
       const task = this.getAll().find((t) => t.id === Number(id));
       if (task) {
         task.nombre = nombre;
-        task.fecha = moment(fecha);
+        task.fecha = moment.utc(fecha); // Store in UTC
         if (!this.isColision(task.fecha.toISOString(), 30)) {
           this.$store.dispatch("setLista", [task, task.id]);
           OkModal("Cita actualizada", "La cita se ha movido correctamente.");
@@ -242,7 +251,7 @@
     }
   
     private combineDateAndTime(date: string, time: string): string {
-      return `${date.split('T')[0]}T${time}:00`;
+      return moment.utc(`${date}T${time}:00`).toISOString(); // Combine and convert to UTC
     }
   
     private getAll(): TaskList[] {
@@ -254,4 +263,3 @@
   <style scoped>
   /* Añade estilos si es necesario */
   </style>
-  
