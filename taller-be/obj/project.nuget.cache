@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zUcxt//aFes=",
+  "dgSpecHash": "sJ0ms+RyYDA=",
   "success": true,
-  "projectFilePath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Recoger Servicios\\dawFinal\\taller-be\\taller-be.csproj",
+  "projectFilePath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\taller-be.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jordi\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\jordi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

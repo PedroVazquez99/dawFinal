@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-
-    <div class="container">
+    <div class="container-fluid">
       <main role="main" class="pb-3">
         <router-view />
       </main>
     </div>
-
   </div>
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
-  export default class App extends Vue { }
+import { Component, Vue } from 'vue-property-decorator';
+export default class App extends Vue {}
 </script>
 
 <style>

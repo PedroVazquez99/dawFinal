@@ -1,6 +1,9 @@
 wwwroot\css\app.bd071c00.css
 wwwroot\css\bootstrap.min.css
 wwwroot\favicon.ico
+wwwroot\img\fondo.bb22b109.jpg
+wwwroot\img\fondo.ddc4303e.jpg
+wwwroot\img\fondo.ecaca2c6.jpg
 wwwroot\img\icons\android-chrome-192x192.png
 wwwroot\img\icons\android-chrome-512x512.png
 wwwroot\img\icons\android-chrome-maskable-192x192.png

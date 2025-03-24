@@ -40,7 +40,7 @@
       // Recupera los servicios
       this.$store.dispatch("fetchServicios")
       .then(() => {
-        console.log("Servicios cargados:", this.servicios);
+        console.log("Servicios cargados:", this.servicioID);
       })
       .catch((error) => {
         console.error("Error al cargar los servicios:", error);
@@ -85,7 +85,7 @@
 
     //Metodo para obtener usuario de store
     get currentUser() {
-    return this.$store.getters.getCurrentUser;
+    return this.$store.getters.AuthenticatedUser;
     }
     // Acceso a los servicios
     private get serviciosDelStore() {
