@@ -15,7 +15,6 @@
   import moment from "moment";
   import { OkModal, deleteModal, errorModal } from "./modals/ModalAdapter";
   import { serviciosPeluqueriaMock } from "@/mocks/servicios.mock";
-  import { Citas } from "@/mocks/miscitas.mock";
   
   @Component
   export default class FullCalendarUser extends Vue {
@@ -138,10 +137,19 @@
         info.revert();
         return;
       }
+      if(event.extendedProps.usuarioId !== this.usuarioID) {
+        errorModal("Error", "No puedes editar citas de otros usuarios.");
+        info.revert();
+        return;
+      }
       this.updateTask(event.id, event.title, event.start.toISOString());
     }
   
     private deleteEvent(evento: any): void {
+      if(evento.extendedProps.usuarioId !== this.usuarioID) {
+        errorModal("Error", "No puedes editar citas de otros usuarios.");
+        return;
+      }
       deleteModal("¿Desea borrar la cita?", `Se borrará la cita para ${evento.title}`).then(() => {
         this.$store.dispatch("deleteList", evento.id);
         evento.remove();
@@ -174,6 +182,10 @@
     }
   
     private updateEvent(evento: any, nombre: string, fecha: string): void {
+      if(evento.extendedProps.usuarioId !== this.usuarioID) {
+        errorModal("Error", "No puedes editar citas de otros usuarios.");
+        return;
+      }
       evento.setProp("title", nombre); // Update the title in the calendar
       evento.setStart(fecha); // Update the start date in the calendar
       this.updateTask(evento.id, nombre, fecha); // Update the event in the store
