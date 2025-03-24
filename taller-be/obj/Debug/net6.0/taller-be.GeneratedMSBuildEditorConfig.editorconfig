@@ -9,89 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = taller_be
 build_property.RootNamespace = taller_be
-build_property.ProjectDir = C:\Master DAW- Copia\Desarrollo Web\Proyecto\Recoger Servicios\dawFinal\taller-be\
+build_property.ProjectDir = C:\Master DAW- Copia\Desarrollo Web\Proyecto\Estilos Interfaces\dawFinal\taller-be\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Master DAW- Copia\Desarrollo Web\Proyecto\Recoger Servicios\dawFinal\taller-be
+build_property.MSBuildProjectDirectory = C:\Master DAW- Copia\Desarrollo Web\Proyecto\Estilos Interfaces\dawFinal\taller-be
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 6.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Account/Login.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Home/Index.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Home/Privacy.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Servicios/Create.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Servicios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Servicios/Delete.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Servicios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Servicios/Details.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Servicios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Servicios/Edit.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Servicios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Servicios/Index.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Servicios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Shared/Error.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Shared/_NavBar.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Shared/_NavBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Usuarios/Create.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Usuarios/Delete.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Usuarios/Details.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Usuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Usuarios/Edit.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Usuarios/Index.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/_ViewImports.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/_ViewStart.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Recoger Servicios/dawFinal/taller-be/Views/Shared/_Layout.cshtml]
+[C:/Master DAW- Copia/Desarrollo Web/Proyecto/Estilos Interfaces/dawFinal/taller-be/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-acnn4hqq99

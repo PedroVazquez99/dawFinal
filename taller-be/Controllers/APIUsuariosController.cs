@@ -196,24 +196,26 @@ namespace taller_be.Controllers
             }
         }
 
+        //Metodo para logout
         [HttpPost("logout")]
         public async Task<IActionResult> Logout()
         {
-            // Eliminar la cookie de autenticación
+
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
             return Redirect("/Account/Login");
         }
 
+        //Metodo para recuperar el usuario
         [HttpGet("currentUser")]
         public IActionResult GetCurrentUser()
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Unauthorized("El usuario no está autenticado.");
-            }
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Unauthorized("El usuario no está autenticado.");
+            //}
 
-            var userIdClaim = User.FindFirst("UsuarioId");
+            var userIdClaim = User.FindFirst("usuarioId");
             if (userIdClaim == null)
             {
                 return NotFound("El ID del usuario no está disponible.");

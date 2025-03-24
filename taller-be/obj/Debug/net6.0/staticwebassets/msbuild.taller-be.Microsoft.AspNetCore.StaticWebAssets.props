@@ -54,6 +54,60 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\fondo.bb22b109.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>taller-be</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/taller-be</BasePath>
+      <RelativePath>img/fondo.bb22b109.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>c1s7ohrhlb</Fingerprint>
+      <Integrity>UIrEGwiDsD/BSDuDBr48j3RNPMzK7KN/hYYZD5nG3Ps=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\fondo.bb22b109.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\fondo.ddc4303e.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>taller-be</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/taller-be</BasePath>
+      <RelativePath>img/fondo.ddc4303e.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8rzj8nz3du</Fingerprint>
+      <Integrity>PBAhAVliiZ/hw6ZuIS88IZ+CqvFrwhSPiJFHJml0QAM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\fondo.ddc4303e.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\fondo.ecaca2c6.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>taller-be</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/taller-be</BasePath>
+      <RelativePath>img/fondo.ecaca2c6.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ej8739gquv</Fingerprint>
+      <Integrity>BrJgvjHXTSKcukjJPyTAqmNLHMLrFqvSDFAPfc1FLYE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\fondo.ecaca2c6.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\icons\android-chrome-192x192.png'))">
       <SourceType>Package</SourceType>
       <SourceId>taller-be</SourceId>
@@ -354,8 +408,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>mp2crupis0</Fingerprint>
-      <Integrity>utuQuzouk38wEFcqjGyOHn73W+47WqELQYGZ42hnXOs=</Integrity>
+      <Fingerprint>ntgj0sme48</Fingerprint>
+      <Integrity>66uelVrwdi5tsN7RSRug2XiM6l3GMIRiErzszbCKkfI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\about.js'))</OriginalItemSpec>
@@ -408,8 +462,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9ogtejacs4</Fingerprint>
-      <Integrity>qZMD3b7pLQpWkyArPDzQvf2JR8ybbSgsTwz2MTklGGY=</Integrity>
+      <Fingerprint>2q5r3b1b9j</Fingerprint>
+      <Integrity>uhT2/df/u4Aqv7MlbCQDkmmah+efhO5SsA8L/7F00y8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\app.js'))</OriginalItemSpec>
@@ -480,8 +534,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>m49g3do8jb</Fingerprint>
-      <Integrity>yrZSO07vu0zdmZzZgc0CCGfzcEP9aOOfDfxT8VtKHSo=</Integrity>
+      <Fingerprint>7ipbx7szw5</Fingerprint>
+      <Integrity>3xL9mHrAJ+UP7e4gcPcV5s6u5fAVEHjj7XRk+fGifq8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\chunk-vendors.js'))</OriginalItemSpec>
