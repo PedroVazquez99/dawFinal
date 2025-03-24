@@ -132,22 +132,36 @@
   
     private handleEventDrop(info: any): void {
       const { event } = info;
-      if (event.start && (event.start < new Date() || this.isColision(event.start.toISOString(), 30, event.id))) {
-        errorModal("Acción cancelada", "No se puede mover la cita a una fecha anterior o con conflicto de horarios.");
+
+      // Validar la fecha de inicio
+      if (!event.start || moment.utc(event.start).isBefore(moment.utc())) {
+        errorModal("Acción cancelada", "La fecha del evento no es válida o es anterior a la actual.");
         info.revert();
         return;
       }
-      if(event.extendedProps.usuarioId !== this.usuarioID) {
+
+      // Validar conflictos de horarios
+      if (this.isColision(event.start.toISOString(), 30, event.id)) {
+        errorModal("Acción cancelada", "Conflicto de horarios con otra cita.");
+        info.revert();
+        return;
+      }
+
+      // Validar permisos del usuario
+      if (event.extendedProps.usuarioId !== Number(this.usuarioID)) {
         errorModal("Error", "No puedes editar citas de otros usuarios.");
         info.revert();
         return;
       }
+
+      // Actualizar la tarea
       this.updateTask(event.id, event.title, event.start.toISOString());
-    }
+}
   
     private deleteEvent(evento: any): void {
-      if(evento.extendedProps.usuarioId !== this.usuarioID) {
-        errorModal("Error", "No puedes editar citas de otros usuarios.");
+      console.log(evento.extendedProps, this.usuarioID);
+      if(evento.extendedProps.usuarioId !== Number(this.usuarioID)) {
+        errorModal("Error", "No puedes eliminar citas de otros usuarios.");
         return;
       }
       deleteModal("¿Desea borrar la cita?", `Se borrará la cita para ${evento.title}`).then(() => {
@@ -163,6 +177,8 @@
           id: item.id.toString(),
           title: item.nombre,
           start: item.fecha.toString(),
+          usuarioId: Number(item.usuarioId),
+          servicioId: Number(item.servicioId),
         })),
       };
     }
@@ -173,17 +189,21 @@
       newTask.fecha = moment.utc(fecha); // Store in UTC
       newTask.usuarioId = this.usuarioID ? Number(this.usuarioID) : 0; // Cogerlo desde el store, ver como hacerlo
       newTask.servicioId = servicioId; // Cogerlo desde el store, ver como hacerlo
+
       this.addList(newTask);
+
       this.calendar.addEvent({
         title: nombre,
         start: fecha, // Use UTC ISO string
-        extendedProps: { usuarioId: this.usuarioID, servicioId },
+        extendedProps: { usuarioId: Number(this.usuarioID), servicioId },
       });
+      console.log('Los eventos son');      
+      console.log(this.calendar.getEvents());
       OkModal("Cita creada", "La cita ha sido creada correctamente.");
     }
   
     private updateEvent(evento: any, nombre: string, fecha: string): void {
-      if(evento.extendedProps.usuarioId !== this.usuarioID) {
+      if(evento.extendedProps.usuarioId !== Number(this.usuarioID)) {
         errorModal("Error", "No puedes editar citas de otros usuarios.");
         return;
       }
@@ -194,7 +214,7 @@
   
     private async showSwal(title: string, nombre = "", hora = "", showDeleteButton = false) {
       const opcionesServicios = this.serviciosDelStore
-        .map((servicio: any) => `<option value="${servicio.id}">${servicio.nombre + " - " + servicio.precio + " €"}</option>`)
+        .map((servicio: any) => `<option value="${servicio.id}">${servicio.nombre + " - " + servicio.precio + "€"}</option>`)
         .join("");
       return Swal.fire({
         title,
