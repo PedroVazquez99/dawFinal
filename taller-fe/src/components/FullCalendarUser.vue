@@ -14,7 +14,6 @@
   import Swal from "sweetalert2";
   import moment from "moment";
   import { OkModal, deleteModal, errorModal } from "./modals/ModalAdapter";
-  import { serviciosPeluqueriaMock } from "@/mocks/servicios.mock";
   
   @Component
   export default class FullCalendarUser extends Vue {
@@ -107,13 +106,14 @@
         this.addEvent(value.nombre, nuevaFecha, Number(value.servicioId));
       }
     }
-  
+// holaaaaa  
     private async handleEventClick(info: any): Promise<void> {
       const evento = info.event;
       const { value, isDenied } = await this.showSwal(
         "Editar cita",
         evento.title,
         moment.utc(evento.start).format("HH:mm"), // Display time in UTC
+        evento.extendedProps.servicioId, // Pass the service ID to pre-select it
         true
       );
       if (isDenied) {
@@ -129,23 +129,9 @@
         this.updateEvent(evento, value.nombre, nuevaFecha);
       }
     }
-  
-    private handleEventDrop(info: any): void {
+  //hola2
+    private async handleEventDrop(info: any): Promise<void> {
       const { event } = info;
-
-      // Validar la fecha de inicio
-      if (!event.start || moment.utc(event.start).isBefore(moment.utc())) {
-        errorModal("Acción cancelada", "La fecha del evento no es válida o es anterior a la actual.");
-        info.revert();
-        return;
-      }
-
-      // Validar conflictos de horarios
-      if (this.isColision(event.start.toISOString(), 30, event.id)) {
-        errorModal("Acción cancelada", "Conflicto de horarios con otra cita.");
-        info.revert();
-        return;
-      }
 
       // Validar permisos del usuario
       if (event.extendedProps.usuarioId !== Number(this.usuarioID)) {
@@ -154,9 +140,26 @@
         return;
       }
 
-      // Actualizar la tarea
-      this.updateTask(event.id, event.title, event.start.toISOString());
-}
+      // Validar conflictos de horarios excluyendo el evento actual
+      if (this.isColision(event.start?.toISOString() || "", 30, event.id)) {
+        errorModal("Acción cancelada", "No se puede mover la cita a una fecha anterior o con conflicto de horarios.");
+        info.revert();
+        return;
+      }
+
+      try {
+        // Actualizar la tarea en el store
+        await this.updateTask(event.id, event.title, event.start?.toISOString() || "");
+
+        // Sincronizar el estado del evento en el calendario
+        event.setStart(event.start?.toISOString() || "");
+        OkModal("Cita actualizada", "La cita se ha movido correctamente.");
+      } catch (error) {
+        console.error("Error al actualizar la cita:", error);
+        errorModal("Error", "No se pudo actualizar la cita. Inténtalo de nuevo.");
+        info.revert();
+      }
+    }
   
     private deleteEvent(evento: any): void {
       console.log(evento.extendedProps, this.usuarioID);
@@ -183,22 +186,25 @@
       };
     }
   
-    private addEvent(nombre: string, fecha: string, servicioId: number): void {
+    private async addEvent(nombre: string, fecha: string, servicioId: number): Promise<void> {
       const newTask = new TaskList();
       newTask.nombre = nombre;
       newTask.fecha = moment.utc(fecha); // Store in UTC
       newTask.usuarioId = this.usuarioID ? Number(this.usuarioID) : 0; // Cogerlo desde el store, ver como hacerlo
       newTask.servicioId = servicioId; // Cogerlo desde el store, ver como hacerlo
 
-      this.addList(newTask);
+      this.addList(newTask).then(() => {
+        this.errAdd = this.getErrorIfExists();
+      });
 
+      // Añadir el evento al calendario
       this.calendar.addEvent({
+        id: newTask.id?.toString() || "", // Ensure the ID is set
         title: nombre,
         start: fecha, // Use UTC ISO string
         extendedProps: { usuarioId: Number(this.usuarioID), servicioId },
       });
-      console.log('Los eventos son');      
-      console.log(this.calendar.getEvents());
+
       OkModal("Cita creada", "La cita ha sido creada correctamente.");
     }
   
@@ -212,10 +218,15 @@
       this.updateTask(evento.id, nombre, fecha); // Update the event in the store
     }
   
-    private async showSwal(title: string, nombre = "", hora = "", showDeleteButton = false) {
+    private async showSwal(title: string, nombre = "", hora = "", servicioId = "", showDeleteButton = false) {
       const opcionesServicios = this.serviciosDelStore
-        .map((servicio: any) => `<option value="${servicio.id}">${servicio.nombre + " - " + servicio.precio + "€"}</option>`)
+        .map((servicio: any) => `
+          <option value="${servicio.id}" ${servicio.id === Number(servicioId) ? "selected" : ""}>
+            ${servicio.nombre + " - " + servicio.precio + "€"}
+          </option>
+        `)
         .join("");
+    
       return Swal.fire({
         title,
         html: `
@@ -230,7 +241,7 @@
           <div style="display: flex; align-items: center; gap: 10px;">
             <i class="fas fa-cut"></i>
             <select id="servicio" class="swal2-input" style="flex: 1;">
-              <option value="" disabled selected>Selecciona un servicio</option>
+              <option value="" disabled>Selecciona un servicio</option>
               ${opcionesServicios}
             </select>
           </div>
@@ -252,7 +263,7 @@
       const fin = moment.utc(fecha).add(duracionEnMinutos, "minutes"); // Ensure the end time is in UTC
       return this.calendar.getEvents().some((evento) => {
         if (excludeEventId && evento.id === excludeEventId) {
-          return false; // Exclude the currently edited event
+          return false; // Exclude the currently edited or moved event
         }
         const eventoInicio = moment.utc(evento.start); // Ensure the event start time is in UTC
         const eventoFin = moment.utc(evento.end || evento.start).add(duracionEnMinutos, "minutes"); // Ensure the event end time is in UTC
@@ -261,23 +272,22 @@
     }
   
     // añade una cita
-    private addList(item: TaskList): void {
+    private async addList(item: TaskList): Promise<void> {
       if (item.nombre) {
-        this.$store.dispatch("addList", item);
+        await this.$store.dispatch("addList", item);
         this.errAdd = this.getErrorIfExists();
       }
     }
   
     // actializa los valores de una cita
-    private updateTask(id: string, nombre: string, fecha: string): void {
+    private async updateTask(id: string, nombre: string, fecha: string): Promise<void> {
       const task = this.getAll().find((t) => t.id === Number(id));
       if (task) {
         task.nombre = nombre;
         task.fecha = moment.utc(fecha); // Store the updated date in UTC
-        this.$store.dispatch("setLista", [task, task.id]); // Dispatch the update to the store
-        OkModal("Cita actualizada", "La cita se ha actualizado correctamente."); // Show success message
+        await this.$store.dispatch("setLista", [task, task.id]); // Dispatch the update to the store
       } else {
-        errorModal("Error", "No se pudo encontrar la cita para actualizar."); // Handle missing task
+        errorModal("No se pudo encontrar la cita para actualizar."); // Handle missing task
       }
     }
   
