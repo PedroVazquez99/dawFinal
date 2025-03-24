@@ -23,15 +23,16 @@
     private calendar!: Calendar;
     private errGet = "";
     private errAdd = "";
-    private usuarioID = 1; // Cogerlo desde el store, ver como hacerlo
+    private usuarioID: string | null = null; // Cogerlo desde el store, ver como hacerlo
     private servicioID = 1; // Cogerlo desde el store, ver como hacerlo
     mounted() {
       if (!this.$refs.calendar) return;
-  
+      console.log("Usuario cargado:", this.currentUser);
       //Recupera el usuario
       this.$store.dispatch("fetchCurrentUser")
       .then(() => {
         console.log("Usuario cargado:", this.currentUser);
+        this.usuarioID = this.currentUserId;
       })
       .catch((error) => {
         console.error("Error al cargar el usuario:", error);
@@ -85,11 +86,15 @@
 
     //Metodo para obtener usuario de store
     get currentUser() {
-    return this.$store.getters.getCurrentUser;
+      return this.$store.getters.getAuthenticatedUser;
+    }
+    //Metodo para obtener id de usuario de store
+    get currentUserId() {
+      return this.$store.getters.getAuthenticatedUser.userId || null;
     }
     // Acceso a los servicios
     private get serviciosDelStore() {
-    return this.$store.state.servicios;
+      return this.$store.state.servicios;
     }
   
     private async handleDateClick(info: any): Promise<void> {
@@ -158,7 +163,7 @@
       const newTask = new TaskList();
       newTask.nombre = nombre;
       newTask.fecha = moment.utc(fecha); // Store in UTC
-      newTask.usuarioId = this.usuarioID; // Cogerlo desde el store, ver como hacerlo
+      newTask.usuarioId = this.usuarioID ? Number(this.usuarioID) : 0; // Cogerlo desde el store, ver como hacerlo
       newTask.servicioId = this.servicioID; // Cogerlo desde el store, ver como hacerlo
       this.addList(newTask);
       this.calendar.addEvent({
