@@ -8,6 +8,7 @@
     int page = ViewData["Page"] as int? ?? 1;
     int totalItems = ViewData["TotalItems"] as int? ?? 0;
     int totalPages = ViewData["TotalPages"] as int? ?? 1;
+    string roleFilter = ViewData["RoleFilter"] as string ?? "";
 }
 
 <div class="container-lg">
@@ -20,11 +21,24 @@
     </p>
 
     <form asp-action="Index" method="get" class="mb-4">
-        <div class="input-group">
-            <input type="text" name="searchTerm" value="@searchTerm" class="form-control" placeholder="Buscar usuarios" />
-            <button type="submit" class="btn btn-primary">
-                <i class="bi bi-search"></i> Buscar
-            </button>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" name="searchTerm" value="@searchTerm" class="form-control" placeholder="Buscar usuarios" />
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-search"></i> Buscar
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="input-group mt-2">
+                    <select name="roleFilter" class="form-select" onchange="this.form.submit()">
+                        <option value="">Filtrar por Rol</option>
+                        <option value="User" selected="@(roleFilter == "User")">Usuario</option>
+                        <option value="Admin" selected="@(roleFilter == "Admin")">Administrador</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </form>
 
@@ -107,3 +121,25 @@
         color: inherit !important;
     }
 </style>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function confirmDelete(url) {
+            Swal.fire({
+                title: '¿Estás seguro?',
+                text: "No podrás revertir esta acción.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Sí, eliminar',
+                cancelButtonText: 'Cancelar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = url;
+                }
+            });
+        }
+    </script>
+}

@@ -194,18 +194,23 @@ namespace taller_be.Controllers
         }
 
         // Método para buscar usuarios por nombre
-        public async Task<IActionResult> Index(string o = "N", string d = "ASC", string searchTerm = "", int page = 1)
+        public async Task<IActionResult> Index(string o = "N", string d = "ASC", string searchTerm = "", string roleFilter = "", int page = 1)
         {
-            // Empezamos con una consulta básica de los usuarios
             IQueryable<Usuario> usuariosQuery = _context.Usuarios.AsQueryable();
 
-            // Lógica de búsqueda (si hay término de búsqueda)
+            // Lógica de búsqueda 
             if (!string.IsNullOrEmpty(searchTerm))
             {
                 usuariosQuery = usuariosQuery.Where(u => u.Nombre.Contains(searchTerm));
             }
 
-            // Expresión dinámica para ordenar solo por Nombre o Email
+            // Filtro por rol 
+            if (!string.IsNullOrEmpty(roleFilter))
+            {
+                usuariosQuery = usuariosQuery.Where(u => u.Rol == roleFilter);
+            }
+
+            // Ordenar solo por Nombre o Email
             Expression<Func<Usuario, object>> orderByExpression = u => u.Nombre;  // Valor por defecto (Nombre)
 
             switch (o)
@@ -221,7 +226,7 @@ namespace taller_be.Controllers
                     break;
             }
 
-            // Ordenación según dirección (ASC o DESC)
+            // Ordenación según dirección
             if (d == "ASC")
             {
                 usuariosQuery = usuariosQuery.OrderBy(orderByExpression);
@@ -232,7 +237,7 @@ namespace taller_be.Controllers
             }
 
             // Paginación
-            int pageSize = 10;  // Tamaño de página
+            int pageSize = 10;  
             int totalItems = await usuariosQuery.CountAsync();
             int totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
             var usuariosPaged = await usuariosQuery
@@ -244,6 +249,7 @@ namespace taller_be.Controllers
             ViewData["SortOrder"] = o;
             ViewData["SortDirection"] = d;
             ViewData["SearchTerm"] = searchTerm;
+            ViewData["RoleFilter"] = roleFilter; 
             ViewData["TotalItems"] = totalItems;
             ViewData["TotalPages"] = totalPages;
             ViewData["Page"] = page;
