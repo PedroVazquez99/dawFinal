@@ -104,7 +104,7 @@
           errorModal("Conflicto de horarios", "Ya existe un evento en esta franja horaria.");
           return;
         }
-        this.addEvent(value.nombre, nuevaFecha);
+        this.addEvent(value.nombre, nuevaFecha, Number(value.servicioId));
       }
     }
   
@@ -167,18 +167,19 @@
       };
     }
   
-    private addEvent(nombre: string, fecha: string): void {
+    private addEvent(nombre: string, fecha: string, servicioId: number): void {
       const newTask = new TaskList();
       newTask.nombre = nombre;
       newTask.fecha = moment.utc(fecha); // Store in UTC
       newTask.usuarioId = this.usuarioID ? Number(this.usuarioID) : 0; // Cogerlo desde el store, ver como hacerlo
-      newTask.servicioId = this.servicioID; // Cogerlo desde el store, ver como hacerlo
+      newTask.servicioId = servicioId; // Cogerlo desde el store, ver como hacerlo
       this.addList(newTask);
       this.calendar.addEvent({
         title: nombre,
         start: fecha, // Use UTC ISO string
-        extendedProps: { usuarioId: this.usuarioID, servicioId: this.servicioID },
+        extendedProps: { usuarioId: this.usuarioID, servicioId },
       });
+      OkModal("Cita creada", "La cita ha sido creada correctamente.");
     }
   
     private updateEvent(evento: any, nombre: string, fecha: string): void {
@@ -192,8 +193,8 @@
     }
   
     private async showSwal(title: string, nombre = "", hora = "", showDeleteButton = false) {
-      const opcionesServicios = serviciosPeluqueriaMock
-        .map((servicio) => `<option value="${servicio.nombre}">${servicio.nombre}</option>`)
+      const opcionesServicios = this.serviciosDelStore
+        .map((servicio: any) => `<option value="${servicio.id}">${servicio.nombre}</option>`)
         .join("");
       return Swal.fire({
         title,
@@ -217,6 +218,7 @@
         preConfirm: () => ({
           nombre: (document.getElementById("nombre") as HTMLInputElement).value,
           hora: (document.getElementById("hora") as HTMLInputElement).value,
+          servicioId: (document.getElementById("servicio") as HTMLSelectElement).value,
         }),
         showCancelButton: true,
         showDenyButton: showDeleteButton,
