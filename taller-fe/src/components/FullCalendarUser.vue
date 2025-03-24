@@ -194,7 +194,7 @@
   
     private async showSwal(title: string, nombre = "", hora = "", showDeleteButton = false) {
       const opcionesServicios = this.serviciosDelStore
-        .map((servicio: any) => `<option value="${servicio.id}">${servicio.nombre}</option>`)
+        .map((servicio: any) => `<option value="${servicio.id}">${servicio.nombre + " - " + servicio.precio + " €"}</option>`)
         .join("");
       return Swal.fire({
         title,
