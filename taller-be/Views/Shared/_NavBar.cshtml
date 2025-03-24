@@ -3,16 +3,13 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212529;">
     <div class="container-fluid">
-        <!-- Título a la izquierda -->
+        <!-- Título  -->
         <a class="navbar-brand fs-3 text-white" href="/">Peluquería</a>
 
-        <!-- Enlaces centrados (colapsables en pantallas pequeñas) -->
+        <!-- Enlaces -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
-                <!-- mx-auto para centrar los enlaces -->
-                <li class="nav-item mx-3">
-                    <a class="nav-link text-white fs-4" href="/">Inicio</a>
-                </li>
+
                 <li class="nav-item mx-3">
                     <a class="nav-link text-white fs-4" href="/#/about">About</a>
                 </li>
@@ -41,7 +38,7 @@
             </ul>
         </div>
 
-        <!-- Contenedor de Avatar y Botón de Hamburguesa (si el usuario está autenticado) -->
+        <!-- Contenedor de Avatar y Botón de Hamburguesa  -->
         @if (User.Identity.IsAuthenticated)
         {
             <div class="d-flex align-items-center ms-auto position-relative">
@@ -61,7 +58,7 @@
                     </ul>
                 </div>
 
-                <!-- Botón para colapsar el menú en pantallas pequeñas -->
+                <!-- Botón para colapsar  -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

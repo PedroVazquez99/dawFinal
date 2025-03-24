@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\taller-be.csproj": {}
+    "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\taller-be.csproj": {}
   },
   "projects": {
-    "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\taller-be.csproj": {
+    "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\taller-be.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\taller-be.csproj",
+        "projectUniqueName": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\taller-be.csproj",
         "projectName": "taller-be",
-        "projectPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\taller-be.csproj",
+        "projectPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\taller-be.csproj",
         "packagesPath": "C:\\Users\\jordi\\.nuget\\packages\\",
-        "outputPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\obj\\",
+        "outputPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -67,6 +67,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.18, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.7.1, )"
             }
           },
           "imports": [

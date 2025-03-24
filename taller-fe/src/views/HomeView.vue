@@ -49,11 +49,19 @@ export default class HomeView extends Vue {
     return this.$store.getters.isAuthenticated;
   } 
 
-  handleReserva() {
-    if (this.isAuthenticated) {
-      this.$router.push('/mi-reserva');
-    } else {
-      this.$router.push('/login');
+  async handleReserva() {
+    try {
+
+    await this.$store.dispatch("fetchCurrentUser");
+
+      if (this.isAuthenticated) {
+        this.$router.push('/mi-reserva');
+      } else {
+        this.$router.push('/login');
+      }
+    } catch (error) {
+        console.error("Error al verificar el usuario:", error);
+        this.$router.push('/login');
     }
   }
 }

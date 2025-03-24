@@ -2,94 +2,108 @@
 
 @{
     ViewData["Title"] = "Lista de Usuarios";
-    int totalItems = ViewData["TotalItems"] as int? ?? 0;
+    string sortOrder = ViewData["SortOrder"] as string ?? "N";  // 'N' = Nombre
+    string sortDirection = ViewData["SortDirection"] as string ?? "ASC";
+    string searchTerm = ViewData["SearchTerm"] as string ?? "";
     int page = ViewData["Page"] as int? ?? 1;
-    int pageSize = ViewData["PageSize"] as int? ?? 10;
+    int totalItems = ViewData["TotalItems"] as int? ?? 0;
     int totalPages = ViewData["TotalPages"] as int? ?? 1;
 }
 
-<h1 class="text-center mb-5">Gestión de Usuarios</h1>
+<div class="container-lg">
+    <h1 class="text-center mb-5">Gestión de Usuarios</h1>
 
-<p>
-    <a asp-action="Create" class="btn btn-success rounded-pill">
-        <i class="bi bi-plus"></i> Nuevo Usuario
-    </a>
-</p>
+    <p>
+        <a asp-action="Create" class="btn btn-success rounded-pill">
+            <i class="bi bi-plus"></i> Nuevo Usuario
+        </a>
+    </p>
 
-<div class="table-responsive rounded-3 shadow-sm">
-    <table class="table table-hover table-striped align-middle mb-0 border-0">
-        <thead class="table-dark">
-            <tr>
-                <th class="fs-5 text-uppercase py-3">@Html.DisplayNameFor(model => model.Nombre)</th>
-                <th class="fs-5 text-uppercase py-3">@Html.DisplayNameFor(model => model.Email)</th>
-                <th class="fs-5 text-uppercase py-3">@Html.DisplayNameFor(model => model.PasswordHash)</th>
-                <th class="fs-5 text-uppercase py-3">@Html.DisplayNameFor(model => model.Rol)</th>
-                <th class="fs-5 text-uppercase py-3">@Html.DisplayNameFor(model => model.FechaRegistro)</th>
-                <th class="fs-5 text-uppercase text-center py-3">Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
+    <form asp-action="Index" method="get" class="mb-4">
+        <div class="input-group">
+            <input type="text" name="searchTerm" value="@searchTerm" class="form-control" placeholder="Buscar usuarios" />
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-search"></i> Buscar
+            </button>
+        </div>
+    </form>
+
+    <div class="table-responsive rounded-3 shadow-sm">
+        <table class="table table-hover table-striped align-middle mb-0 border-0">
+            <thead class="table-dark">
                 <tr>
-                    <td class="py-3">@Html.DisplayFor(modelItem => item.Nombre)</td>
-                    <td class="py-3">@Html.DisplayFor(modelItem => item.Email)</td>
-                    <td class="py-3">@Html.DisplayFor(modelItem => item.PasswordHash)</td>
-                    <td class="py-3">@Html.DisplayFor(modelItem => item.Rol)</td>
-                    <td class="py-3">@Html.DisplayFor(modelItem => item.FechaRegistro)</td>
-                    <td class="text-center py-3">
-                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm me-1" title="Editar">
-                            <i class="bi bi-pencil"></i>
+                    <th class="fs-5 text-uppercase py-3">
+                        <a href="@Url.Action("Index", "Usuarios", new { o = "N", d = sortDirection == "ASC" ? "DESC" : "ASC", searchTerm = searchTerm, page = page })" class="no-underline">
+                            Nombre
+                            @if (sortOrder == "N")
+                            {
+                                <i class="bi @(sortDirection == "ASC" ? "bi-sort-alpha-up" : "bi-sort-alpha-down")"></i>
+                            }
                         </a>
-                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm me-1" title="Detalles">
-                            <i class="bi bi-eye"></i>
+                    </th>
+
+                    <th class="fs-5 text-uppercase py-3">
+                        <a href="@Url.Action("Index", "Usuarios", new { o = "E", d = sortDirection == "ASC" ? "DESC" : "ASC", searchTerm = searchTerm, page = page })" class="no-underline">
+                            Email
+                            @if (sortOrder == "E")
+                            {
+                                <i class="bi @(sortDirection == "ASC" ? "bi-sort-alpha-up" : "bi-sort-alpha-down")"></i>
+                            }
                         </a>
-                        <a href="javascript:void(0);" onclick="confirmDelete('@Url.Action("Delete", "Usuarios", new { id = item.Id })')" class="btn btn-danger btn-sm" title="Eliminar">
-                            <i class="bi bi-trash"></i>
-                        </a>
-                    </td>
+                    </th>
+
+                    <th class="fs-5 text-uppercase py-3">Rol</th>
+                    <th class="fs-5 text-uppercase py-3">Fecha Registro</th>
+                    <th class="fs-5 text-uppercase text-center py-3">Acciones</th>
                 </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="py-3">@Html.DisplayFor(modelItem => item.Nombre)</td>
+                        <td class="py-3">@Html.DisplayFor(modelItem => item.Email)</td>
+                        <td class="py-3">@Html.DisplayFor(modelItem => item.Rol)</td>
+                        <td class="py-3">@Html.DisplayFor(modelItem => item.FechaRegistro)</td>
+                        <td class="text-center py-3">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm me-1" title="Editar">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm me-1" title="Detalles">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a href="javascript:void(0);" onclick="confirmDelete('@Url.Action("Delete", "Usuarios", new { id = item.Id })')" class="btn btn-danger btn-sm" title="Eliminar">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Paginación -->
+    <nav class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item @(page <= 1 ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("Index", "Usuarios", new { o = sortOrder, d = sortDirection, searchTerm = searchTerm, page = page - 1 })">Anterior</a>
+            </li>
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == page ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("Index", "Usuarios", new { o = sortOrder, d = sortDirection, searchTerm = searchTerm, page = i })">@i</a>
+                </li>
             }
-        </tbody>
-    </table>
+            <li class="page-item @(page >= totalPages ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("Index", "Usuarios", new { o = sortOrder, d = sortDirection, searchTerm = searchTerm, page = page + 1 })">Siguiente</a>
+            </li>
+        </ul>
+    </nav>
 </div>
 
-<!-- Controles de paginación -->
-<nav class="mt-4">
-    <ul class="pagination justify-content-center">
-        <li class="page-item @(page <= 1 ? "disabled" : "")">
-            <a class="page-link" asp-action="Index" asp-route-page="@(page - 1)">Anterior</a>
-        </li>
-        @for (int i = 1; i <= totalPages; i++)
-        {
-            <li class="page-item @(i == page ? "active" : "")">
-                <a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
-            </li>
-        }
-        <li class="page-item @(page >= totalPages ? "disabled" : "")">
-            <a class="page-link" asp-action="Index" asp-route-page="@(page + 1)">Siguiente</a>
-        </li>
-    </ul>
-</nav>
-
-@section Scripts {
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        function confirmDelete(url) {
-            Swal.fire({
-                title: '¿Estás seguro?',
-                text: "No podrás revertir esta acción.",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#d33',
-                cancelButtonColor: '#3085d6',
-                confirmButtonText: 'Sí, eliminar',
-                cancelButtonText: 'Cancelar'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    window.location.href = url;
-                }
-            });
-        }
-    </script>
-}
+<style>
+    .no-underline {
+        text-decoration: none !important;
+        color: inherit !important;
+    }
+</style>
