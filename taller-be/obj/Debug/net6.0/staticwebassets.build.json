@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WQZEPeKjgLPmM5jVHY/VrKR9KZuFSw7a49kUu8msdJo=",
+  "Hash": "TbuD3JIhVIuwkTDRcHGsXp++9pqQE4ZybRCo+DHP6vs=",
   "Source": "taller-be",
   "BasePath": "_content/taller-be",
   "Mode": "Default",
@@ -640,8 +640,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "s8vf2ra1nm",
-      "Integrity": "7LnBRTdusVUZ+BjceAQ7Fkn4IU3LoeN31TPbN2KsGrc=",
+      "Fingerprint": "iuee61nwrd",
+      "Integrity": "VuN/77WbJ0D+g0xlVGUWbY2LQSC0CF+Zkr7+UEUmduw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\app.js"
@@ -2603,7 +2603,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 16:40:26 GMT"
+          "Value": "Mon, 24 Mar 2025 21:38:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2648,7 +2648,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 16:40:26 GMT"
+          "Value": "Mon, 24 Mar 2025 21:38:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3073,6 +3073,51 @@
       ]
     },
     {
+      "Route": "js/app.iuee61nwrd.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VuN/77WbJ0D+g0xlVGUWbY2LQSC0CF+Zkr7+UEUmduw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 21:37:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iuee61nwrd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VuN/77WbJ0D+g0xlVGUWbY2LQSC0CF+Zkr7+UEUmduw="
+        }
+      ]
+    },
+    {
       "Route": "js/app.js",
       "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
       "Selectors": [],
@@ -3083,7 +3128,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "105345"
+          "Value": "108766"
         },
         {
           "Name": "Content-Type",
@@ -3091,11 +3136,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7LnBRTdusVUZ+BjceAQ7Fkn4IU3LoeN31TPbN2KsGrc=\""
+          "Value": "\"VuN/77WbJ0D+g0xlVGUWbY2LQSC0CF+Zkr7+UEUmduw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 16:40:20 GMT"
+          "Value": "Mon, 24 Mar 2025 21:37:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3105,52 +3150,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7LnBRTdusVUZ+BjceAQ7Fkn4IU3LoeN31TPbN2KsGrc="
-        }
-      ]
-    },
-    {
-      "Route": "js/app.s8vf2ra1nm.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "105345"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7LnBRTdusVUZ+BjceAQ7Fkn4IU3LoeN31TPbN2KsGrc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 16:40:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "s8vf2ra1nm"
-        },
-        {
-          "Name": "label",
-          "Value": "js/app.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-7LnBRTdusVUZ+BjceAQ7Fkn4IU3LoeN31TPbN2KsGrc="
+          "Value": "sha256-VuN/77WbJ0D+g0xlVGUWbY2LQSC0CF+Zkr7+UEUmduw="
         }
       ]
     },

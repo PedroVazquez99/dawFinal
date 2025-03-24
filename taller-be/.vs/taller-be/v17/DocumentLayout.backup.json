@@ -30,21 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\Views\\Usuarios\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Usuarios\\Delete.cshtml",
-              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\Views\\Usuarios\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Usuarios\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T21:24:03.045Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -67,6 +54,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\Views\\Usuarios\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\Delete.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\Views\\Usuarios\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Usuarios\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-24T21:24:03.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\Views\\Servicios\\Delete.cshtml",
@@ -75,8 +75,7 @@
               "RelativeToolTip": "Views\\Servicios\\Delete.cshtml",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T21:18:48.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T21:18:48.692Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "Views\\Servicios\\Index.cshtml",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T21:17:13.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T21:17:13.473Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "Controllers\\UsuariosController.cs",
               "ViewState": "AgIAALEAAAAAAAAAAAAAwNcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T17:08:06.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T17:08:06.012Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "Views\\Usuarios\\Index.cshtml",
               "ViewState": "AgIAAFsAAAAAAAAAAAAgwHsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T00:37:15.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T00:37:15.515Z"
             }
           ]
         }
