@@ -118,7 +118,7 @@
       }
       if (value?.nombre && value?.hora) {
         const nuevaFecha = this.combineDateAndTime(moment.utc(evento.start).format("YYYY-MM-DD"), value.hora);
-        if (this.isColision(nuevaFecha, 30)) {
+        if (this.isColision(nuevaFecha, 30, evento.id)) { // Pass the event ID to exclude it from collision checks
           errorModal("Conflicto de horarios", "Ya existe un evento en esta franja horaria.");
           return;
         }
@@ -128,7 +128,7 @@
   
     private handleEventDrop(info: any): void {
       const { event } = info;
-      if (event.start && (event.start < new Date() || this.isColision(event.start.toISOString(), 30))) {
+      if (event.start && (event.start < new Date() || this.isColision(event.start.toISOString(), 30, event.id))) {
         errorModal("Acción cancelada", "No se puede mover la cita a una fecha anterior o con conflicto de horarios.");
         info.revert();
         return;
@@ -169,9 +169,9 @@
     }
   
     private updateEvent(evento: any, nombre: string, fecha: string): void {
-      evento.setProp("title", nombre);
-      evento.setStart(fecha);
-      this.updateTask(evento.id, nombre, fecha);
+      evento.setProp("title", nombre); // Update the title in the calendar
+      evento.setStart(fecha); // Update the start date in the calendar
+      this.updateTask(evento.id, nombre, fecha); // Update the event in the store
     }
   
     private async showSwal(title: string, nombre = "", hora = "", showDeleteButton = false) {
@@ -208,13 +208,15 @@
     }
   
     // mira las colisiones entre citas
-    private isColision(fecha: string, duracionEnMinutos: number): boolean {
-      const inicio = moment(fecha);
-      const fin = moment(fecha).add(duracionEnMinutos, "minutes");
+    private isColision(fecha: string, duracionEnMinutos: number, excludeEventId?: string): boolean {
+      const inicio = moment.utc(fecha); // Ensure the start time is in UTC
+      const fin = moment.utc(fecha).add(duracionEnMinutos, "minutes"); // Ensure the end time is in UTC
       return this.calendar.getEvents().some((evento) => {
-        if (evento.start?.toISOString() === fecha) return false;
-        const eventoInicio = moment(evento.start).subtract(duracionEnMinutos, "minutes");
-        const eventoFin = moment(evento.end || evento.start).add(duracionEnMinutos, "minutes");
+        if (excludeEventId && evento.id === excludeEventId) {
+          return false; // Exclude the currently edited event
+        }
+        const eventoInicio = moment.utc(evento.start); // Ensure the event start time is in UTC
+        const eventoFin = moment.utc(evento.end || evento.start).add(duracionEnMinutos, "minutes"); // Ensure the event end time is in UTC
         return inicio.isBefore(eventoFin) && fin.isAfter(eventoInicio);
       });
     }
@@ -232,11 +234,11 @@
       const task = this.getAll().find((t) => t.id === Number(id));
       if (task) {
         task.nombre = nombre;
-        task.fecha = moment.utc(fecha); // Store in UTC
-        if (!this.isColision(task.fecha.toISOString(), 30)) {
-          this.$store.dispatch("setLista", [task, task.id]);
-          OkModal("Cita actualizada", "La cita se ha movido correctamente.");
-        }
+        task.fecha = moment.utc(fecha); // Store the updated date in UTC
+        this.$store.dispatch("setLista", [task, task.id]); // Dispatch the update to the store
+        OkModal("Cita actualizada", "La cita se ha actualizado correctamente."); // Show success message
+      } else {
+        errorModal("Error", "No se pudo encontrar la cita para actualizar."); // Handle missing task
       }
     }
   
