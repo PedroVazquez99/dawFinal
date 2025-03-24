@@ -14,6 +14,7 @@
   import Swal from "sweetalert2";
   import moment from "moment";
   import { OkModal, deleteModal, errorModal } from "./modals/ModalAdapter";
+
   
   @Component
   export default class FullCalendarUser extends Vue {
@@ -189,24 +190,31 @@
     private async addEvent(nombre: string, fecha: string, servicioId: number): Promise<void> {
       const newTask = new TaskList();
       newTask.nombre = nombre;
-      newTask.fecha = moment.utc(fecha); // Store in UTC
-      newTask.usuarioId = this.usuarioID ? Number(this.usuarioID) : 0; // Cogerlo desde el store, ver como hacerlo
-      newTask.servicioId = servicioId; // Cogerlo desde el store, ver como hacerlo
+      newTask.fecha = moment.utc(fecha); // Almacenar en UTC
+      newTask.usuarioId = this.usuarioID ? Number(this.usuarioID) : 0;
+      newTask.servicioId = servicioId;
 
-      this.addList(newTask).then(() => {
-        this.errAdd = this.getErrorIfExists();
-      });
+      try {
+        // Llamar a addList y obtener el ID generado por el backend
+        const newId = await this.$store.dispatch("addList", newTask);
+        
+        console.log("ID de la nueva cita:", newId);
+        // Añadir el evento al calendario con el ID generado
+        this.calendar.addEvent({
+          id: newId, // Usar el ID generado
+          title: nombre,
+          start: fecha, // Usar la fecha en formato UTC
+          extendedProps: { usuarioId: Number(this.usuarioID), servicioId },
+        });
 
-      // Añadir el evento al calendario
-      this.calendar.addEvent({
-        id: newTask.id?.toString() || "", // Ensure the ID is set
-        title: nombre,
-        start: fecha, // Use UTC ISO string
-        extendedProps: { usuarioId: Number(this.usuarioID), servicioId },
-      });
+        console.log("Cita creada:", this.calendar.getEventById(newId));
 
-      OkModal("Cita creada", "La cita ha sido creada correctamente.");
-    }
+        OkModal("Cita creada", "La cita ha sido creada correctamente.");
+      } catch (error) {
+        console.error("Error al crear la cita:", error);
+        errorModal("Error", "No se pudo crear la cita. Inténtalo de nuevo.");
+      }
+  }
   
     private updateEvent(evento: any, nombre: string, fecha: string): void {
       if(evento.extendedProps.usuarioId !== Number(this.usuarioID)) {
