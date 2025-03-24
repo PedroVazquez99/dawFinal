@@ -31,7 +31,7 @@ export default class FullCalendarComponent extends Vue {
     // Recupera los servicios
     this.$store.dispatch("fetchServicios")
       .then(() => {
-        console.log("Servicios cargados:", this.servicios);
+        console.log("Servicios cargados:", this.servicioID);
       })
       .catch((error) => {
         console.error("Error al cargar los servicios:", error);
