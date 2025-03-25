@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iho0WuN6So6D7qLDl0QJWF/PLUyjO94kuwsFxGky7DU=",
+  "Hash": "XHM+R5seJ2SgcQN0eUvxHL1SVL0O+wBRnmDAH08Eqdg=",
   "Source": "taller-be",
   "BasePath": "_content/taller-be",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "taller-be\\wwwroot",
       "Source": "taller-be",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\taller-be.styles.css",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\taller-be.styles.css",
       "SourceId": "taller-be",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "taller-be#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "H5P4Mmdm3CrXibk1XdyjA0attYI600EVgEDeFq3eU1U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\taller-be.styles.css"
+      "OriginalItemSpec": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\taller-be.styles.css"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css",
       "SourceId": "taller-be",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "taller-be#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "H5P4Mmdm3CrXibk1XdyjA0attYI600EVgEDeFq3eU1U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\css\\app.bd071c00.css",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\css\\app.bd071c00.css",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "css/app.bd071c00#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\css\\app.bd071c00.css"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\css\\bootstrap.min.css",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\favicon.ico",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\fondo.bb22b109.jpg",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\fondo.bb22b109.jpg",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/fondo.bb22b109#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fondo.bb22b109.jpg"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\fondo.ddc4303e.jpg",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\fondo.ddc4303e.jpg",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/fondo.ddc4303e#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fondo.ddc4303e.jpg"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\fondo.ecaca2c6.jpg",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\fondo.ecaca2c6.jpg",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/fondo.ecaca2c6#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fondo.ecaca2c6.jpg"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-192x192.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-192x192.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/android-chrome-192x192#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\android-chrome-192x192.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-512x512.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-512x512.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/android-chrome-512x512#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\android-chrome-512x512.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-192x192.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-192x192.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/android-chrome-maskable-192x192#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\android-chrome-maskable-192x192.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-512x512.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-512x512.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/android-chrome-maskable-512x512#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\android-chrome-maskable-512x512.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/apple-touch-icon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\apple-touch-icon.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-120x120.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-120x120.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/apple-touch-icon-120x120#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\apple-touch-icon-120x120.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-152x152.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-152x152.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/apple-touch-icon-152x152#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\apple-touch-icon-152x152.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-180x180.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-180x180.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/apple-touch-icon-180x180#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\apple-touch-icon-180x180.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-60x60.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-60x60.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/apple-touch-icon-60x60#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\apple-touch-icon-60x60.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-76x76.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-76x76.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/apple-touch-icon-76x76#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\apple-touch-icon-76x76.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-16x16.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-16x16.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/favicon-16x16#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\favicon-16x16.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-32x32.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-32x32.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/favicon-32x32#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\favicon-32x32.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\msapplication-icon-144x144.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\msapplication-icon-144x144.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/msapplication-icon-144x144#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\msapplication-icon-144x144.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\mstile-150x150.png",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\mstile-150x150.png",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/mstile-150x150#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\mstile-150x150.png"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\safari-pinned-tab.svg",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\safari-pinned-tab.svg",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "img/icons/safari-pinned-tab#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icons\\safari-pinned-tab.svg"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\index.html",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\index.html",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "js/about.4a4183d6#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\js\\about.4a4183d6.js"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js.map",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js.map",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "js/about.4a4183d6.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\js\\about.4a4183d6.js.map"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\about.js",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\about.js",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "js/about#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -577,17 +577,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ntgj0sme48",
-      "Integrity": "66uelVrwdi5tsN7RSRug2XiM6l3GMIRiErzszbCKkfI=",
+      "Fingerprint": "n103iqyzyf",
+      "Integrity": "+/xUVE5ZuedEzVXL7NPVInwtRby0+IDu19b2BViTSPQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\about.js"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "js/app.e32529b0#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\js\\app.e32529b0.js"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js.map",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js.map",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "js/app.e32529b0.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\js\\app.e32529b0.js.map"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "js/app#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -640,17 +640,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "2q5r3b1b9j",
-      "Integrity": "uhT2/df/u4Aqv7MlbCQDkmmah+efhO5SsA8L/7F00y8=",
+      "Fingerprint": "tu6zolfeok",
+      "Integrity": "i/b+7UxoNkXLMtfKnRxZ/KU+4yZPGH9o5OExPui9hCM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\app.js"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\bootstrap.bundle.min.js",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "js/chunk-vendors.41ea2f5f#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\js\\chunk-vendors.41ea2f5f.js"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js.map",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js.map",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "js/chunk-vendors.41ea2f5f.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -710,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\js\\chunk-vendors.41ea2f5f.js.map"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.js",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.js",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "js/chunk-vendors#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\js\\chunk-vendors.js"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\manifest.json",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\manifest.json",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "manifest#[.{fingerprint}]?.json",
       "AssetKind": "All",
@@ -752,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\manifest.json"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\robots.txt",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\robots.txt",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "robots#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -773,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\robots.txt"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\service-worker.js",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\service-worker.js",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "service-worker#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -794,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\service-worker.js"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\service-worker.js.map",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\service-worker.js.map",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "service-worker.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\service-worker.js.map"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "workbox-6567b62a#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -836,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\workbox-6567b62a.js"
     },
     {
-      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js.map",
+      "Identity": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js.map",
       "SourceId": "taller-be",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\",
+      "ContentRoot": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\",
       "BasePath": "_content/taller-be",
       "RelativePath": "workbox-6567b62a.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -860,7 +860,7 @@
   "Endpoints": [
     {
       "Route": "css/app.bd071c00.css",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\css\\app.bd071c00.css",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\css\\app.bd071c00.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -881,7 +881,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -897,7 +897,7 @@
     },
     {
       "Route": "css/app.bd071c00.r0bz71qz9h.css",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\css\\app.bd071c00.css",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\css\\app.bd071c00.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -918,7 +918,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -942,7 +942,7 @@
     },
     {
       "Route": "css/bootstrap.min.css",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -963,7 +963,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -979,7 +979,7 @@
     },
     {
       "Route": "css/bootstrap.min.dyjx89twm7.css",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1000,7 +1000,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1024,7 +1024,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1045,7 +1045,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1061,7 +1061,7 @@
     },
     {
       "Route": "favicon.r8e75ffup4.ico",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1082,7 +1082,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1106,7 +1106,7 @@
     },
     {
       "Route": "img/fondo.bb22b109.c1s7ohrhlb.jpg",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\fondo.bb22b109.jpg",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\fondo.bb22b109.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1127,7 +1127,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 02:36:17 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1151,7 +1151,7 @@
     },
     {
       "Route": "img/fondo.bb22b109.jpg",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\fondo.bb22b109.jpg",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\fondo.bb22b109.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1172,7 +1172,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 02:36:17 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1188,7 +1188,7 @@
     },
     {
       "Route": "img/fondo.ddc4303e.8rzj8nz3du.jpg",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\fondo.ddc4303e.jpg",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\fondo.ddc4303e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1209,7 +1209,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 02:25:37 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1233,7 +1233,7 @@
     },
     {
       "Route": "img/fondo.ddc4303e.jpg",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\fondo.ddc4303e.jpg",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\fondo.ddc4303e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1254,7 +1254,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 02:25:37 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1270,7 +1270,7 @@
     },
     {
       "Route": "img/fondo.ecaca2c6.ej8739gquv.jpg",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\fondo.ecaca2c6.jpg",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\fondo.ecaca2c6.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1291,7 +1291,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 02:16:45 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1315,7 +1315,7 @@
     },
     {
       "Route": "img/fondo.ecaca2c6.jpg",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\fondo.ecaca2c6.jpg",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\fondo.ecaca2c6.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1336,7 +1336,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 02:16:45 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1352,7 +1352,7 @@
     },
     {
       "Route": "img/icons/android-chrome-192x192.kl5s4ogku6.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-192x192.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-192x192.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1373,7 +1373,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1397,7 +1397,7 @@
     },
     {
       "Route": "img/icons/android-chrome-192x192.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-192x192.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-192x192.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1418,7 +1418,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1434,7 +1434,7 @@
     },
     {
       "Route": "img/icons/android-chrome-512x512.063njcnw40.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-512x512.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-512x512.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1455,7 +1455,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1479,7 +1479,7 @@
     },
     {
       "Route": "img/icons/android-chrome-512x512.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-512x512.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-512x512.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1500,7 +1500,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1516,7 +1516,7 @@
     },
     {
       "Route": "img/icons/android-chrome-maskable-192x192.mrn2onwdug.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-192x192.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-192x192.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1537,7 +1537,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1561,7 +1561,7 @@
     },
     {
       "Route": "img/icons/android-chrome-maskable-192x192.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-192x192.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-192x192.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1582,7 +1582,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1598,7 +1598,7 @@
     },
     {
       "Route": "img/icons/android-chrome-maskable-512x512.293w1wehuk.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-512x512.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-512x512.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1619,7 +1619,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1643,7 +1643,7 @@
     },
     {
       "Route": "img/icons/android-chrome-maskable-512x512.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-512x512.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\android-chrome-maskable-512x512.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1664,7 +1664,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1680,7 +1680,7 @@
     },
     {
       "Route": "img/icons/apple-touch-icon.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1701,7 +1701,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1717,7 +1717,7 @@
     },
     {
       "Route": "img/icons/apple-touch-icon.zo1dn3gmkf.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1738,7 +1738,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1762,7 +1762,7 @@
     },
     {
       "Route": "img/icons/apple-touch-icon-120x120.84m4x4lfod.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-120x120.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-120x120.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1783,7 +1783,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1807,7 +1807,7 @@
     },
     {
       "Route": "img/icons/apple-touch-icon-120x120.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-120x120.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-120x120.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1828,7 +1828,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1844,7 +1844,7 @@
     },
     {
       "Route": "img/icons/apple-touch-icon-152x152.bawxgy7syl.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-152x152.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-152x152.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1865,7 +1865,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1889,7 +1889,7 @@
     },
     {
       "Route": "img/icons/apple-touch-icon-152x152.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-152x152.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-152x152.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1910,7 +1910,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1926,7 +1926,7 @@
     },
     {
       "Route": "img/icons/apple-touch-icon-180x180.hhrc1t8sbo.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-180x180.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-180x180.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1947,7 +1947,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1971,7 +1971,7 @@
     },
     {
       "Route": "img/icons/apple-touch-icon-180x180.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-180x180.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-180x180.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1992,7 +1992,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2008,7 +2008,7 @@
     },
     {
       "Route": "img/icons/apple-touch-icon-60x60.daix16r79y.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-60x60.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-60x60.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2029,7 +2029,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2053,7 +2053,7 @@
     },
     {
       "Route": "img/icons/apple-touch-icon-60x60.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-60x60.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-60x60.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2074,7 +2074,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2090,7 +2090,7 @@
     },
     {
       "Route": "img/icons/apple-touch-icon-76x76.pkmw2mjv1h.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-76x76.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-76x76.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2111,7 +2111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2135,7 +2135,7 @@
     },
     {
       "Route": "img/icons/apple-touch-icon-76x76.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-76x76.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\apple-touch-icon-76x76.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2156,7 +2156,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2172,7 +2172,7 @@
     },
     {
       "Route": "img/icons/favicon-16x16.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-16x16.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-16x16.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2193,7 +2193,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2209,7 +2209,7 @@
     },
     {
       "Route": "img/icons/favicon-16x16.qtci45t06m.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-16x16.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-16x16.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2230,7 +2230,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2254,7 +2254,7 @@
     },
     {
       "Route": "img/icons/favicon-32x32.20o635qypc.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-32x32.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-32x32.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2275,7 +2275,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2299,7 +2299,7 @@
     },
     {
       "Route": "img/icons/favicon-32x32.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-32x32.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\favicon-32x32.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2320,7 +2320,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2336,7 +2336,7 @@
     },
     {
       "Route": "img/icons/msapplication-icon-144x144.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\msapplication-icon-144x144.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\msapplication-icon-144x144.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2357,7 +2357,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2373,7 +2373,7 @@
     },
     {
       "Route": "img/icons/msapplication-icon-144x144.ycee3we5iq.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\msapplication-icon-144x144.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\msapplication-icon-144x144.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2394,7 +2394,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2418,7 +2418,7 @@
     },
     {
       "Route": "img/icons/mstile-150x150.ey9bdv9ypk.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\mstile-150x150.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\mstile-150x150.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2439,7 +2439,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2463,7 +2463,7 @@
     },
     {
       "Route": "img/icons/mstile-150x150.png",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\mstile-150x150.png",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\mstile-150x150.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2484,7 +2484,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2500,7 +2500,7 @@
     },
     {
       "Route": "img/icons/safari-pinned-tab.j3ge0sjvud.svg",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\safari-pinned-tab.svg",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\safari-pinned-tab.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2521,7 +2521,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2545,7 +2545,7 @@
     },
     {
       "Route": "img/icons/safari-pinned-tab.svg",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\img\\icons\\safari-pinned-tab.svg",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\img\\icons\\safari-pinned-tab.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2566,7 +2566,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2582,7 +2582,7 @@
     },
     {
       "Route": "index.7omsybvb2w.html",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\index.html",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2603,7 +2603,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 02:16:51 GMT"
+          "Value": "Tue, 25 Mar 2025 01:08:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2627,7 +2627,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\index.html",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2648,7 +2648,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 02:16:51 GMT"
+          "Value": "Tue, 25 Mar 2025 01:08:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2664,7 +2664,7 @@
     },
     {
       "Route": "js/about.4a4183d6.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2685,7 +2685,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2701,7 +2701,7 @@
     },
     {
       "Route": "js/about.4a4183d6.js.map",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js.map",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2722,7 +2722,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2738,7 +2738,7 @@
     },
     {
       "Route": "js/about.4a4183d6.js.w3lahea90l.map",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js.map",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2759,7 +2759,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2783,7 +2783,7 @@
     },
     {
       "Route": "js/about.4a4183d6.kezjh5y8jm.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\about.4a4183d6.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2804,7 +2804,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2828,7 +2828,7 @@
     },
     {
       "Route": "js/about.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\about.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\about.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2837,7 +2837,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1786353"
+          "Value": "1716641"
         },
         {
           "Name": "Content-Type",
@@ -2845,11 +2845,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"66uelVrwdi5tsN7RSRug2XiM6l3GMIRiErzszbCKkfI=\""
+          "Value": "\"+/xUVE5ZuedEzVXL7NPVInwtRby0+IDu19b2BViTSPQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 03:11:29 GMT"
+          "Value": "Tue, 25 Mar 2025 00:56:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2859,13 +2859,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-66uelVrwdi5tsN7RSRug2XiM6l3GMIRiErzszbCKkfI="
+          "Value": "sha256-+/xUVE5ZuedEzVXL7NPVInwtRby0+IDu19b2BViTSPQ="
         }
       ]
     },
     {
-      "Route": "js/about.ntgj0sme48.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\about.js",
+      "Route": "js/about.n103iqyzyf.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\about.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2874,7 +2874,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1786353"
+          "Value": "1716641"
         },
         {
           "Name": "Content-Type",
@@ -2882,11 +2882,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"66uelVrwdi5tsN7RSRug2XiM6l3GMIRiErzszbCKkfI=\""
+          "Value": "\"+/xUVE5ZuedEzVXL7NPVInwtRby0+IDu19b2BViTSPQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 03:11:29 GMT"
+          "Value": "Tue, 25 Mar 2025 00:56:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2896,7 +2896,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ntgj0sme48"
+          "Value": "n103iqyzyf"
         },
         {
           "Name": "label",
@@ -2904,58 +2904,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-66uelVrwdi5tsN7RSRug2XiM6l3GMIRiErzszbCKkfI="
-        }
-      ]
-    },
-    {
-      "Route": "js/app.2q5r3b1b9j.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "104312"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"uhT2/df/u4Aqv7MlbCQDkmmah+efhO5SsA8L/7F00y8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 03:17:45 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2q5r3b1b9j"
-        },
-        {
-          "Name": "label",
-          "Value": "js/app.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-uhT2/df/u4Aqv7MlbCQDkmmah+efhO5SsA8L/7F00y8="
+          "Value": "sha256-+/xUVE5ZuedEzVXL7NPVInwtRby0+IDu19b2BViTSPQ="
         }
       ]
     },
     {
       "Route": "js/app.e32529b0.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2976,7 +2931,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2992,7 +2947,7 @@
     },
     {
       "Route": "js/app.e32529b0.js.dh12mpyn4k.map",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js.map",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3013,7 +2968,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3037,7 +2992,7 @@
     },
     {
       "Route": "js/app.e32529b0.js.map",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js.map",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3058,7 +3013,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3074,7 +3029,7 @@
     },
     {
       "Route": "js/app.e32529b0.lt2m1su761.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.e32529b0.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3095,7 +3050,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3119,7 +3074,7 @@
     },
     {
       "Route": "js/app.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3128,7 +3083,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "104312"
+          "Value": "106003"
         },
         {
           "Name": "Content-Type",
@@ -3136,11 +3091,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uhT2/df/u4Aqv7MlbCQDkmmah+efhO5SsA8L/7F00y8=\""
+          "Value": "\"i/b+7UxoNkXLMtfKnRxZ/KU+4yZPGH9o5OExPui9hCM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 03:17:45 GMT"
+          "Value": "Tue, 25 Mar 2025 01:08:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3150,13 +3105,58 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uhT2/df/u4Aqv7MlbCQDkmmah+efhO5SsA8L/7F00y8="
+          "Value": "sha256-i/b+7UxoNkXLMtfKnRxZ/KU+4yZPGH9o5OExPui9hCM="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.tu6zolfeok.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106003"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i/b+7UxoNkXLMtfKnRxZ/KU+4yZPGH9o5OExPui9hCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 01:08:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tu6zolfeok"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-i/b+7UxoNkXLMtfKnRxZ/KU+4yZPGH9o5OExPui9hCM="
         }
       ]
     },
     {
       "Route": "js/bootstrap.bundle.min.exr1phcmb0.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3177,7 +3177,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3201,7 +3201,7 @@
     },
     {
       "Route": "js/bootstrap.bundle.min.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3222,7 +3222,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3238,7 +3238,7 @@
     },
     {
       "Route": "js/chunk-vendors.41ea2f5f.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3259,7 +3259,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3275,7 +3275,7 @@
     },
     {
       "Route": "js/chunk-vendors.41ea2f5f.js.map",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js.map",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3296,7 +3296,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3312,7 +3312,7 @@
     },
     {
       "Route": "js/chunk-vendors.41ea2f5f.js.w2qrl9bl9g.map",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js.map",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3333,7 +3333,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3357,7 +3357,7 @@
     },
     {
       "Route": "js/chunk-vendors.41ea2f5f.zwywkfwsb7.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.41ea2f5f.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3378,7 +3378,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3402,7 +3402,7 @@
     },
     {
       "Route": "js/chunk-vendors.7ipbx7szw5.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3423,7 +3423,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 02:20:44 GMT"
+          "Value": "Mon, 24 Mar 2025 16:40:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3447,7 +3447,7 @@
     },
     {
       "Route": "js/chunk-vendors.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\chunk-vendors.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3468,7 +3468,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 02:20:44 GMT"
+          "Value": "Mon, 24 Mar 2025 16:40:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3484,7 +3484,7 @@
     },
     {
       "Route": "manifest.0ej3vn690t.json",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\manifest.json",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\manifest.json",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3505,7 +3505,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3529,7 +3529,7 @@
     },
     {
       "Route": "manifest.json",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\manifest.json",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\manifest.json",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3550,7 +3550,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3566,7 +3566,7 @@
     },
     {
       "Route": "robots.txt",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\robots.txt",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\robots.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3587,7 +3587,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3603,7 +3603,7 @@
     },
     {
       "Route": "robots.xwne7zfsbo.txt",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\robots.txt",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\robots.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3624,7 +3624,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3648,7 +3648,7 @@
     },
     {
       "Route": "service-worker.a5mfh91hal.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\service-worker.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\service-worker.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3669,7 +3669,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3693,7 +3693,7 @@
     },
     {
       "Route": "service-worker.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\service-worker.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\service-worker.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3714,7 +3714,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3730,7 +3730,7 @@
     },
     {
       "Route": "service-worker.js.map",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\service-worker.js.map",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\service-worker.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3751,7 +3751,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3767,7 +3767,7 @@
     },
     {
       "Route": "service-worker.js.sbmavgk62v.map",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\service-worker.js.map",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\service-worker.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3788,7 +3788,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3812,7 +3812,7 @@
     },
     {
       "Route": "taller-be.bundle.scp.css",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3833,7 +3833,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 19:33:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3849,7 +3849,7 @@
     },
     {
       "Route": "taller-be.d13a76wwz8.bundle.scp.css",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\taller-be.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3870,7 +3870,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 19:33:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3894,7 +3894,7 @@
     },
     {
       "Route": "taller-be.d13a76wwz8.styles.css",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\taller-be.styles.css",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\taller-be.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3915,7 +3915,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 19:33:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3939,7 +3939,7 @@
     },
     {
       "Route": "taller-be.styles.css",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\taller-be.styles.css",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\obj\\Debug\\net6.0\\scopedcss\\bundle\\taller-be.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3960,7 +3960,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 19:33:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3976,7 +3976,7 @@
     },
     {
       "Route": "workbox-6567b62a.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3997,7 +3997,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4013,7 +4013,7 @@
     },
     {
       "Route": "workbox-6567b62a.js.map",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js.map",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4034,7 +4034,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4050,7 +4050,7 @@
     },
     {
       "Route": "workbox-6567b62a.js.qe1eukmc64.map",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js.map",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4071,7 +4071,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4095,7 +4095,7 @@
     },
     {
       "Route": "workbox-6567b62a.yqypdavmrp.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\workbox-6567b62a.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4116,7 +4116,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 00:34:15 GMT"
+          "Value": "Mon, 24 Mar 2025 16:18:25 GMT"
         },
         {
           "Name": "Cache-Control",

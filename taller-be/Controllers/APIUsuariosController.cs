@@ -91,14 +91,38 @@ namespace taller_be.Controllers
         [HttpPost]
         public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
         {
-          if (_context.Usuarios == null)
-          {
-              return Problem("Entity set 'PeluqueriaBDDContext.Usuarios'  is null.");
-          }
+            if (_context.Usuarios == null)
+            {
+                return Problem("Entity set 'PeluqueriaBDDContext.Usuarios' is null.");
+            }
+
+            // Validar si el email ya está registrado
+            if (await _context.Usuarios.AnyAsync(u => u.Email == usuario.Email))
+            {
+                return Conflict("Ya existe un usuario registrado con este correo electrónico.");
+            }
+
+            // Generar el hash de la contraseña
+            usuario.PasswordHash = HashPassword(usuario.PasswordHash);
+            usuario.FechaRegistro = DateTime.UtcNow;
+
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetUsuario", new { id = usuario.Id }, usuario);
+        }
+
+        // Hasheo para la creacion de usuarios
+        private string HashPassword(string password)
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                // Convertir la contraseña a bytes y aplicar hash
+                var hashBytes = sha256.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+
+                // Convertir el hash a una cadena hexadecimal
+                return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+            }
         }
 
         // DELETE: api/APIUsuarios/5

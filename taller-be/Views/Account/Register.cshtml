@@ -15,28 +15,20 @@
                     </div>
                 }
 
-                <form id="createUserForm">
+                <form method="post" action="/api/APIUsuarios" id="registerForm">
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre:</label>
-                        <input type="text" id="nombre" class="form-control rounded-pill" placeholder="Ingresa tu nombre" required />
+                        <input type="text" name="nombre" id="nombre" class="form-control rounded-pill" placeholder="Ingresa tu nombre" required />
                     </div>
 
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo Electrónico:</label>
-                        <input type="email" id="email" class="form-control rounded-pill" placeholder="Ingresa tu correo" required />
+                        <input type="email" name="email" id="email" class="form-control rounded-pill" placeholder="Ingresa tu correo" required />
                     </div>
 
                     <div class="mb-3">
                         <label for="password" class="form-label">Contraseña:</label>
-                        <input type="password" id="password" class="form-control rounded-pill" placeholder="Ingresa tu contraseña" required />
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="rol" class="form-label">Rol:</label>
-                        <select id="rol" class="form-control rounded-pill" required>
-                            <option value="user">Usuario</option>
-                            <option value="admin">Administrador</option>
-                        </select>
+                        <input type="password" name="password" id="password" class="form-control rounded-pill" placeholder="Ingresa tu contraseña" required />
                     </div>
 
                     <div class="d-grid">
@@ -50,13 +42,13 @@
 
 @section Scripts {
     <script>
-        document.getElementById("createUserForm").onsubmit = async function (event) {
+        document.getElementById("registerForm").onsubmit = async function (event) {
             event.preventDefault();
 
             const nombre = document.getElementById("nombre").value;
             const email = document.getElementById("email").value;
             const passwordHash = document.getElementById("password").value;
-            const rol = document.getElementById("rol").value;
+            const rol = "user";
 
             const registerRequest = {
                 nombre: nombre,
@@ -77,7 +69,28 @@
 
                 if (response.ok) {
                     alert('Usuario registrado exitosamente.');
-                    window.location.href = '/Usuarios2';
+
+                    //logear usuario automatico
+                    const loginRequest = {
+                        email: email,
+                        password: passwordHash
+                    };
+                    const loginResponse = await fetch('/api/APIUsuarios/login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(loginRequest),
+                    });
+
+                    if (loginResponse.ok) {
+                        alert('Usuario registrado e iniciado sesión exitosamente.');
+                        window.location.href = '/#';
+                    } else {
+                        const errorData = await loginResponse.json();
+                        alert('Error al iniciar sesión: ' + errorData.message);
+                    }
+                    
                 } else {
                     const errorData = await response.json();
                     alert('Error: ' + errorData.title || errorData.message);
@@ -89,3 +102,4 @@
         };
     </script>
 }
+

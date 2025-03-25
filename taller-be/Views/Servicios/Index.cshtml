@@ -4,49 +4,51 @@
     ViewData["Title"] = "Servicios";
 }
 
-<h1 class="text-center mb-5">Servicios</h1>
+<div class="container-lg">
+    <h1 class="text-center mb-5">Servicios</h1>
 
-<p>
-    <a asp-action="Create" class="btn btn-success">
-        <i class="bi bi-plus"></i> Nuevo
-    </a>
-</p>
+    <p>
+        <a asp-action="Create" class="btn btn-success rounded-pill">
+            <i class="bi bi-plus"></i> Nuevo Servicio
+        </a>
+    </p>
 
-<div class="table-responsive rounded-3 shadow-sm">
-    <table class="table table-hover table-striped align-middle mb-0 border-0">
-        <thead class="table-dark">
-            <tr>
-                <th class="fs-5 text-uppercase py-3">@Html.DisplayNameFor(model => model.Nombre)</th>
-                <th class="fs-5 text-uppercase py-3">@Html.DisplayNameFor(model => model.Descripcion)</th>
-                <th class="fs-5 text-uppercase py-3">@Html.DisplayNameFor(model => model.Precio)</th>
-                <th class="fs-5 text-uppercase py-3">@Html.DisplayNameFor(model => model.Duracion)</th>
-                <th class="fs-5 text-uppercase text-center py-3">Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
+    <div class="table-responsive rounded-3 shadow-sm">
+        <table class="table table-hover table-striped align-middle mb-0 border-0">
+            <thead class="table-dark">
                 <tr>
-                    <td class="py-3">@Html.DisplayFor(modelItem => item.Nombre)</td>
-                    <td class="py-3">@Html.DisplayFor(modelItem => item.Descripcion)</td>
-                    <td class="py-3">@Html.DisplayFor(modelItem => item.Precio)</td>
-                    <td class="py-3">@Html.DisplayFor(modelItem => item.Duracion)</td>
-                    <td class="text-center py-3">
-                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm me-1" title="Editar">
-                            <i class="bi bi-pencil"></i>
-                        </a>
-                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm me-1" title="Detalles">
-                            <i class="bi bi-eye"></i>
-                        </a>
-                        <!-- Modificado: Popup de confirmación para eliminar -->
-                        <a href="javascript:void(0);" onclick="confirmDelete('@Url.Action("Delete", "Servicios", new { id = item.Id })')" class="btn btn-danger btn-sm" title="Eliminar">
-                            <i class="bi bi-trash"></i>
-                        </a>
-                    </td>
+                    <th class="fs-5 text-uppercase py-3">@Html.DisplayNameFor(model => model.Nombre)</th>
+                    <th class="fs-5 text-uppercase py-3">@Html.DisplayNameFor(model => model.Descripcion)</th>
+                    <th class="fs-5 text-uppercase py-3">@Html.DisplayNameFor(model => model.Precio)</th>
+                    <th class="fs-5 text-uppercase py-3">@Html.DisplayNameFor(model => model.Duracion)</th>
+                    <th class="fs-5 text-uppercase text-center py-3">Acciones</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="py-3">@Html.DisplayFor(modelItem => item.Nombre)</td>
+                        <td class="py-3">@Html.DisplayFor(modelItem => item.Descripcion)</td>
+                        <td class="py-3">@Html.DisplayFor(modelItem => item.Precio)</td>
+                        <td class="py-3">@Html.DisplayFor(modelItem => item.Duracion)</td>
+                        <td class="text-center py-3">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm me-1" title="Editar">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm me-1" title="Detalles">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <!-- Modificado: Popup de confirmación para eliminar -->
+                            <a href="javascript:void(0);" onclick="confirmDelete('@Url.Action("Delete", "Servicios", new { id = item.Id })')" class="btn btn-danger btn-sm" title="Eliminar">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>
 
 @section Scripts {
