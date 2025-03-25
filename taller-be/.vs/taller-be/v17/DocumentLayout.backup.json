@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\models\\peluqueriabddcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:models\\peluqueriabddcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\usuarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\usuarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\usuarios\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\usuarios\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\usuarios\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\usuarios\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\servicios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\servicios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\servicios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\servicios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\servicios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\servicios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -35,12 +59,44 @@
       "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\models\\peluqueriabddcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:models\\peluqueriabddcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\models\\itemtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:models\\itemtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\models\\apiresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:models\\apiresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\controllers\\apiusuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:controllers\\apiusuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\controllers\\apiservicioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:controllers\\apiservicioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\pruebas\\confirmaciones\\dawfinal\\taller-be\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,8 +106,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 14,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\Details.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Details.cshtml",
+              "RelativeToolTip": "Views\\Usuarios\\Details.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T02:43:55.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\Delete.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Usuarios\\Delete.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T02:43:52.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T02:43:28.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Servicios\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Servicios\\Index.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Servicios\\Index.cshtml",
+              "RelativeToolTip": "Views\\Servicios\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T02:43:14.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Servicios\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Servicios\\Edit.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Servicios\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Servicios\\Edit.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T02:43:09.528Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -74,7 +195,163 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Servicios\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Servicios\\Create.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Servicios\\Create.cshtml",
+              "RelativeToolTip": "Views\\Servicios\\Create.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T02:42:56.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T02:42:53.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T02:42:51.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\Edit.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Usuarios\\Edit.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAACMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T00:37:00.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\Index.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Index.cshtml",
+              "RelativeToolTip": "Views\\Usuarios\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-24T23:41:40.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T02:42:14.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_NavBar.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_NavBar.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_NavBar.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T00:44:32.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\Create.cshtml",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Create.cshtml",
+              "RelativeToolTip": "Views\\Usuarios\\Create.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T00:34:38.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ItemTask.cs",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Models\\ItemTask.cs",
+              "RelativeDocumentMoniker": "Models\\ItemTask.cs",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Models\\ItemTask.cs",
+              "RelativeToolTip": "Models\\ItemTask.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T02:42:12.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T02:42:09.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "APIResult.cs",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Models\\APIResult.cs",
+              "RelativeDocumentMoniker": "Models\\APIResult.cs",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Models\\APIResult.cs",
+              "RelativeToolTip": "Models\\APIResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T02:42:07.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T02:41:38.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "PeluqueriaBDDContext.cs",
               "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Models\\PeluqueriaBDDContext.cs",
               "RelativeDocumentMoniker": "Models\\PeluqueriaBDDContext.cs",
@@ -87,111 +364,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_NavBar.cshtml",
-              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Shared\\_NavBar.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_NavBar.cshtml",
-              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Shared\\_NavBar.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_NavBar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:44:32.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Usuarios\\Edit.cshtml",
-              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Usuarios\\Edit.cshtml",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAAC8AAABwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:37:00.579Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Usuarios\\Create.cshtml",
-              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Create.cshtml",
-              "RelativeToolTip": "Views\\Usuarios\\Create.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:34:38.357Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAC8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:26:59.701Z"
+              "WhenOpened": "2025-03-25T00:26:59.701Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
               "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Account\\Register.cshtml",
               "RelativeToolTip": "Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFwAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAADkAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:15:27.054Z"
+              "WhenOpened": "2025-03-25T00:15:27.054Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 23,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T02:41:22.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "APIUsuariosController.cs",
               "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Controllers\\APIUsuariosController.cs",
               "RelativeDocumentMoniker": "Controllers\\APIUsuariosController.cs",
               "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Controllers\\APIUsuariosController.cs",
               "RelativeToolTip": "Controllers\\APIUsuariosController.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAIwFgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAPUAAAAAAAAAAADwv1gAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T00:12:47.825Z"
+              "WhenOpened": "2025-03-25T00:12:47.825Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "APIServiciosController.cs",
-              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Controllers\\APIServiciosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\APIServiciosController.cs",
-              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Controllers\\APIServiciosController.cs",
-              "RelativeToolTip": "Controllers\\APIServiciosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T00:12:47.057Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Usuarios\\Index.cshtml",
-              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Views\\Usuarios\\Index.cshtml",
-              "RelativeToolTip": "Views\\Usuarios\\Index.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T23:41:40.139Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "UsuariosController.cs",
               "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
               "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Controllers\\UsuariosController.cs",
               "RelativeToolTip": "Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAcwAwAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T17:08:06.012Z"
+              "WhenOpened": "2025-03-24T17:08:06.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "APIServiciosController.cs",
+              "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Controllers\\APIServiciosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\APIServiciosController.cs",
+              "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\Controllers\\APIServiciosController.cs",
+              "RelativeToolTip": "Controllers\\APIServiciosController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T00:12:47.057Z",
+              "EditorCaption": ""
             }
           ]
         }

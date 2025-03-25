@@ -39,7 +39,7 @@
                             <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm me-1" title="Detalles">
                                 <i class="bi bi-eye"></i>
                             </a>
-                            <!-- Modificado: Popup de confirmación para eliminar -->
+                            <!-- Popup de confirmación para eliminar -->
                             <a href="javascript:void(0);" onclick="confirmDelete('@Url.Action("Delete", "Servicios", new { id = item.Id })')" class="btn btn-danger btn-sm" title="Eliminar">
                                 <i class="bi bi-trash"></i>
                             </a>
