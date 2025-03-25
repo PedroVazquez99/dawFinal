@@ -123,7 +123,7 @@
     private async handleEventClick(info: any): Promise<void> {
       const evento = info.event;
       const { value, isDenied } = await this.showSwal(
-        "Editar cita",
+        "Editar cita - " + String(this.currentUser.name),
         evento.title,
         moment.utc(evento.start).format("HH:mm"), // Display time in UTC
         evento.extendedProps.servicioId, // Pass the service ID to pre-select it
@@ -247,7 +247,7 @@
           </option>
         `)
         .join("");
-    
+      console.log(this.currentUser.name.toString());
       return Swal.fire({
         title,
         html: `
@@ -264,7 +264,7 @@
           </div>
         `,
         preConfirm: () => ({
-          nombre: this.currentUser.nombre,
+          nombre: String(this.currentUser.name),
           hora: (document.getElementById("hora") as HTMLInputElement).value,
           servicioId: (document.getElementById("servicio") as HTMLSelectElement).value,
         }),
