@@ -13,28 +13,43 @@
                 @if (User.Identity.IsAuthenticated)
                 {
                     <li class="nav-item mx-3">
-                        <a class="nav-link text-white fs-4" href="@((User.IsInRole("admin") ? "/#/reserva" : "/#/mi-reserva"))">Reservas</a>
+                        <a class="nav-link text-white fs-4 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Reserva" ? "active" : "")"
+                           href="@((User.IsInRole("admin") ? "/#/reserva" : "/#/mi-reserva"))">
+                            Reservas
+                        </a>
                     </li>
 
                     @if (User.IsInRole("admin"))
                     {
                         <li class="nav-item mx-3">
-                            <a class="nav-link text-white fs-4" href="/Usuarios">Usuarios</a>
+                            <a class="nav-link text-white fs-4 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Usuarios" ? "active" : "")"
+                               href="/Usuarios">
+                                Usuarios
+                            </a>
                         </li>
 
                         <li class="nav-item mx-3">
-                            <a class="nav-link text-white fs-4" href="/Servicios">Servicios</a>
+                            <a class="nav-link text-white fs-4 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Servicios" ? "active" : "")"
+                               href="/Servicios">
+                                Servicios
+                            </a>
                         </li>
                     }
                 }
                 else
                 {
                     <li class="nav-item mx-3">
-                        <a class="nav-link text-white fs-4" href="/Account/Login">Login</a>
+                        <a class="nav-link text-white fs-4 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Account" && ViewContext.RouteData.Values["action"]?.ToString() == "Login" ? "active" : "")"
+                           href="/Account/Login">
+                            Login
+                        </a>
                     </li>
 
                     <li class="nav-item mx-3">
-                        <a class="nav-link text-white fs-4" href="/Account/Register">Register</a>
+                        <a class="nav-link text-white fs-4 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Account" && ViewContext.RouteData.Values["action"]?.ToString() == "Register" ? "active" : "")"
+                           href="/Account/Register">
+                            Register
+                        </a>
                     </li>
                 }
             </ul>
@@ -68,3 +83,26 @@
         }
     </div>
 </nav>
+
+<style>
+    .navbar-nav .nav-item {
+        font-family: 'Optima', sans-serif; 
+        color: #f8f9fa; 
+        transition: transform 0.2s ease, color 0.2s ease; 
+    }
+
+    /* Efecto hover */
+    .navbar-nav .nav-item:hover {
+        color: #f8f9fa !important; 
+        transform: scale(1.1); 
+        transition: transform 0.2s ease, color 0.2s ease; 
+    }
+
+    /* Estilo para el enlace activo */
+    .navbar-nav .nav-item.active {
+        font-family: 'Optima', sans-serif; 
+        font-weight: bold;
+        color: #f8f9fa !important;
+        border-bottom: 2px solid #f8f9fa; /* Indicador de enlace activo */
+    }
+</style>
