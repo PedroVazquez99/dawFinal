@@ -268,15 +268,22 @@
   
     // mira las colisiones entre citas
     private isColision(fecha: string, duracionEnMinutos: number, excludeEventId?: string): boolean {
-      const inicio = moment.utc(fecha); // Ensure the start time is in UTC
-      const fin = moment.utc(fecha).add(duracionEnMinutos, "minutes"); // Ensure the end time is in UTC
+      const inicio = moment.utc(fecha); // Start time in UTC
+      const fin = moment.utc(fecha).add(duracionEnMinutos, "minutes"); // End time in UTC
+    
       return this.calendar.getEvents().some((evento) => {
         if (excludeEventId && evento.id === excludeEventId) {
           return false; // Exclude the currently edited or moved event
         }
-        const eventoInicio = moment.utc(evento.start); // Ensure the event start time is in UTC
-        const eventoFin = moment.utc(evento.end || evento.start).add(duracionEnMinutos, "minutes"); // Ensure the event end time is in UTC
-        return inicio.isBefore(eventoFin) && fin.isAfter(eventoInicio);
+    
+        const eventoInicio = moment.utc(evento.start); // Event start time in UTC
+        const eventoFin = moment.utc(evento.end || evento.start).add(duracionEnMinutos, "minutes"); // Event end time in UTC
+    
+        // Check if the given time range overlaps with the event's time range
+        return (
+          inicio.isBefore(eventoFin) && fin.isAfter(eventoInicio) || // Overlap from above
+          fin.isAfter(eventoInicio) && inicio.isBefore(eventoFin)    // Overlap from below
+        );
       });
     }
   
