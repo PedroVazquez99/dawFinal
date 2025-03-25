@@ -252,10 +252,6 @@
         title,
         html: `
           <div style="display: flex; align-items: center; gap: 10px;">
-            <i class="fas fa-user"></i>
-            <input id="nombre" class="swal2-input" placeholder="Nombre del cliente" style="flex: 1;" value="${nombre}">
-          </div>
-          <div style="display: flex; align-items: center; gap: 10px;">
             <i class="fas fa-clock"></i>
             <input id="hora" type="time" class="swal2-input" style="flex: 1;" value="${hora}">
           </div>
@@ -268,7 +264,7 @@
           </div>
         `,
         preConfirm: () => ({
-          nombre: (document.getElementById("nombre") as HTMLInputElement).value,
+          nombre: this.currentUser.nombre,
           hora: (document.getElementById("hora") as HTMLInputElement).value,
           servicioId: (document.getElementById("servicio") as HTMLSelectElement).value,
         }),
@@ -280,21 +276,21 @@
   
     // mira las colisiones entre citas
     private isColision(fecha: string, duracionEnMinutos: number, excludeEventId?: string): boolean {
-      const inicio = moment.utc(fecha); // Start time in UTC
-      const fin = moment.utc(fecha).add(duracionEnMinutos, "minutes"); // End time in UTC
+      const inicio = moment.utc(fecha); // Comienzo
+      const fin = moment.utc(fecha).add(duracionEnMinutos, "minutes"); // Finalizacion
     
       return this.calendar.getEvents().some((evento) => {
         if (excludeEventId && evento.id === excludeEventId) {
-          return false; // Exclude the currently edited or moved event
+          return false; // Exluimos el evento actual de la comprobación
         }
     
         const eventoInicio = moment.utc(evento.start); // Event start time in UTC
         const eventoFin = moment.utc(evento.end || evento.start).add(duracionEnMinutos, "minutes"); // Event end time in UTC
     
-        // Check if the given time range overlaps with the event's time range
+        // Comprobamos si existe colision por encima y por debajo
         return (
-          inicio.isBefore(eventoFin) && fin.isAfter(eventoInicio) || // Overlap from above
-          fin.isAfter(eventoInicio) && inicio.isBefore(eventoFin)    // Overlap from below
+          inicio.isBefore(eventoFin) && fin.isAfter(eventoInicio) || // Duracion por encima
+          fin.isAfter(eventoInicio) && inicio.isBefore(eventoFin)    // Duracion por debajo
         );
       });
     }
