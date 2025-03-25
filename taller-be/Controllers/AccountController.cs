@@ -11,5 +11,10 @@ namespace tu_app.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Register()
+        {
+            return View();
+        }
     }
 }

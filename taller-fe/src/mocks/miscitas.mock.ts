@@ -15,7 +15,7 @@ export const citas = [
         id: 3,
         fecha: "2025-03-27T10:30:00",
         titulo: "titulo 3",
-        usuario: 5,
+        UsuarioId: 5,
     },
   ];
   

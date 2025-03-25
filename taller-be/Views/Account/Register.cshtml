@@ -1,0 +1,105 @@
+﻿@{
+    ViewData["Title"] = "Registro de Usuario";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <div class="card shadow-sm p-4 border-0 rounded-3">
+                <h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+                @if (ViewData["error"] != null && ViewData["error"].ToString() != "")
+                {
+                    <div class="alert alert-danger text-center">
+                        Error: @ViewData["error"].ToString()
+                    </div>
+                }
+
+                <form method="post" action="/api/APIUsuarios" id="registerForm">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control rounded-pill" placeholder="Ingresa tu nombre" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico:</label>
+                        <input type="email" name="email" id="email" class="form-control rounded-pill" placeholder="Ingresa tu correo" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <input type="password" name="password" id="password" class="form-control rounded-pill" placeholder="Ingresa tu contraseña" required />
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary rounded-pill">Registrarse</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById("registerForm").onsubmit = async function (event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById("nombre").value;
+            const email = document.getElementById("email").value;
+            const passwordHash = document.getElementById("password").value;
+            const rol = "user";
+
+            const registerRequest = {
+                nombre: nombre,
+                email: email,
+                passwordHash: passwordHash,
+                rol: rol,
+                fechaRegistro: new Date().toISOString()
+            };
+
+            try {
+                const response = await fetch('/api/APIUsuarios', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(registerRequest),
+                });
+
+                if (response.ok) {
+                    alert('Usuario registrado exitosamente.');
+
+                    //logear usuario automatico
+                    const loginRequest = {
+                        email: email,
+                        password: passwordHash
+                    };
+                    const loginResponse = await fetch('/api/APIUsuarios/login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(loginRequest),
+                    });
+
+                    if (loginResponse.ok) {
+                        alert('Usuario registrado e iniciado sesión exitosamente.');
+                        window.location.href = '/#';
+                    } else {
+                        const errorData = await loginResponse.json();
+                        alert('Error al iniciar sesión: ' + errorData.message);
+                    }
+                    
+                } else {
+                    const errorData = await response.json();
+                    alert('Error: ' + errorData.title || errorData.message);
+                }
+            } catch (error) {
+                console.error('Error en la solicitud de registro:', error);
+                alert('Ocurrió un error al intentar registrar el usuario.');
+            }
+        };
+    </script>
+}
+

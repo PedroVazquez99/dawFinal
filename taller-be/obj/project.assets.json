@@ -10752,11 +10752,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\taller-be.csproj",
+      "projectUniqueName": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\taller-be.csproj",
       "projectName": "taller-be",
-      "projectPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\taller-be.csproj",
+      "projectPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\taller-be.csproj",
       "packagesPath": "C:\\Users\\jordi\\.nuget\\packages\\",
-      "outputPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Estilos Interfaces\\dawFinal\\taller-be\\obj\\",
+      "outputPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Pruebas\\Confirmaciones\\dawFinal\\taller-be\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

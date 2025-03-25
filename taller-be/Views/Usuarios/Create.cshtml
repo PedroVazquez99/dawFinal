@@ -1,63 +1,91 @@
-﻿@model taller_be.Models.Usuario
-
-@{
-    ViewData["Title"] = "Crear Usuario";
+﻿@{
+    ViewData["Title"] = "Registro de Usuario";
 }
 
 <div class="container mt-5">
-    <!-- Título del formulario -->
-    <div class="text-center mb-4">
-        <h1 class="display-4 text-primary fw-bold">Crear Nuevo Usuario</h1>
-        <p class="text-muted">Completa los campos para agregar un nuevo usuario al sistema.</p>
-    </div>
-
-    <!-- Formulario -->
     <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <form asp-action="Create">
-                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+        <div class="col-12 col-md-6">
+            <div class="card shadow-sm p-4 border-0 rounded-3">
+                <h2 class="text-center mb-4">@ViewData["Title"]</h2>
 
-                        <!-- Campo Nombre -->
-                        <div class="form-group mb-3">
-                            <label asp-for="Nombre" class="form-label"></label>
-                            <input asp-for="Nombre" class="form-control" placeholder="Ingrese el nombre del usuario" />
-                            <span asp-validation-for="Nombre" class="text-danger"></span>
-                        </div>
+                @if (ViewData["error"] != null && ViewData["error"].ToString() != "")
+                {
+                    <div class="alert alert-danger text-center">
+                        Error: @ViewData["error"].ToString()
+                    </div>
+                }
 
-                        <!-- Campo Email -->
-                        <div class="form-group mb-3">
-                            <label asp-for="Email" class="form-label"></label>
-                            <input asp-for="Email" class="form-control" placeholder="Ingrese el correo electrónico" />
-                            <span asp-validation-for="Email" class="text-danger"></span>
-                        </div>
+                <form id="createUserForm">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" id="nombre" class="form-control rounded-pill" placeholder="Ingresa tu nombre" required />
+                    </div>
 
-                        <!-- Campo Contraseña -->
-                        <div class="form-group mb-3">
-                            <label asp-for="PasswordHash" class="form-label"></label>
-                            <input asp-for="PasswordHash" type="password" class="form-control" placeholder="Ingrese la contraseña" />
-                            <span asp-validation-for="PasswordHash" class="text-danger"></span>
-                        </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico:</label>
+                        <input type="email" id="email" class="form-control rounded-pill" placeholder="Ingresa tu correo" required />
+                    </div>
 
-                        <!-- Botones -->
-                        <div class="d-flex justify-content-between">
-                            <a asp-action="Index" class="btn btn-outline-secondary">
-                                <i class="fas fa-arrow-left"></i> Regresar
-                            </a>
-                            <button type="submit" class="btn btn-outline-primary">
-                                <i class="fas fa-save"></i> Crear Usuario
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <input type="password" id="password" class="form-control rounded-pill" placeholder="Ingresa tu contraseña" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="rol" class="form-label">Rol:</label>
+                        <select id="rol" class="form-control rounded-pill" required>
+                            <option value="user">Usuario</option>
+                            <option value="admin">Administrador</option>
+                        </select>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary rounded-pill">Registrarse</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    <script>
+        document.getElementById("createUserForm").onsubmit = async function (event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById("nombre").value;
+            const email = document.getElementById("email").value;
+            const passwordHash = document.getElementById("password").value;
+            const rol = document.getElementById("rol").value;
+
+            const registerRequest = {
+                nombre: nombre,
+                email: email,
+                passwordHash: passwordHash,
+                rol: rol,
+                fechaRegistro: new Date().toISOString()
+            };
+
+            try {
+                const response = await fetch('/api/APIUsuarios', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(registerRequest),
+                });
+
+                if (response.ok) {
+                    alert('Usuario registrado exitosamente.');
+                    window.location.href = '/Usuarios2';
+                } else {
+                    const errorData = await response.json();
+                    alert('Error: ' + errorData.title || errorData.message);
+                }
+            } catch (error) {
+                console.error('Error en la solicitud de registro:', error);
+                alert('Ocurrió un error al intentar registrar el usuario.');
+            }
+        };
+    </script>
 }
