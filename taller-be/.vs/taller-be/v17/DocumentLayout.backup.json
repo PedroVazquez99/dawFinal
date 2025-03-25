@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\arreglos finales\\dawfinal\\taller-be\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\arreglos finales\\dawfinal\\taller-be\\views\\usuarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\usuarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\arreglos finales\\dawfinal\\taller-be\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|solutionrelative:views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA93EB9A-5FF9-4693-B043-7CD17C086D22}|taller-be.csproj|c:\\master daw- copia\\desarrollo web\\proyecto\\arreglos finales\\dawfinal\\taller-be\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -46,24 +46,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_NavBar.cshtml",
               "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\Views\\Shared\\_NavBar.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_NavBar.cshtml",
               "ToolTip": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\Views\\Shared\\_NavBar.cshtml",
               "RelativeToolTip": "Views\\Shared\\_NavBar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-25T00:44:32.474Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\Views\\Usuarios\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Usuarios\\Edit.cshtml",
@@ -84,8 +104,7 @@
               "RelativeToolTip": "Views\\Usuarios\\Create.cshtml",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:34:38.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T00:34:38.357Z"
             },
             {
               "$type": "Document",
@@ -97,8 +116,7 @@
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:26:59.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T00:26:59.701Z"
             },
             {
               "$type": "Document",
@@ -110,8 +128,7 @@
               "RelativeToolTip": "Views\\Account\\Register.cshtml",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAAFwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:15:27.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T00:15:27.054Z"
             },
             {
               "$type": "Document",
@@ -123,8 +140,7 @@
               "RelativeToolTip": "Controllers\\APIUsuariosController.cs",
               "ViewState": "AgIAAFAAAAAAAAAAAAAIwFgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T00:12:47.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T00:12:47.825Z"
             },
             {
               "$type": "Document",
@@ -136,8 +152,7 @@
               "RelativeToolTip": "Controllers\\APIServiciosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T00:12:47.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T00:12:47.057Z"
             },
             {
               "$type": "Document",
@@ -149,8 +164,7 @@
               "RelativeToolTip": "Views\\Usuarios\\Index.cshtml",
               "ViewState": "AgIAADwAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T23:41:40.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T23:41:40.139Z"
             },
             {
               "$type": "Document",
@@ -162,28 +176,7 @@
               "RelativeToolTip": "Controllers\\UsuariosController.cs",
               "ViewState": "AgIAAHMAAAAAAAAAAAAcwAwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T17:08:06.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2025-03-24T17:08:06.012Z"
             }
           ]
         }

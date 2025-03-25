@@ -21,9 +21,9 @@
             :key="index"
             class="service-card shadow-sm p-3"
           >
-            <h3 class="card-title">{{ servicio.titulo }}</h3>
+          
             <p class="card-text">{{ servicio.descripcion }}</p>
-            <p class="card-price">Precio: {{ servicio.precio }} €</p>
+            <p class="card-price">{{ servicio.precio }} €</p>
           </div>
         </div>
       </div>
@@ -168,7 +168,7 @@ export default class HomeView extends Vue {
 .card-price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #007bff;
+  color: #000000;
 }
 
 /* Animación flotante */
