@@ -121,13 +121,13 @@
         this.deleteEvent(evento);
         return;
       }
-      if (value?.nombre && value?.hora) {
+      if (value?.nombre && value?.hora && value?.servicioId) {
         const nuevaFecha = this.combineDateAndTime(moment.utc(evento.start).format("YYYY-MM-DD"), value.hora);
         if (this.isColision(nuevaFecha, 30, evento.id)) { // Pass the event ID to exclude it from collision checks
           errorModal("Conflicto de horarios", "Ya existe un evento en esta franja horaria.");
           return;
         }
-        this.updateEvent(evento, value.nombre, nuevaFecha);
+        this.updateEvent(evento, value.nombre, nuevaFecha, Number(value.servicioId));
       }
     }
   //hola2
@@ -150,7 +150,7 @@
 
       try {
         // Actualizar la tarea en el store
-        await this.updateTask(event.id, event.title, event.start?.toISOString() || "");
+        await this.updateTask(event.id, event.title, event.start?.toISOString() || "", Number(event.extendedProps.servicioId));
 
         // Sincronizar el estado del evento en el calendario
         event.setStart(event.start?.toISOString() || "");
@@ -216,14 +216,15 @@
       }
   }
   
-    private updateEvent(evento: any, nombre: string, fecha: string): void {
+    private updateEvent(evento: any, nombre: string, fecha: string, servicioId: number): void {
       if(evento.extendedProps.usuarioId !== Number(this.usuarioID)) {
         errorModal("Error", "No puedes editar citas de otros usuarios.");
         return;
       }
       evento.setProp("title", nombre); // Update the title in the calendar
       evento.setStart(fecha); // Update the start date in the calendar
-      this.updateTask(evento.id, nombre, fecha); // Update the event in the store
+      evento.setExtendedProp("servicioId", servicioId); // Update the service ID in the calendar
+      this.updateTask(evento.id, nombre, fecha, servicioId); // Update the event in the store
     }
   
     private async showSwal(title: string, nombre = "", hora = "", servicioId = "", showDeleteButton = false) {
@@ -288,17 +289,19 @@
     }
   
     // actializa los valores de una cita
-    private async updateTask(id: string, nombre: string, fecha: string): Promise<void> {
+    private async updateTask(id: string, nombre: string, fecha: string, servicioId: number): Promise<void> {
       const task = this.getAll().find((t) => t.id === Number(id));
       if (task) {
         task.nombre = nombre;
         task.fecha = moment.utc(fecha); // Store the updated date in UTC
+        task.servicioId = servicioId; // Update the service ID
         await this.$store.dispatch("setLista", [task, task.id]); // Dispatch the update to the store
       } else {
         errorModal("No se pudo encontrar la cita para actualizar."); // Handle missing task
       }
     }
   
+    
     // ----------------------------------------------------------------------- HELPERS -----------------------------------------------------------------------
   
     private getErrorIfExists(): string {
