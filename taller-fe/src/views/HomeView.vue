@@ -107,7 +107,7 @@ export default class HomeView extends Vue {
 }
 
 .services-title {
-  font-family: "Georgia", serif; /* Igual que el título "Peluquería" */
+  font-family: "Georgia", serif;
   font-size: 2.5rem;
   color: rgb(49, 49, 47);
 }
@@ -116,7 +116,7 @@ export default class HomeView extends Vue {
   display: flex;
   gap: 1rem;
   padding: 1rem 0;
-  overflow: hidden; /* Oculta el slider horizontal */
+  overflow: hidden;
   position: relative;
 }
 
@@ -148,7 +148,7 @@ export default class HomeView extends Vue {
   text-align: center;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  animation: float 10s linear infinite; /* Animación flotante */
+  animation: float 10s linear infinite; 
 }
 
 .service-card:hover {

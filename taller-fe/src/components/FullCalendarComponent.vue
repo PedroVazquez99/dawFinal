@@ -99,7 +99,7 @@ import { OkModal, deleteModal, errorModal } from "./modals/ModalAdapter";
         this.addEvent(value.nombre, nuevaFecha, Number(value.servicioId));
       }
     }
-// holaaaaa  
+
     private async handleEventClick(info: any): Promise<void> {
       const evento = info.event;
       const { value, isDenied } = await this.showSwal(
@@ -122,7 +122,7 @@ import { OkModal, deleteModal, errorModal } from "./modals/ModalAdapter";
         this.updateEvent(evento, value.nombre, nuevaFecha, Number(value.servicioId));
       }
     }
-  //hola2
+
     private async handleEventDrop(info: any): Promise<void> {
       const { event } = info;
 
@@ -309,6 +309,6 @@ import { OkModal, deleteModal, errorModal } from "./modals/ModalAdapter";
   </script>
   
   <style scoped>
-  /* Añade estilos si es necesario */
+
   </style>
 

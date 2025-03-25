@@ -115,30 +115,6 @@ class APIService {
     
         return resp;
     }
-
-    // Valida el usuario
-    async login(ruta: string, credentials: { email: string; password: string }) {
-        const resp = new APIResponse();
-        await http.post(
-            ruta, credentials
-        ).then((respuesta) => {
-            const data = respuesta.data;
-            resp.status = APIStatus.OK;
-            resp.respuesta = data; // Aquí puedes manejar la respuesta del servidor
-            console.log(respuesta);
-            if (data.usuario.rol === 'admin') {
-                console.log("Es admin");
-                // window.location.href = '/Usuarios'; // Redirige a Razor Pages
-            } else if (data.usuario.rol === 'user') {
-                console.log("Es user");
-                router.push('/reserva'); // Navega dentro de la SPA de Vue
-            }
-        }).catch((error) => {
-            resp.status = APIStatus.ERR;
-            resp.error = error.toString();
-        });
-        return resp;
-    }
     
     //Recupera el usuario actual
     async getCurrentUser() {
