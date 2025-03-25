@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TbuD3JIhVIuwkTDRcHGsXp++9pqQE4ZybRCo+DHP6vs=",
+  "Hash": "49reehdEoyNPuG9e6ipDVSnUOFouzdkuHWmj1qZOyW0=",
   "Source": "taller-be",
   "BasePath": "_content/taller-be",
   "Mode": "Default",
@@ -640,8 +640,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "iuee61nwrd",
-      "Integrity": "VuN/77WbJ0D+g0xlVGUWbY2LQSC0CF+Zkr7+UEUmduw=",
+      "Fingerprint": "puaa5glq1h",
+      "Integrity": "cYqFyBwjLj47/B6SNhUwmVm+tUzMhs1HnHi0joTy32g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\app.js"
@@ -3073,51 +3073,6 @@
       ]
     },
     {
-      "Route": "js/app.iuee61nwrd.js",
-      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "108766"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VuN/77WbJ0D+g0xlVGUWbY2LQSC0CF+Zkr7+UEUmduw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 21:37:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iuee61nwrd"
-        },
-        {
-          "Name": "label",
-          "Value": "js/app.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-VuN/77WbJ0D+g0xlVGUWbY2LQSC0CF+Zkr7+UEUmduw="
-        }
-      ]
-    },
-    {
       "Route": "js/app.js",
       "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
       "Selectors": [],
@@ -3128,7 +3083,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "108766"
+          "Value": "108054"
         },
         {
           "Name": "Content-Type",
@@ -3136,11 +3091,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VuN/77WbJ0D+g0xlVGUWbY2LQSC0CF+Zkr7+UEUmduw=\""
+          "Value": "\"cYqFyBwjLj47/B6SNhUwmVm+tUzMhs1HnHi0joTy32g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 21:37:09 GMT"
+          "Value": "Mon, 24 Mar 2025 21:50:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3150,7 +3105,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VuN/77WbJ0D+g0xlVGUWbY2LQSC0CF+Zkr7+UEUmduw="
+          "Value": "sha256-cYqFyBwjLj47/B6SNhUwmVm+tUzMhs1HnHi0joTy32g="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.puaa5glq1h.js",
+      "AssetFile": "C:\\Master DAW- Copia\\Desarrollo Web\\Proyecto\\Arreglos Finales\\dawFinal\\taller-be\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108054"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cYqFyBwjLj47/B6SNhUwmVm+tUzMhs1HnHi0joTy32g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 21:50:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "puaa5glq1h"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cYqFyBwjLj47/B6SNhUwmVm+tUzMhs1HnHi0joTy32g="
         }
       ]
     },

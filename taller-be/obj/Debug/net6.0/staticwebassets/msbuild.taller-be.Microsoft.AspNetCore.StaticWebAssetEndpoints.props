@@ -324,17 +324,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lt2m1su761"},{"Name":"integrity","Value":"sha256-NxcLX\u002BIfOprvEP0r3B9GBtWlKybIzTNZSEJPqHeTAsU="},{"Name":"label","Value":"_content/taller-be/js/app.e32529b0.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"17126"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022NxcLX\u002BIfOprvEP0r3B9GBtWlKybIzTNZSEJPqHeTAsU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 16:18:25 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/taller-be/js/app.iuee61nwrd.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\app.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"iuee61nwrd"},{"Name":"integrity","Value":"sha256-VuN/77WbJ0D\u002Bg0xlVGUWbY2LQSC0CF\u002BZkr7\u002BUEUmduw="},{"Name":"label","Value":"_content/taller-be/js/app.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"108766"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022VuN/77WbJ0D\u002Bg0xlVGUWbY2LQSC0CF\u002BZkr7\u002BUEUmduw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 21:37:09 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/taller-be/js/app.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\app.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VuN/77WbJ0D\u002Bg0xlVGUWbY2LQSC0CF\u002BZkr7\u002BUEUmduw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"108766"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022VuN/77WbJ0D\u002Bg0xlVGUWbY2LQSC0CF\u002BZkr7\u002BUEUmduw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 21:37:09 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-cYqFyBwjLj47/B6SNhUwmVm\u002BtUzMhs1HnHi0joTy32g="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"108054"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022cYqFyBwjLj47/B6SNhUwmVm\u002BtUzMhs1HnHi0joTy32g=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 21:50:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/taller-be/js/app.puaa5glq1h.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\app.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"puaa5glq1h"},{"Name":"integrity","Value":"sha256-cYqFyBwjLj47/B6SNhUwmVm\u002BtUzMhs1HnHi0joTy32g="},{"Name":"label","Value":"_content/taller-be/js/app.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"108054"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022cYqFyBwjLj47/B6SNhUwmVm\u002BtUzMhs1HnHi0joTy32g=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 21:50:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/taller-be/js/bootstrap.bundle.min.exr1phcmb0.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\bootstrap.bundle.min.js'))</AssetFile>
