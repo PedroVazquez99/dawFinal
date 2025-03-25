@@ -5,7 +5,7 @@
   </template>
   
   <script lang="ts">
-  import { Component, Prop, Vue } from "vue-property-decorator";
+  import { Component, Prop, Vue, Watch } from "vue-property-decorator";
   import { Calendar, EventSourceInput } from "@fullcalendar/core";
   import dayGridPlugin from "@fullcalendar/daygrid";
   import timeGridPlugin from "@fullcalendar/timegrid";
@@ -22,65 +22,77 @@
     private calendar!: Calendar;
     private errGet = "";
     private errAdd = "";
-    private usuarioID: string | null = null; // Cogerlo desde el store, ver como hacerlo
-    private servicioID = 1; // Cogerlo desde el store, ver como hacerlo
-    mounted() {
+    private usuarioID: string | null = null;
+    async mounted() {
       if (!this.$refs.calendar) return;
-      console.log("Usuario cargado:", this.currentUser);
-      //Recupera el usuario
-      this.$store.dispatch("fetchCurrentUser")
-      .then(() => {
-        console.log("Usuario cargado:", this.currentUser);
-        this.usuarioID = this.currentUserId;
-      })
-      .catch((error) => {
-        console.error("Error al cargar el usuario:", error);
-      });
 
-      // Recupera los servicios
-      this.$store.dispatch("fetchServicios")
-      .then(() => {
-        // console.log("Servicios cargados:", this.servicios);
-      })
-      .catch((error) => {
-        console.error("Error al cargar los servicios:", error);
-      });
+      // Cargar datos necesarios antes de inicializar el calendario
+      Promise.all([
+        this.$store.dispatch("fetchCurrentUser"),
+        this.$store.dispatch("fetchServicios"),
+        this.$store.dispatch("getLists"),
+      ])
+        .then(() => {
+          this.errGet = this.getErrorIfExists();
+          this.usuarioID = this.currentUserId;
 
+          // Esperar hasta que getAll tenga datos
+          const interval = setInterval(() => {
+            const events = this.getAll();
+            console.log("Esperando datos de getAll:", events);
+            if (events.length > 0) {
+              clearInterval(interval);
 
-      this.$store.dispatch("getLists");
-      this.errGet = this.getErrorIfExists();
-  
-      this.calendar = new Calendar(this.$refs.calendar as HTMLElement, {
-        plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
-        locale: "es",
-        initialView: "dayGridMonth",
-        editable: true,
-        eventDurationEditable: false,
-        selectable: true,
-        firstDay: 1,
-        dayMaxEvents: 3,
-        timeZone: 'UTC',
-        headerToolbar: {
-          left: "",
-          center: "title",
-          right: "prev,next today",
-        },
-        buttonText: { today: "Hoy", month: "Mes", week: "Semana", day: "Día" },
-        validRange: { start: this.getToday() },
-        eventTimeFormat: { hour: "2-digit", minute: "2-digit", meridiem: false },
-        selectAllow: (selectInfo) => selectInfo.startStr === selectInfo.endStr.split("T")[0],
-        events: this.convertirAEventSource(this.getAll()),
-        eventClick: this.handleEventClick,
-        dateClick: this.handleDateClick,
-        eventDrop: this.handleEventDrop,
-        moreLinkText: (num) => `Ver ${num} más`,
-      });
-  
-      this.calendar.render();
+              // Inicializar el calendario después de cargar los datos
+              this.calendar = new Calendar(this.$refs.calendar as HTMLElement, {
+                plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
+                locale: "es",
+                initialView: "dayGridMonth",
+                editable: true,
+                eventDurationEditable: false,
+                selectable: true,
+                firstDay: 1,
+                dayMaxEvents: 3,
+                timeZone: "UTC",
+                headerToolbar: {
+                  left: "dayGridMonth,timeGridWeek,timeGridDay",
+                  center: "title",
+                  right: "prev,next today",
+                },
+                buttonText: { today: "Hoy", month: "Mes", week: "Semana", day: "Día" },
+                validRange: { start: this.getToday() },
+                eventTimeFormat: { hour: "2-digit", minute: "2-digit", meridiem: false },
+                selectAllow: (selectInfo) =>
+                  selectInfo.startStr === selectInfo.endStr.split("T")[0],
+                events: this.convertirAEventSource(events),
+                eventClick: this.handleEventClick,
+                dateClick: this.handleDateClick,
+                eventDrop: this.handleEventDrop,
+                moreLinkText: (num) => `Ver ${num} más`,
+              });
+
+              this.calendar.render();
+            }
+          }, 100); // Verificar cada 100ms
+        })
+        .catch((error) => {
+          console.error("Error al cargar los datos necesarios:", error);
+        });
     }
   
     beforeDestroy() {
       this.calendar?.destroy();
+    }
+
+    // Observa los cambios en los eventos del store
+    @Watch("getAll", { deep: true })
+    onEventsChange(newEvents: TaskList[]) {
+      console.log("Eventos actualizados en getAll:", newEvents);
+      if (this.calendar) {
+        this.calendar.removeAllEvents(); // Elimina todos los eventos actuales
+        this.calendar.addEventSource(this.convertirAEventSource(newEvents)); // Agrega los nuevos eventos
+        this.calendar.render();
+      }
     }
 
     //Metodo para obtener usuario de store

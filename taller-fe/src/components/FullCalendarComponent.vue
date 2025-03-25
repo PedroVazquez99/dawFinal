@@ -25,57 +25,50 @@ import { OkModal, deleteModal, errorModal } from "./modals/ModalAdapter";
 
     mounted() {
       if (!this.$refs.calendar) return;
-      console.log("Usuario cargado:", this.currentUser);
-      //Recupera el usuario
-      this.$store.dispatch("fetchCurrentUser")
-      .then(() => {
-        console.log("Usuario cargado:", this.currentUser);
-        this.usuarioID = this.currentUserId;
+      Promise.all([
+        this.$store.dispatch("fetchCurrentUser"),
+        this.$store.dispatch("fetchServicios"),
+        this.$store.dispatch("getLists"),
+      ])
+        .then(() => {
+          this.errGet = this.getErrorIfExists();
+          const interval = setInterval(() => {
+            const events = this.getAll();
+            console.log("Esperando datos de getAll:", events);
+            if (events.length > 0) {
+              clearInterval(interval);
+            this.calendar = new Calendar(this.$refs.calendar as HTMLElement, {
+              plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
+              locale: "es",
+              initialView: "dayGridMonth",
+              editable: true,
+              eventDurationEditable: false,
+              selectable: true,
+              firstDay: 1,
+              dayMaxEvents: 3,
+              timeZone: 'UTC',
+              headerToolbar: {
+                left: "dayGridMonth,timeGridWeek,timeGridDay",
+                center: "title",
+                right: "prev,next today",
+              },
+              buttonText: { today: "Hoy", month: "Mes", week: "Semana", day: "Día" },
+              validRange: { start: this.getToday() },
+              eventTimeFormat: { hour: "2-digit", minute: "2-digit", meridiem: false },
+              selectAllow: (selectInfo) => selectInfo.startStr === selectInfo.endStr.split("T")[0],
+              events: this.convertirAEventSource(this.getAll()),
+              eventClick: this.handleEventClick,
+              dateClick: this.handleDateClick,
+              eventDrop: this.handleEventDrop,
+              moreLinkText: (num) => `Ver ${num} más`,
+            });
+
+          this.calendar.render();
+          }
+        }, 100);
       })
-      .catch((error) => {
-        console.error("Error al cargar el usuario:", error);
-      });
-
-      // Recupera los servicios
-      this.$store.dispatch("fetchServicios")
-      .then(() => {
-        // console.log("Servicios cargados:", this.servicios);
-      })
-      .catch((error) => {
-        console.error("Error al cargar los servicios:", error);
-      });
-
-
-      this.$store.dispatch("getLists");
-      this.errGet = this.getErrorIfExists();
-  
-      this.calendar = new Calendar(this.$refs.calendar as HTMLElement, {
-        plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
-        locale: "es",
-        initialView: "dayGridMonth",
-        editable: true,
-        eventDurationEditable: false,
-        selectable: true,
-        firstDay: 1,
-        dayMaxEvents: 3,
-        timeZone: 'UTC',
-        headerToolbar: {
-          left: "dayGridMonth,timeGridWeek,timeGridDay",
-          center: "title",
-          right: "prev,next today",
-        },
-        buttonText: { today: "Hoy", month: "Mes", week: "Semana", day: "Día" },
-        validRange: { start: this.getToday() },
-        eventTimeFormat: { hour: "2-digit", minute: "2-digit", meridiem: false },
-        selectAllow: (selectInfo) => selectInfo.startStr === selectInfo.endStr.split("T")[0],
-        events: this.convertirAEventSource(this.getAll()),
-        eventClick: this.handleEventClick,
-        dateClick: this.handleDateClick,
-        eventDrop: this.handleEventDrop,
-        moreLinkText: (num) => `Ver ${num} más`,
-      });
-  
-      this.calendar.render();
+      
+      this.errGet = this.getErrorIfExists(); 
     }
   
     beforeDestroy() {
