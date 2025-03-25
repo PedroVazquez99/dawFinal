@@ -1,35 +1,11 @@
 
 
--- Crear tabla TaskList
-CREATE TABLE TaskList (
-    id NUMERIC(18, 0) IDENTITY(1,1) NOT NULL PRIMARY KEY,
-    color VARCHAR(10) NOT NULL DEFAULT '#FFFFFF',
-    fecha DATETIME NOT NULL,
-    nombre VARCHAR(250) NOT NULL,
-    visible CHAR(1) NOT NULL DEFAULT 'S'
-);
+-- IMPORTANTE
 
--- Crear tabla ItemTask
-CREATE TABLE ItemTask (
-    id NUMERIC(18, 0) IDENTITY(1,1) NOT NULL PRIMARY KEY,
-    caduca DATETIME NULL,
-    fecha DATETIME NOT NULL,
-    lista NUMERIC(18, 0) NOT NULL,
-    terminada CHAR(1) NOT NULL DEFAULT 'N',
-    texto VARCHAR(250) NOT NULL,
-    visible CHAR(1) NOT NULL DEFAULT 'S',
-    CONSTRAINT FK_Tasks_Lists FOREIGN KEY (lista) REFERENCES TaskList(id)
-);
+-- Realizar generacion de la BBDD con la migracion
+    --> Update-Database 
 
--- Crear tabla Usuarios
-CREATE TABLE Usuarios (
-    id NUMERIC(18, 0) IDENTITY(1,1) NOT NULL PRIMARY KEY,
-    nombre VARCHAR(150) NOT NULL,
-    email VARCHAR(250) NOT NULL UNIQUE,
-    password_hash VARCHAR(250) NOT NULL,
-    rol VARCHAR(10) NOT NULL CHECK (rol IN ('admin', 'user')) DEFAULT 'user',
-    fecha_registro DATETIME NOT NULL DEFAULT GETDATE()
-);
+
 
 -- Usuarios 
 
@@ -62,3 +38,15 @@ VALUES
     ('Peinado de novia', 'Peinado exclusivo para bodas y eventos especiales.', 80.00, '01:30'),
     ('Extensiones de cabello', 'Colocación de extensiones para agregar longitud y volumen.', 150.00, '03:00'),
     ('Coloración completa', 'Aplicación de tinte en todo el cabello para un nuevo look.', 70.00, '02:00');
+
+
+-- Reservas
+
+INSERT INTO TaskList (Color, Fecha, Nombre, Visible, UsuarioId, ServicioId) VALUES
+('#FF5733', '2025-04-01 10:30:00', 'Carlos Rodríguez', 'S', 1, 2),
+('#33FF57', '2025-04-01 11:45:00', 'María Fernández', 'S', 2, 3),
+('#3357FF', '2025-04-01 14:00:00', 'Juan Pérez', 'S', 3, 1),
+('#FF33A1', '2025-04-01 16:15:00', 'Ana López', 'S', 4, 4),
+('#A133FF', '2025-04-01 18:30:00', 'Pedro Gómez', 'S', 5, 2),
+('#FF8C33', '2025-04-02 10:00:00', 'Sofía Martínez', 'S', 6, 3),
+('#33FFF5', '2025-04-02 12:45:00', 'David Herrera', 'S', 7, 1)
